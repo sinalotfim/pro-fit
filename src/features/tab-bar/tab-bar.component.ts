@@ -5,7 +5,6 @@ import { IonicModule } from '@ionic/angular';
     selector: 'pf-tab-bar',
     templateUrl: 'tab-bar.component.html',
     styleUrls: ['tab-bar.component.scss'],
-    standalone: true,
     imports: [IonicModule],
 })
 export class TabBarComponent {

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
     selector: 'pf-statistic',
     templateUrl: 'statistic.component.html',
     styleUrls: ['statistic.component.scss'],
-    standalone: true,
     imports: [CommonModule],
 })
 export class StatisticComponent {

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
     selector: 'pf-profile',
     templateUrl: 'profile.component.html',
     styleUrls: ['profile.component.scss'],
-    standalone: true,
     imports: [CommonModule],
 })
 export class ProfileComponent {

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
     selector: 'pf-exercise',
     templateUrl: 'exercise.component.html',
     styleUrls: ['exercise.component.scss'],
-    standalone: true,
     imports: [CommonModule],
 })
 export class ExerciseComponent {
