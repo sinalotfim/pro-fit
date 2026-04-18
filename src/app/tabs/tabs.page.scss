@@ -1,0 +1,19 @@
+.app-tab-bar {
+  --background: var(--pf-surface);
+  --color: var(--pf-text-muted);
+  --color-selected: var(--pf-accent);
+  border-top: 1px solid var(--pf-border);
+}
+
+.tab-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto 2px;
+}
+
+.tab-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}

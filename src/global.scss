@@ -1,0 +1,128 @@
+/*
+ * App Global CSS
+ * --------------
+ * Ionic is used ONLY for the tab shell (ion-tabs/ion-tab-bar/ion-tab-button/
+ * ion-router-outlet). The imports below are just the minimum Ionic runtime CSS
+ * needed for those components. Everything else below is plain HTML/SCSS.
+ */
+
+@use "styles/tokens";
+
+/* Minimum Ionic runtime CSS for the tab shell */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+
+/* Base typography & layout */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--pf-font);
+  background: var(--pf-bg);
+  color: var(--pf-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--pf-space-3);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 var(--pf-space-3);
+  line-height: 1.5;
+  color: var(--pf-text);
+}
+
+p.muted {
+  color: var(--pf-text-muted);
+}
+
+/* Page primitives used by tab pages */
+.page-header {
+  padding: var(--pf-space-5) var(--pf-space-4) var(--pf-space-3);
+  background: var(--pf-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.page {
+  padding: 0 var(--pf-space-4) var(--pf-space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-space-4);
+}
+
+.card {
+  background: var(--pf-surface);
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius);
+  padding: var(--pf-space-4);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: filter 120ms ease, transform 80ms ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--pf-accent);
+  color: var(--pf-accent-contrast);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--pf-text);
+  border-color: var(--pf-border);
+}
+
+/* Links */
+.link {
+  color: var(--pf-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
