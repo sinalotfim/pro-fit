@@ -1,7 +1,231 @@
 :host {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     height: 100%;
     overflow-y: auto;
     background: var(--pf-bg);
     color: var(--pf-text);
+}
+
+.exercise-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-3);
+}
+
+.exercise-header__top {
+    display: flex;
+    align-items: center;
+    gap: var(--pf-space-3);
+    justify-content: space-between;
+}
+
+.exercise-header__filter {
+    display: flex;
+}
+
+.exercise-header__title {
+    margin: 0;
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    font-size: 26px;
+    color: var(--pf-text);
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--pf-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: background-color 120ms ease;
+}
+
+.header-icon:hover,
+.header-icon:focus-visible {
+    background: var(--pf-border);
+    outline: none;
+}
+
+.header-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.search-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--pf-space-2);
+    background: var(--pf-border);
+    border-radius: 999px;
+    padding: 8px 14px;
+    min-width: 0;
+}
+
+.search-input__icon {
+    width: 18px;
+    height: 18px;
+    color: var(--pf-text-muted);
+    flex-shrink: 0;
+}
+
+.search-input__field {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--pf-text);
+    font: inherit;
+    font-size: 16px;
+    padding: 2px 0;
+}
+
+.search-input__field::placeholder {
+    color: var(--pf-text-muted);
+}
+
+.search-input__field::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.header-link {
+    background: transparent;
+    border: none;
+    color: var(--pf-accent);
+    font: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 4px;
+    flex-shrink: 0;
+}
+
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--pf-space-2);
+    background: var(--pf-border);
+    color: var(--pf-text);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-chip svg {
+    width: 14px;
+    height: 14px;
+}
+
+.exercise-page {
+    gap: var(--pf-space-4);
+    padding-bottom: var(--pf-space-6);
+}
+
+.letter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-2);
+}
+
+.letter-group__title {
+    margin: 0;
+    padding: var(--pf-space-2) 0 var(--pf-space-1);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--pf-text-muted);
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: var(--pf-ex-header-h, 110px);
+    background: var(--pf-bg);
+    z-index: 1;
+}
+
+.exercise-item {
+    display: flex;
+    align-items: center;
+    gap: var(--pf-space-3);
+    width: 100%;
+    background: var(--pf-surface);
+    border: 1px solid var(--pf-border);
+    border-radius: var(--pf-radius);
+    padding: var(--pf-space-3);
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    transition:
+        transform 80ms ease,
+        background-color 120ms ease;
+}
+
+.exercise-item:active {
+    transform: scale(0.99);
+}
+
+.exercise-item:hover {
+    background: color-mix(in srgb, var(--pf-surface) 90%, var(--pf-border));
+}
+
+.exercise-item__thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: var(--pf-bg);
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.exercise-item__body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.exercise-item__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--pf-text);
+    line-height: 1.25;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.exercise-item__name .hl {
+    color: var(--pf-accent);
+    font-weight: 700;
+}
+
+.exercise-item__muscles {
+    margin: 0;
+    font-size: 14px;
+    color: var(--pf-text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.empty-results {
+    margin: var(--pf-space-5) 0;
+    text-align: center;
+    color: var(--pf-text-muted);
 }

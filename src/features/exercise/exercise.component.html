@@ -1,15 +1,115 @@
-<header class="page-header">
-    <h1>Exercises</h1>
+<header class="page-header exercise-header" #pageHeader>
+    <div class="exercise-header__top">
+        <ng-container *ngIf="!searchActive(); else searchMode">
+            <h1 class="exercise-header__title">EXERCISES</h1>
+            <button
+                class="header-icon"
+                type="button"
+                (click)="openSearch()"
+                aria-label="Search exercises"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <path
+                        d="M20 20l-3.5-3.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+        </ng-container>
+        <ng-template #searchMode>
+            <label class="search-input">
+                <svg class="search-input__icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <path
+                        d="M20 20l-3.5-3.5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <input
+                    #searchBox
+                    type="search"
+                    class="search-input__field"
+                    [value]="query()"
+                    (input)="onQueryInput($event)"
+                    placeholder="Search"
+                    autocomplete="off"
+                    spellcheck="false"
+                    enterkeyhint="search"
+                    aria-label="Search exercises"
+                />
+            </label>
+            <button class="header-link" type="button" (click)="closeSearch()">Close</button>
+        </ng-template>
+    </div>
+
+    <div class="exercise-header__filter">
+        <span class="filter-chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M4 5h16l-6 8v6l-4-2v-4z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                />
+            </svg>
+            <span>All ({{ count() }})</span>
+        </span>
+    </div>
 </header>
 
-<main class="page">
-    <section class="card">
-        <h2>Exercise library</h2>
-        <p>Browse exercises and add them to your workouts.</p>
+<main class="page exercise-page">
+    <section
+        class="letter-group"
+        *ngFor="let g of groups(); trackBy: trackByLetter"
+    >
+        <h2 class="letter-group__title">{{ g.letter }}</h2>
+        <button
+            class="exercise-item"
+            type="button"
+            *ngFor="let ex of g.items; trackBy: trackById"
+        >
+            <img
+                class="exercise-item__thumb"
+                [src]="ex.imageUrl || placeholderImage"
+                [alt]="ex.name"
+                (error)="onImageError($event)"
+                loading="lazy"
+            />
+            <div class="exercise-item__body">
+                <p class="exercise-item__name">
+                    <span
+                        *ngFor="let part of splitForHighlight(ex.name)"
+                        [class.hl]="part.match"
+                        >{{ part.text }}</span
+                    >
+                </p>
+                <p class="exercise-item__muscles">{{ ex.focusArea }}</p>
+            </div>
+        </button>
     </section>
 
-    <section class="card">
-        <h2>Favorites</h2>
-        <p class="muted">No favorites yet.</p>
-    </section>
+    <p class="empty-results" *ngIf="groups().length === 0">No exercises match your search.</p>
 </main>
