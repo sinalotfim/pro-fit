@@ -1,16 +1,56 @@
 <header class="page-header">
-    <h1>Workouts</h1>
+    <h1 class="title">Workouts</h1>
 </header>
 
 <main class="page">
-    <section class="card">
-        <h2>Your workouts</h2>
-        <p>Plan and track your training sessions here.</p>
-        <button type="button" class="btn btn-primary">Start a workout</button>
+    <section class="empty-state" *ngIf="workouts.length === 0">
+        <div class="empty-state__figure">
+            <img
+                class="empty-state__image"
+                [src]="emptyStateImage"
+                alt="Create a new workout"
+                (error)="onImageError($event)"
+            />
+        </div>
+        <h2 class="empty-state__title">Create your first custom workout</h2>
+        <p class="empty-state__subtitle">Set up your own unique routine</p>
+        <button type="button" class="btn btn-primary empty-state__cta" (click)="onCreateWorkout()">
+            <span class="empty-state__cta-icon" aria-hidden="true">+</span>
+            <span>START</span>
+        </button>
     </section>
 
-    <section class="card">
-        <h2>Recent sessions</h2>
-        <p class="muted">No sessions logged yet.</p>
-    </section>
+    <article class="workout-card" *ngFor="let w of workouts">
+        <header class="workout-card__head">
+            <div class="workout-card__heading">
+                <h2 class="workout-card__name">{{ w.name }}</h2>
+                <p class="workout-card__count">{{ w.exerciseCount }} exercises</p>
+            </div>
+            <img
+                class="workout-card__figure"
+                [src]="w.image || placeholderImage"
+                [alt]="w.name"
+                (error)="onImageError($event)"
+            />
+        </header>
+
+        <ul class="workout-card__list">
+            <li class="workout-card__row" *ngFor="let e of w.preview">
+                <span class="ex-name">{{ e.name }} · {{ e.equipment }}</span>
+                <span class="ex-sets">{{ e.sets }} × {{ e.rep }}</span>
+            </li>
+        </ul>
+
+        <a class="workout-card__viewall link" href="#">View all</a>
+    </article>
 </main>
+
+<button
+    type="button"
+    class="btn btn-primary fab-new"
+    *ngIf="workouts.length > 0"
+    (click)="onCreateWorkout()"
+>
+    <span class="fab-new__icon" aria-hidden="true">+</span>
+    <span>New</span>
+</button>

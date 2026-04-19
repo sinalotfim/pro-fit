@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Barbell">
+    <circle cx="80" cy="80" r="80" fill="#eef0f4" />
+    <g transform="translate(80 86)">
+        <line x1="-58" y1="0" x2="58" y2="0" stroke="#bfc6d1" stroke-width="6" stroke-linecap="round" />
+        <line x1="-50" y1="22" x2="50" y2="22" stroke="#bfc6d1" stroke-width="4" stroke-linecap="round" />
+        <line x1="-44" y1="0" x2="-36" y2="22" stroke="#bfc6d1" stroke-width="4" stroke-linecap="round" />
+        <line x1="44" y1="0" x2="36" y2="22" stroke="#bfc6d1" stroke-width="4" stroke-linecap="round" />
+        <ellipse cx="-44" cy="0" rx="10" ry="22" fill="#3a7afe" stroke="#1f4fd1" stroke-width="2" />
+        <ellipse cx="44" cy="0" rx="10" ry="22" fill="#e34a3a" stroke="#a8281c" stroke-width="2" />
+        <ellipse cx="-32" cy="22" rx="9" ry="18" fill="#f5c542" stroke="#b88f15" stroke-width="2" />
+    </g>
+</svg>
