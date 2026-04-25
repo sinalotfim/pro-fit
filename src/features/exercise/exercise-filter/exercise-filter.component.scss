@@ -1,0 +1,309 @@
+:host {
+    display: contents;
+}
+
+.sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 20;
+    animation: pf-fade-in 160ms ease-out;
+}
+
+.sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
+    background: var(--pf-surface);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: 0 -16px 40px rgba(0, 0, 0, 0.25);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    animation: pf-slide-up 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    overflow: hidden;
+}
+
+@keyframes pf-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pf-slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.sheet-header {
+    padding: var(--pf-space-4) var(--pf-space-4) var(--pf-space-2);
+}
+
+.sheet-header__title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--pf-space-2);
+}
+
+.sheet-header__title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--pf-text);
+}
+
+.sheet-header__clear {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--pf-text-muted);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition:
+        background-color 120ms ease,
+        color 120ms ease,
+        opacity 120ms ease;
+}
+
+.sheet-header__clear svg {
+    width: 16px;
+    height: 16px;
+}
+
+.sheet-header__clear:hover:not(:disabled),
+.sheet-header__clear:focus-visible:not(:disabled) {
+    background: var(--pf-border);
+    color: var(--pf-text);
+    outline: none;
+}
+
+.sheet-header__clear:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sheet-header__count {
+    margin: 0 0 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--pf-text);
+}
+
+.sheet-header__count-num {
+    color: var(--pf-accent);
+    font-weight: 800;
+    margin-right: 4px;
+}
+
+.sheet-header__close {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: none;
+    background: var(--pf-border);
+    color: var(--pf-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition:
+        filter 120ms ease,
+        transform 80ms ease;
+}
+
+.sheet-header__close svg {
+    width: 18px;
+    height: 18px;
+}
+
+.sheet-header__close:hover {
+    filter: brightness(0.95);
+}
+
+.sheet-header__close:active {
+    transform: scale(0.95);
+}
+
+.sheet-header__close:focus-visible {
+    outline: 2px solid var(--pf-accent);
+    outline-offset: 2px;
+}
+
+.sheet-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: var(--pf-space-2) var(--pf-space-4) var(--pf-space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-4);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-2);
+}
+
+.filter-group__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--pf-text);
+}
+
+.filter-group__badge {
+    color: var(--pf-text-muted);
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.chip-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--pf-space-2);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.chip-row::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.chip {
+    flex: 0 0 auto;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--pf-border);
+    background: var(--pf-surface);
+    color: var(--pf-text);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 120ms ease,
+        color 120ms ease,
+        border-color 120ms ease,
+        transform 80ms ease;
+}
+
+.chip:active {
+    transform: scale(0.97);
+}
+
+.chip:hover {
+    background: var(--pf-border);
+}
+
+.chip--selected,
+.chip--selected:hover {
+    background: var(--pf-accent);
+    color: var(--pf-accent-contrast);
+    border-color: var(--pf-accent);
+}
+
+.equipment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-2);
+}
+
+.equipment-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--pf-space-3);
+    padding: 12px var(--pf-space-3);
+    background: var(--pf-surface);
+    border: 1px solid var(--pf-border);
+    border-radius: var(--pf-radius);
+    color: var(--pf-text);
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+    transition:
+        border-color 120ms ease,
+        background-color 120ms ease,
+        transform 80ms ease;
+}
+
+.equipment-card:active {
+    transform: scale(0.99);
+}
+
+.equipment-card:hover {
+    background: color-mix(in srgb, var(--pf-surface) 90%, var(--pf-border));
+}
+
+.equipment-card--selected {
+    border-color: var(--pf-accent);
+    border-width: 2px;
+    padding: 11px calc(var(--pf-space-3) - 1px);
+}
+
+.equipment-card__name {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--pf-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.equipment-card__thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: var(--pf-bg);
+    flex-shrink: 0;
+}
+
+.equipment-card__check {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: var(--pf-text);
+    color: var(--pf-surface);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.equipment-card__check svg {
+    width: 14px;
+    height: 14px;
+}
+

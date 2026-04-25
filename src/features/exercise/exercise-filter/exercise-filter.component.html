@@ -1,0 +1,114 @@
+<div class="sheet-backdrop" (click)="onBackdropClick()" aria-hidden="true"></div>
+
+<section
+    class="sheet"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="filterSheetTitle"
+    (click)="$event.stopPropagation()"
+>
+    <header class="sheet-header">
+        <div class="sheet-header__title-row">
+            <h2 id="filterSheetTitle" class="sheet-header__title">Filtered</h2>
+            <button
+                class="sheet-header__clear"
+                type="button"
+                (click)="clearAll()"
+                [disabled]="!hasSelection()"
+                aria-label="Clear all filters"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M6 7h12M9 7V5h6v2M7 7l1 12a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2l1-12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </button>
+            <p class="sheet-header__count">
+                <span class="sheet-header__count-num">{{ previewCount() }}</span> Exercises
+            </p>
+            <button
+                class="sheet-header__close"
+                type="button"
+                (click)="onClose()"
+                aria-label="Close filters"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M6 6l12 12M18 6L6 18"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="sheet-body">
+        <section class="filter-group">
+            <h3 class="filter-group__title">
+                Focus Area <span class="filter-group__badge">({{ selectedBodyParts().size }})</span>
+            </h3>
+            <div class="chip-row">
+                <button
+                    *ngFor="let part of bodyParts; trackBy: trackByBodyPart"
+                    class="chip"
+                    type="button"
+                    [class.chip--selected]="isBodyPartSelected(part)"
+                    [attr.aria-pressed]="isBodyPartSelected(part)"
+                    (click)="toggleBodyPart(part)"
+                >
+                    {{ part }}
+                </button>
+            </div>
+        </section>
+
+        <section class="filter-group">
+            <h3 class="filter-group__title">
+                Equipment <span class="filter-group__badge">({{ selectedEquipment().size }})</span>
+            </h3>
+            <ul class="equipment-list">
+                <li *ngFor="let name of equipmentOptions(); trackBy: trackByEquipment">
+                    <button
+                        class="equipment-card"
+                        type="button"
+                        [class.equipment-card--selected]="isEquipmentSelected(name)"
+                        [attr.aria-pressed]="isEquipmentSelected(name)"
+                        (click)="toggleEquipment(name)"
+                    >
+                        <span
+                            class="equipment-card__check"
+                            *ngIf="isEquipmentSelected(name)"
+                            aria-hidden="true"
+                        >
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12l5 5L20 7"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+                        <span class="equipment-card__name">{{ name }}</span>
+                        <img
+                            class="equipment-card__thumb"
+                            [src]="placeholderImage"
+                            [alt]="name"
+                            (error)="onImageError($event)"
+                            loading="lazy"
+                        />
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</section>

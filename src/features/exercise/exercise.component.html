@@ -64,7 +64,14 @@
     </div>
 
     <div class="exercise-header__filter">
-        <span class="filter-chip">
+        <button
+            type="button"
+            class="filter-chip"
+            [class.filter-chip--active]="hasActiveFilter()"
+            (click)="openFilter()"
+            aria-haspopup="dialog"
+            [attr.aria-expanded]="filterOpen()"
+        >
             <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path
                     d="M4 5h16l-6 8v6l-4-2v-4z"
@@ -75,13 +82,52 @@
                     stroke-linecap="round"
                 />
             </svg>
-            <span>All ({{ count() }})</span>
-        </span>
+            <span *ngIf="!hasActiveFilter(); else activeLabel">All ({{ count() }})</span>
+            <ng-template #activeLabel>
+                <span>Filtered ({{ activeFilterChips().length }})</span>
+            </ng-template>
+        </button>
+        <button
+            *ngIf="hasActiveFilter()"
+            type="button"
+            class="header-link header-link--clear"
+            (click)="clearAllFilters()"
+        >
+            Clear
+        </button>
+    </div>
+
+    <div class="exercise-header__chips" *ngIf="hasActiveFilter()">
+        <button
+            *ngFor="let chip of activeFilterChips(); trackBy: trackByChip"
+            type="button"
+            class="active-chip"
+            (click)="removeFilterChip(chip)"
+            [attr.aria-label]="'Remove filter ' + chip.label"
+        >
+            <span class="active-chip__label">{{ chip.label }}</span>
+            <span class="active-chip__remove" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="currentColor" />
+                    <path
+                        d="M9 9l6 6M15 9l-6 6"
+                        fill="none"
+                        stroke="var(--pf-surface)"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </span>
+        </button>
     </div>
 </header>
 
 <main class="page exercise-page">
-    <span class="letter-overlay" *ngIf="currentLetter() && !searchActive()" aria-hidden="true">
+    <span
+        class="letter-overlay"
+        *ngIf="currentLetter() && !searchActive() && !hasActiveFilter()"
+        aria-hidden="true"
+    >
         {{ currentLetter() }}
     </span>
 
@@ -124,5 +170,15 @@
         </div>
     </cdk-virtual-scroll-viewport>
 
-    <p class="empty-results" *ngIf="rows().length === 0">No exercises match your search.</p>
+    <p class="empty-results" *ngIf="rows().length === 0">
+        {{ searchActive() ? 'No exercises match your search.' : 'No exercises match your filters.' }}
+    </p>
 </main>
+
+<pf-exercise-filter
+    *ngIf="filterOpen()"
+    [initial]="filterState()"
+    [allExercises]="all()"
+    (change)="onFilterChange($event)"
+    (close)="closeFilter()"
+/>

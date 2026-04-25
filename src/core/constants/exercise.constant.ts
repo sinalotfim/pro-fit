@@ -12,6 +12,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Romanian+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand tall holding a barbell at hip level with a shoulder-width grip.",
     execution: [
@@ -35,6 +36,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit on the leg press machine and place feet shoulder-width apart on the platform.",
     execution: [
@@ -59,6 +61,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Bulgarian+Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand in front of a bench and place one foot behind you on the bench while holding dumbbells at your sides.",
     execution: [
@@ -82,6 +85,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Position your shoulders under the pads and place feet shoulder-width on the platform.",
     execution: [
@@ -105,6 +109,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on a flat bench, grip the bar slightly wider than shoulder-width.",
     execution: [
@@ -128,6 +133,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Lower Chest, Inner Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set pulleys high, grab handles, and step forward into a stable stance.",
     execution: [
@@ -151,6 +157,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grab the bar with an overhand grip slightly wider than shoulders and hang fully extended.",
     execution: [
@@ -174,6 +181,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Barbell+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Middle Back, Lats, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Hinge at the hips with a flat back, barbell held with overhand grip.",
     execution: [
@@ -198,6 +206,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Skull+Crushers",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on a flat bench holding an EZ bar above your chest with elbows pointed upward.",
     execution: [
@@ -221,6 +230,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Brachialis, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells at your sides with palms facing inward.",
     execution: [
@@ -245,6 +255,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Goblet+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold a dumbbell vertically at chest level with both hands, feet shoulder-width apart.",
     execution: [
@@ -269,6 +280,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Walking+Lunge",
     videoUrls: ["https://www.youtube.com/embed/L8fvypPrzzs"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall with dumbbells at your sides, feet hip-width apart.",
     execution: [
@@ -292,6 +304,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation: "Stand facing a bench/box, holding dumbbells at your sides.",
     execution: [
       "Place one foot on the bench and drive through that heel to step up.",
@@ -315,6 +328,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Lying+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Lie face down on the machine with ankles positioned under the pad.",
     execution: [
@@ -338,6 +352,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Stand on the calf machine platform with balls of feet on the edge and shoulders under pads.",
     execution: [
@@ -362,6 +377,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench to a 30–45 degree incline and hold dumbbells at chest level.",
     execution: [
@@ -385,6 +401,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest, Triceps, Shoulders, Core",
+    bodyPart: ["Arm", "Chest", "Core", "Shoulder"],
     preparation:
       "Get into a plank position with hands slightly wider than shoulder-width.",
     execution: [
@@ -408,6 +425,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Chest+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Lower Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Hold parallel bars with arms locked out and lean slightly forward.",
     execution: [
@@ -431,6 +449,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Middle Back, Lats, Rhomboids",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, feet on platform, grab the neutral grip handle and brace core.",
     execution: [
@@ -455,6 +474,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Triceps+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand facing the cable machine, grab rope attachment, elbows tucked close to your sides.",
     execution: [
@@ -479,6 +499,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Overhead+Press",
     videoUrls: ["https://www.youtube.com/embed/2yjwXTZQDDI"],
     focusArea: "Shoulders, Triceps, Upper Chest",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Stand with feet shoulder-width apart, barbell at upper chest with a grip just outside shoulders.",
     execution: [
@@ -502,6 +523,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Arnold+Press",
     videoUrls: ["https://www.youtube.com/embed/6Z15_WdXmVw"],
     focusArea: "Shoulders (Front/Side), Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit or stand holding dumbbells in front of your face with palms facing you.",
     execution: [
@@ -526,6 +548,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Rear+Delt+Fly",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit facing the machine pad, grab handles with arms extended forward.",
     execution: [
@@ -550,6 +573,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/5x9Wq5L0P5Y"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Stand next to a low cable pulley, grab the handle with the outside hand.",
     execution: [
@@ -573,6 +597,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand tall holding a barbell at thigh level with hands shoulder-width apart.",
     execution: [
@@ -596,6 +621,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=EZ+Bar+Curl",
     videoUrls: ["https://www.youtube.com/embed/zA9yR4WydQI"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand with EZ bar in hands, underhand grip, elbows close to your torso.",
     execution: [
@@ -620,6 +646,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Sit at the preacher bench, upper arms resting on the pad, grip the handle/bar.",
     execution: [
@@ -644,6 +671,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Triceps",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Face away from the cable machine, grab rope handles, and bring them behind your head.",
     execution: [
@@ -668,6 +696,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Close+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/0B_3TQX5Wmw"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench and grip bar slightly inside shoulder-width, feet planted firmly.",
     execution: [
@@ -692,6 +721,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Leg+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation: "Hang from a pull-up bar with a firm grip and body steady.",
     execution: [
       "Lift legs upward by contracting your abs.",
@@ -714,6 +744,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8eMxBk"],
     focusArea: "Quads, Upper Back, Core",
+    bodyPart: ["Back", "Core", "Leg"],
     preparation:
       "Rack the bar on your front shoulders (front rack), elbows high, feet shoulder-width apart.",
     execution: [
@@ -738,6 +769,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Sumo+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/1yY7S5w1WcE"],
     focusArea: "Glutes, Hamstrings, Quads, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand with a wide stance, toes slightly out, bar over mid-foot, hands inside legs.",
     execution: [
@@ -761,6 +793,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Good+Morning",
     videoUrls: ["https://www.youtube.com/embed/vKPGe4H6Z1A"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Place barbell on upper traps, feet shoulder-width apart, soft knee bend.",
     execution: [
@@ -784,6 +817,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Glute+Bridge",
     videoUrls: ["https://www.youtube.com/embed/wPM8icPu6H8"],
     focusArea: "Glutes, Hamstrings, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Lie on your back with knees bent, feet flat on the floor, arms by your sides.",
     execution: [
@@ -808,6 +842,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Pull+Through",
     videoUrls: ["https://www.youtube.com/embed/3TjvKq6C3m4"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set rope attachment low, face away from the cable, step forward holding rope between legs.",
     execution: [
@@ -831,6 +866,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/1jv2qk0aZkI"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with mid-chest, feet flat, back against pad.",
     execution: [
@@ -854,6 +890,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Pec+Deck",
     videoUrls: ["https://www.youtube.com/embed/eGjt4lk6g34"],
     focusArea: "Chest (Inner/Outer)",
+    bodyPart: ["Chest"],
     preparation:
       "Sit tall, forearms on pads or hands on handles, chest against the pad.",
     execution: [
@@ -877,6 +914,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Row",
     videoUrls: ["https://www.youtube.com/embed/pYcpY20QaE8"],
     focusArea: "Lats, Middle Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Place one knee and hand on bench, hold dumbbell with other hand, back flat.",
     execution: [
@@ -901,6 +939,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Straight+Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/4o6eE-8jVnE"],
     focusArea: "Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Set cable high with straight bar, stand tall with slight hinge, arms straight.",
     execution: [
@@ -925,6 +964,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Concentration+Curl",
     videoUrls: ["https://www.youtube.com/embed/VMbDQ8D0c7Q"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on a bench, elbow braced against inner thigh, dumbbell in hand.",
     execution: [
@@ -949,6 +989,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Landmine+Squat",
     videoUrls: ["https://www.youtube.com/embed/0wqZkz3k1dA"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Place one end of a barbell in a landmine attachment, hold the other end at chest height, feet shoulder-width apart.",
     execution: [
@@ -972,6 +1013,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Squat",
     videoUrls: ["https://www.youtube.com/embed/YvWgYp6Gx2Y"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Position bar on upper traps, feet slightly forward of hips, stance shoulder-width.",
     execution: [
@@ -996,6 +1038,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Extension",
     videoUrls: ["https://www.youtube.com/embed/9k4Gv0kYQ7w"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on the leg extension machine, adjust pad over your ankle, one leg working at a time.",
     execution: [
@@ -1020,6 +1063,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Seated+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/JbyjNymZOt0"],
     focusArea: "Calves (Soleus)",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on the machine with balls of feet on the platform and pads resting on thighs.",
     execution: [
@@ -1044,6 +1088,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Smith+Incline+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench on incline under Smith bar, grip slightly wider than shoulders.",
     execution: [
@@ -1068,6 +1113,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Dumbbell+Pullover",
     videoUrls: ["https://www.youtube.com/embed/Fx2f8D4G3yU"],
     focusArea: "Chest, Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Lie on a bench holding one dumbbell above chest with both hands, slight elbow bend.",
     execution: [
@@ -1091,6 +1137,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Chin-Up",
     videoUrls: ["https://www.youtube.com/embed/b-ztMQpj8yc"],
     focusArea: "Lats, Biceps, Upper Back",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grab the bar with an underhand grip about shoulder-width apart and hang fully.",
     execution: [
@@ -1114,6 +1161,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=T-Bar+Row",
     videoUrls: ["https://www.youtube.com/embed/j3Igk5nyZE4"],
     focusArea: "Middle Back, Lats, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Position chest on pad (if supported), grab handles, feet stable and braced.",
     execution: [
@@ -1137,6 +1185,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach a straight bar to a low pulley, stand tall, elbows close to torso.",
     execution: [
@@ -1160,6 +1209,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Plank",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Core, Abs, Lower Back",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Place forearms on the floor, elbows under shoulders, legs extended behind you.",
     execution: [
@@ -1184,6 +1234,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Trap+Bar+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/1X0D8yQzB8Q"],
     focusArea: "Quads, Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand inside the trap bar with feet hip-width, grip handles, chest up, core braced.",
     execution: [
@@ -1207,6 +1258,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit with upper back on a bench, barbell over hips, feet planted shoulder-width.",
     execution: [
@@ -1231,6 +1283,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Narrow+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Set feet close together on the platform, body tight against the pad.",
     execution: [
@@ -1255,6 +1308,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Kickback",
     videoUrls: ["https://www.youtube.com/embed/S3I6hD2J2lA"],
     focusArea: "Glutes",
+    bodyPart: ["Glutes"],
     preparation:
       "Attach ankle strap to low cable, hold support, slight forward lean.",
     execution: [
@@ -1279,6 +1333,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Cable+Fly",
     videoUrls: ["https://www.youtube.com/embed/6mWJf5G1n9g"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables low, step forward, arms slightly bent, chest tall.",
     execution: [
@@ -1303,6 +1358,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/LfyQBUKR8SE"],
     focusArea: "Lower Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set decline bench, secure feet, grip bar slightly wider than shoulders.",
     execution: [
@@ -1327,6 +1383,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Lat+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation: "Sit tall, grab bar wide, brace core, and slightly lean back.",
     execution: [
       "Pull bar down to upper chest while driving elbows down.",
@@ -1349,6 +1406,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Face+Pull",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cable to face height, grab rope, step back, and brace core.",
     execution: [
@@ -1373,6 +1431,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Triceps+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar to high cable, stand tall, elbows tucked close to sides.",
     execution: [
@@ -1397,6 +1456,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Russian+Twist",
     videoUrls: ["https://www.youtube.com/embed/wkD8rjkodUI"],
     focusArea: "Abs, Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Sit on the floor, lean back slightly, lift feet (optional), hands together or holding weight.",
     execution: [
@@ -1421,6 +1481,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Romanian+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells in front of thighs, feet hip-width apart, knees soft.",
     execution: [
@@ -1444,6 +1505,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sissy+Squat",
     videoUrls: ["https://www.youtube.com/embed/YJwXbJ5FvG0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Stand tall holding a support (optional), feet close together, rise onto toes slightly.",
     execution: [
@@ -1467,6 +1529,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Wall+Sit",
     videoUrls: ["https://www.youtube.com/embed/y-wV4Venusw"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Lean your back against a wall and slide down until knees are around 90 degrees.",
     execution: [
@@ -1491,6 +1554,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Hack+Squat+Assisted",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set assistance band(s) on the machine (if available), feet shoulder-width on platform.",
     execution: [
@@ -1515,6 +1579,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/VmB1G1K7v94"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on a flat bench with dumbbells at chest level, feet planted firmly.",
     execution: [
@@ -1539,6 +1604,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Crossover",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables at mid height, grab handles, step forward and brace core.",
     execution: [
@@ -1562,6 +1628,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Inverted+Row",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Upper Back, Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Set a bar at waist height, lie under it, grip bar, and keep body straight.",
     execution: [
@@ -1586,6 +1653,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/lhpaJ4C93S8"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit at cable row station, grip handle with one hand, brace core and stay tall.",
     execution: [
@@ -1610,6 +1678,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=DB+Overhead+Triceps",
     videoUrls: ["https://www.youtube.com/embed/YbX7Wd8jQ-Q"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit or stand holding one dumbbell overhead with both hands, elbows close to head.",
     execution: [
@@ -1634,6 +1703,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Mountain+Climbers",
     videoUrls: ["https://www.youtube.com/embed/nmwgirgXLYM"],
     focusArea: "Core, Abs, Conditioning",
+    bodyPart: ["Core", "Full Body"],
     preparation:
       "Start in a high plank position with hands under shoulders and body straight.",
     execution: [
@@ -1658,6 +1728,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=High+Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Place bar high on upper traps, feet shoulder-width, brace core and stand tall.",
     execution: [
@@ -1682,6 +1753,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Low+Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Place bar lower across rear delts, grip tight, feet shoulder-width, brace core.",
     execution: [
@@ -1705,6 +1777,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand in a split stance holding dumbbells at sides, torso upright and stable.",
     execution: [
@@ -1729,6 +1802,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit on leg press, place one foot on platform, keep hips and back stable.",
     execution: [
@@ -1753,6 +1827,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Donkey+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/6Yp9VxYl2iE"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Position hips under pad and balls of feet on platform edge, torso braced.",
     execution: [
@@ -1777,6 +1852,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set bench to 30–45 degrees, dumbbells above chest with slight elbow bend.",
     execution: [
@@ -1801,6 +1877,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/5lJt7bJQyZs"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set cables at chest height, step forward into split stance, elbows slightly behind torso.",
     execution: [
@@ -1824,6 +1901,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Dead+Hang",
     videoUrls: ["https://www.youtube.com/embed/2tM1LFFxeKg"],
     focusArea: "Grip, Lats, Shoulders",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Grab a pull-up bar with a comfortable grip and let your body hang freely.",
     execution: [
@@ -1850,6 +1928,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=DB+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/Fx2f8D4G3yU"],
     focusArea: "Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Stand holding a dumbbell with both hands, hinge slightly at hips, arms extended forward/up.",
     execution: [
@@ -1874,6 +1953,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Curl",
     videoUrls: ["https://www.youtube.com/embed/soxrZlIl35U"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set bench to incline, sit back with arms hanging down holding dumbbells.",
     execution: [
@@ -1898,6 +1978,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Set up for a back squat with barbell on traps, brace core, feet shoulder-width apart.",
     execution: [
@@ -1921,6 +2002,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Unrack barbell, feet shoulder-width, core braced and posture tall.",
     execution: [
@@ -1944,6 +2026,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Box+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Glutes, Hamstrings, Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set a box behind you at desired height, unrack barbell and step back into stance.",
     execution: [
@@ -1968,6 +2051,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set Smith bar on upper traps, take a split stance with one leg forward for balance.",
     execution: [
@@ -1992,6 +2076,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Hip+Abduction",
     videoUrls: ["https://www.youtube.com/embed/9Jt_0H0YCb8"],
     focusArea: "Glutes (Side), Outer Thighs",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach ankle strap to low cable, stand sideways holding the machine for balance.",
     execution: [
@@ -2015,6 +2100,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Floor+Press",
     videoUrls: ["https://www.youtube.com/embed/0G2_XV7slIg"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on the floor with knees bent, dumbbells at chest level, elbows resting on floor lightly.",
     execution: [
@@ -2039,6 +2125,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Squeeze+Press",
     videoUrls: ["https://www.youtube.com/embed/pX3kZfT6N1o"],
     focusArea: "Chest (Inner), Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on a flat bench holding two dumbbells pressed together over your chest.",
     execution: [
@@ -2062,6 +2149,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Meadows+Row",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Lats, Upper Back, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Set barbell in a landmine, stand perpendicular, hinge at hips, grip bar near the sleeve.",
     execution: [
@@ -2086,6 +2174,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Stand tall holding dumbbells at sides, slight bend in elbows, core braced.",
     execution: [
@@ -2109,6 +2198,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Abs",
+    bodyPart: ["Core"],
     preparation:
       "Attach rope to high pulley, kneel facing machine, rope near forehead, hips stable.",
     execution: [
@@ -2133,6 +2223,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Zercher+Squat",
     videoUrls: ["https://www.youtube.com/embed/0wqZkz3k1dA"],
     focusArea: "Quads, Glutes, Upper Back, Core",
+    bodyPart: ["Back", "Core", "Leg", "Glutes"],
     preparation:
       "Set barbell in rack around waist height, cradle bar in elbow crease, stand tall with feet shoulder-width.",
     execution: [
@@ -2157,6 +2248,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Anderson+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Set bar on safety pins at the bottom squat position, get under bar, brace and prepare to drive up.",
     execution: [
@@ -2180,6 +2272,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Belt+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach belt and stand on platform, feet shoulder-width, core braced and posture tall.",
     execution: [
@@ -2204,6 +2297,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=High+Foot+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place feet higher on platform than usual, stance shoulder-width, back flat on pad.",
     execution: [
@@ -2227,6 +2321,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Nordic+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Anchor your ankles under a pad/partner, keep torso straight and core braced.",
     execution: [
@@ -2251,6 +2346,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/VmB1G1K7v94"],
     focusArea: "Lower Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set bench to a decline angle, secure feet, dumbbells at chest level.",
     execution: [
@@ -2275,6 +2371,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest, Triceps, Shoulders, Core",
+    bodyPart: ["Arm", "Chest", "Core", "Shoulder"],
     preparation:
       "Place hands on a bench/box, walk feet back into a straight-body plank.",
     execution: [
@@ -2299,6 +2396,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Chest+Supported+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Upper Back, Lats, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Set bench to incline, lie chest-down holding dumbbells with arms hanging.",
     execution: [
@@ -2322,6 +2420,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Machine+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Adjust seat so handles align with mid torso, chest on pad, feet stable.",
     execution: [
@@ -2346,6 +2445,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Reverse+Crunch",
     videoUrls: ["https://www.youtube.com/embed/hyv14e2QDq0"],
     focusArea: "Lower Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Lie on your back, hands by sides or holding a bench, knees bent at 90 degrees.",
     execution: [
@@ -2370,6 +2470,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Safety+Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Upper Back, Core",
+    bodyPart: ["Back", "Core", "Leg", "Glutes"],
     preparation:
       "Set safety bar on shoulders, hold handles, feet shoulder-width, brace core.",
     execution: [
@@ -2394,6 +2495,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8eMxBk"],
     focusArea: "Quads, Core, Upper Back",
+    bodyPart: ["Back", "Core", "Leg"],
     preparation:
       "Set up in front rack position, elbows high, feet shoulder-width, brace core.",
     execution: [
@@ -2418,6 +2520,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Jefferson+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Quads, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Stand over bar with one leg in front and one behind, grip bar with mixed hand positions.",
     execution: [
@@ -2442,6 +2545,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Walking+Lunge",
     videoUrls: ["https://www.youtube.com/embed/L8fvypPrzzs"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place barbell on upper traps, stand tall, feet hip-width, brace core.",
     execution: [
@@ -2466,6 +2570,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells at sides, feet hip-width, core braced.",
     execution: [
@@ -2490,6 +2595,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Guillotine+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Upper Chest, Front Delts",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Lie on flat bench, grip slightly wider than shoulders, use light weight only.",
     execution: [
@@ -2514,6 +2620,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Low+to+High+Fly",
     videoUrls: ["https://www.youtube.com/embed/6mWJf5G1n9g"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables low, grab handles, step forward, arms slightly bent, chest tall.",
     execution: [
@@ -2538,6 +2645,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Close+Grip+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, attach close grip handle, brace core, chest up and shoulders down.",
     execution: [
@@ -2561,6 +2669,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Reverse+Fly",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Hinge at hips, dumbbells hanging down, slight bend in elbows, core tight.",
     execution: [
@@ -2585,6 +2694,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Bicycle+Crunch",
     videoUrls: ["https://www.youtube.com/embed/9FGilxCbdz8"],
     focusArea: "Abs, Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Lie on your back, hands behind head, knees bent, shoulder blades slightly raised.",
     execution: [
@@ -2610,6 +2720,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set a bench/box in front of you, place barbell on upper traps, brace core.",
     execution: [
@@ -2634,6 +2745,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Wide+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Glutes, Hamstrings, Inner Thighs",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit in machine, place feet high and wide on platform, core braced.",
     execution: [
@@ -2658,6 +2770,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Standing+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Stand on the machine, brace with handles, pad behind ankle of working leg.",
     execution: [
@@ -2682,6 +2795,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tibialis+Raise",
     videoUrls: ["https://www.youtube.com/embed/4xYlYp5Kq7g"],
     focusArea: "Tibialis (Shins)",
+    bodyPart: ["Leg"],
     preparation:
       "Stand with your back against a wall, heels on the floor slightly forward.",
     execution: [
@@ -2706,6 +2820,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Lower Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set bench to decline, dumbbells above chest, elbows slightly bent.",
     execution: [
@@ -2730,6 +2845,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=DB+Shoulder+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit on a bench with back support, dumbbells at shoulder level, core tight.",
     execution: [
@@ -2753,6 +2869,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Upright+Row",
     videoUrls: ["https://www.youtube.com/embed/f5jhOTcup6M"],
     focusArea: "Shoulders, Traps",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Attach straight bar to low cable, grip close, stand tall with core braced.",
     execution: [
@@ -2777,6 +2894,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Supported+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit with chest against pad, grab bar/handles, shoulders down and back.",
     execution: [
@@ -2801,6 +2919,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Triceps+Kickback",
     videoUrls: ["https://www.youtube.com/embed/ybJJvTUbfpQ"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low, hinge slightly forward, elbow tucked close to torso, grip handle.",
     execution: [
@@ -2824,6 +2943,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Hollow+Hold",
     videoUrls: ["https://www.youtube.com/embed/ll8tF4W9zW8"],
     focusArea: "Core, Abs",
+    bodyPart: ["Core"],
     preparation:
       "Lie on your back, press lower back into floor, arms overhead and legs extended.",
     execution: [
@@ -2848,6 +2968,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Pistol+Squat",
     videoUrls: ["https://www.youtube.com/embed/vq5-vdgJc0I"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Stand tall on one leg, extend the other leg forward, arms in front for balance.",
     execution: [
@@ -2872,6 +2993,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Assisted+Pistol+Squat",
     videoUrls: ["https://www.youtube.com/embed/vq5-vdgJc0I"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold onto a support (TRX, pole, or rack), stand on one leg with the other extended.",
     execution: [
@@ -2896,6 +3018,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cossack+Squat",
     videoUrls: ["https://www.youtube.com/embed/7o0yFhM8u7A"],
     focusArea: "Quads, Glutes, Adductors, Mobility",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand with a wide stance, toes slightly turned out, chest upright.",
     execution: [
@@ -2920,6 +3043,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Adduction",
     videoUrls: ["https://www.youtube.com/embed/D7KaRcUTQeE"],
     focusArea: "Inner Thighs, Adductors",
+    bodyPart: ["Leg"],
     preparation:
       "Attach ankle strap to low cable, stand sideways holding the machine for balance.",
     execution: [
@@ -2943,6 +3067,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Calf+Press",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Sit in leg press, place balls of feet on the bottom edge of the platform, legs slightly bent.",
     execution: [
@@ -2966,6 +3091,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Triceps+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Triceps, Chest, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Grip parallel bars with torso more upright than chest dips, elbows tucked slightly.",
     execution: [
@@ -2989,6 +3115,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Press+Around",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Chest (Inner), Serratus",
+    bodyPart: ["Chest"],
     preparation:
       "Set cable at mid height, stand sideways, grab handle and step forward into a staggered stance.",
     execution: [
@@ -3013,6 +3140,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Neutral+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, grip neutral handles, chest up, shoulders down and braced.",
     execution: [
@@ -3036,6 +3164,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Bench+Dip",
     videoUrls: ["https://www.youtube.com/embed/jox1rb5krQI"],
     focusArea: "Triceps, Shoulders",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Place hands on bench behind you, legs extended or bent, hips off bench.",
     execution: [
@@ -3059,6 +3188,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Side+Plank",
     videoUrls: ["https://www.youtube.com/embed/K2VljzCC16g"],
     focusArea: "Obliques, Core, Glutes",
+    bodyPart: ["Core", "Glutes"],
     preparation:
       "Lie on your side, elbow under shoulder, legs straight or knees bent for regression.",
     execution: [
@@ -3083,6 +3213,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Heel+Elevated+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Stand with heels elevated on plates/wedge, hold dumbbell at chest, feet shoulder-width.",
     execution: [
@@ -3107,6 +3238,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Narrow+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit in the machine and place feet close together on the platform, core braced.",
     execution: [
@@ -3131,6 +3263,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Leg+Press+Calves",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Sit in leg press, place balls of feet on platform edge, knees slightly bent.",
     execution: [
@@ -3155,6 +3288,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Ball+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Lie on back, heels on stability ball, lift hips into bridge position.",
     execution: [
@@ -3179,6 +3313,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on bench, grip bar wider than shoulders, shoulder blades retracted, feet planted.",
     execution: [
@@ -3203,6 +3338,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Diamond+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/J0DnG1_S92I"],
     focusArea: "Triceps, Chest, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Get into push-up position and place hands close together forming a diamond shape.",
     execution: [
@@ -3227,6 +3363,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Underhand+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Lats, Middle Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hinge at hips with flat back, underhand grip shoulder-width, core braced.",
     execution: [
@@ -3251,6 +3388,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Neutral+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit on bench with back support, hold dumbbells with palms facing each other.",
     execution: [
@@ -3275,6 +3413,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Reverse+Grip+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/ybJJvTUbfpQ"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar, grip underhand, elbows pinned close to sides, stand tall.",
     execution: [
@@ -3298,6 +3437,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dead+Bug",
     videoUrls: ["https://www.youtube.com/embed/4XLEnwUr1d8"],
     focusArea: "Core, Abs, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back with arms up, hips and knees bent at 90 degrees, lower back pressed into floor.",
     execution: [
@@ -3322,6 +3462,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8eMxBk"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold two dumbbells at shoulders (front rack), feet shoulder-width, core braced.",
     execution: [
@@ -3346,6 +3487,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cyclist+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Stand with heels elevated and feet closer together, bar on traps, core braced.",
     execution: [
@@ -3370,6 +3512,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Balance",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold a dumbbell in one or both hands, stand on one leg with slight knee bend.",
     execution: [
@@ -3394,6 +3537,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Hyper",
     videoUrls: ["https://www.youtube.com/embed/0wqZkz3k1dA"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Lie face down on reverse hyper machine with hips on pad and legs hanging freely.",
     execution: [
@@ -3418,6 +3562,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Stand tall holding dumbbells at sides, balls of feet on edge of a step (optional).",
     execution: [
@@ -3442,6 +3587,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Machine+Press",
     videoUrls: ["https://www.youtube.com/embed/1jv2qk0aZkI"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with upper chest, feet planted, shoulders back.",
     execution: [
@@ -3466,6 +3612,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Cable+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cable at mid height, stand sideways, grab handle, step forward into stable stance.",
     execution: [
@@ -3490,6 +3637,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Machine+Pullover",
     videoUrls: ["https://www.youtube.com/embed/4o6eE-8jVnE"],
     focusArea: "Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Sit in machine, adjust pad/handles, keep chest up and core braced.",
     execution: [
@@ -3514,6 +3662,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Farmer%27s+Walk",
     videoUrls: ["https://www.youtube.com/embed/ykJmrZ5v0Oo"],
     focusArea: "Grip, Traps, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Pick up heavy dumbbells at sides, stand tall, brace core, shoulders down and back.",
     execution: [
@@ -3538,6 +3687,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Toe+Touch+Crunch",
     videoUrls: ["https://www.youtube.com/embed/7yZ5YQ4x1Yc"],
     focusArea: "Abs (Upper), Core",
+    bodyPart: ["Core"],
     preparation:
       "Lie on your back, legs straight up, arms reaching toward toes.",
     execution: [
@@ -3562,6 +3712,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set upper back on bench, barbell over hips, feet planted, core braced.",
     execution: [
@@ -3586,6 +3737,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=B-Stance+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set up like a hip thrust, place one foot slightly forward (light support leg).",
     execution: [
@@ -3609,6 +3761,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Frog+Pump",
     videoUrls: ["https://www.youtube.com/embed/5fKfR7oXq_0"],
     focusArea: "Glutes",
+    bodyPart: ["Glutes"],
     preparation:
       "Lie on your back, bring soles of feet together, knees out, feet close to hips.",
     execution: [
@@ -3633,6 +3786,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Leg+Extension",
     videoUrls: ["https://www.youtube.com/embed/YyvSfVjQeL0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on machine, adjust seat and pad on shins, back against pad.",
     execution: [
@@ -3657,6 +3811,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Stand on one foot (on a step if possible), lightly hold support for balance.",
     execution: [
@@ -3681,6 +3836,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Neutral+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set incline bench 30–45 degrees, hold dumbbells with palms facing each other.",
     execution: [
@@ -3704,6 +3860,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Pec+Deck+Fly",
     videoUrls: ["https://www.youtube.com/embed/eGjt4lk6g34"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Sit tall, set arms more straight than usual, chest against pad, shoulders down.",
     execution: [
@@ -3727,6 +3884,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Kroc+Row",
     videoUrls: ["https://www.youtube.com/embed/pYcpY20QaE8"],
     focusArea: "Lats, Upper Back, Grip",
+    bodyPart: ["Back"],
     preparation:
       "Brace one hand on bench/rack, hold heavy dumbbell with the other hand, strong hinge position.",
     execution: [
@@ -3750,6 +3908,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Rope+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to low cable, grip rope ends with neutral grip, elbows close to sides.",
     execution: [
@@ -3773,6 +3932,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Ab+Wheel",
     videoUrls: ["https://www.youtube.com/embed/A3uVJ1V6G5Q"],
     focusArea: "Abs, Core, Lats",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Kneel on the floor holding the ab wheel, core braced, hips slightly tucked.",
     execution: [
@@ -3797,6 +3957,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand with feet hip-width, bar over mid-foot, grip bar just outside legs, brace core.",
     execution: [
@@ -3820,6 +3981,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand under Smith bar, grip shoulder-width, feet hip-width, knees soft.",
     execution: [
@@ -3844,6 +4006,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit in leg press, feet shoulder-width, back flat on pad, core braced.",
     execution: [
@@ -3868,6 +4031,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Seated+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on the machine, adjust pads, brace core, grip handles for stability.",
     execution: [
@@ -3892,6 +4056,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Adductor+Machine",
     videoUrls: ["https://www.youtube.com/embed/D7KaRcUTQeE"],
     focusArea: "Inner Thighs, Adductors",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on the machine with legs wide, pads against inner thighs, back against pad.",
     execution: [
@@ -3916,6 +4081,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Paused+Incline+DB",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set incline bench 30–45 degrees, dumbbells at upper chest level, feet planted.",
     execution: [
@@ -3940,6 +4106,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Low+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Lower Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cable high, stand sideways, grab handle, step forward into staggered stance.",
     execution: [
@@ -3964,6 +4131,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Neutral+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grab neutral handles, hang fully extended, brace core and keep body still.",
     execution: [
@@ -3988,6 +4156,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Supported+DB+Row",
     videoUrls: ["https://www.youtube.com/embed/pYcpY20QaE8"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Place one knee/hand on bench, hold dumbbell, keep back flat and core tight.",
     execution: [
@@ -4011,6 +4180,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Pallof+Press",
     videoUrls: ["https://www.youtube.com/embed/8b4G2VnW6YQ"],
     focusArea: "Core, Obliques, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Set cable at chest height, stand sideways, hold handle at chest, feet shoulder-width.",
     execution: [
@@ -4035,6 +4205,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Pulse+Goblet+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbell at chest, feet shoulder-width, brace core and squat down to comfortable depth.",
     execution: [
@@ -4059,6 +4230,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Bulgarian",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set bar on traps in Smith machine, place rear foot on bench behind you, brace core.",
     execution: [
@@ -4083,6 +4255,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place bar on upper traps, stand tall with feet hip-width, brace core.",
     execution: [
@@ -4107,6 +4280,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Pull+Through",
     videoUrls: ["https://www.youtube.com/embed/3TjvKq6C3m4"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set rope low, face away from machine, step forward with rope between legs, brace core.",
     execution: [
@@ -4131,6 +4305,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Seated+Calf",
     videoUrls: ["https://www.youtube.com/embed/JbyjNymZOt0"],
     focusArea: "Calves (Soleus)",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on machine, feet on platform edge, pads on thighs, core braced.",
     execution: [
@@ -4155,6 +4330,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Machine+Shoulder+Press",
     videoUrls: ["https://www.youtube.com/embed/2yjwXTZQDDI"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Adjust seat so handles align with shoulders, grip handles, back against pad.",
     execution: [
@@ -4179,6 +4355,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Rear+Delt",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cables at shoulder height, grab opposite handles, slight hinge and brace core.",
     execution: [
@@ -4203,6 +4380,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/kiuVA0gs3EI"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand facing cable, grip handle, elbow tucked close to side, core braced.",
     execution: [
@@ -4226,6 +4404,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Zottman+Curl",
     videoUrls: ["https://www.youtube.com/embed/soxrZlIl35U"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand holding dumbbells at sides, palms forward to start, elbows close to torso.",
     execution: [
@@ -4249,6 +4428,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=V-Up",
     videoUrls: ["https://www.youtube.com/embed/iP2fjvG0g3w"],
     focusArea: "Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Lie on your back with arms overhead and legs extended straight, core braced.",
     execution: [
@@ -4272,6 +4452,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Trap+Bar+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand inside trap bar, soft knees, hips hinged back, core braced, grip handles firmly.",
     execution: [
@@ -4296,6 +4477,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Deficit+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Lower Back, Quads",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand on a small plate/platform, barbell over mid-foot, grip bar, brace core and lats.",
     execution: [
@@ -4319,6 +4501,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Rack+Pull",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Upper Back, Glutes, Hamstrings, Grip",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set bar on safety pins/blocks around knee height, take deadlift stance and grip bar tightly.",
     execution: [
@@ -4342,6 +4525,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Pendlay+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Upper Back, Lats, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Hinge at hips with flat back, bar over mid-foot, grip bar slightly wider than shoulders.",
     execution: [
@@ -4365,6 +4549,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Seal+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Lie face-down on a flat bench elevated high enough for bar clearance, grip bar and brace upper back.",
     execution: [
@@ -4389,6 +4574,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Paused+Incline+Bench",
     videoUrls: ["https://www.youtube.com/embed/SrqOu55lrYU"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench to incline, grip bar, shoulder blades pinned back, feet planted.",
     execution: [
@@ -4412,6 +4598,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Spoto+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench, grip bar, retract shoulder blades, set feet firmly.",
     execution: [
@@ -4436,6 +4623,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Floor+Pullover",
     videoUrls: ["https://www.youtube.com/embed/Fx2f8D4G3yU"],
     focusArea: "Chest, Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Lie on floor holding dumbbell over chest with both hands, elbows slightly bent.",
     execution: [
@@ -4459,6 +4647,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Spider+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie chest-down on an incline bench, arms hanging straight down holding dumbbells.",
     execution: [
@@ -4483,6 +4672,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Knee+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from a pull-up bar, grip tight, body steady and core braced.",
     execution: [
@@ -4507,6 +4697,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Lower Back, Upper Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set up for deadlift with bar over mid-foot, grip bar tight, brace core and lats.",
     execution: [
@@ -4531,6 +4722,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Snatch+Grip+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Upper Back, Lats, Hamstrings, Glutes",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Take a very wide grip on the bar (snatch width), hips set, chest up, core braced.",
     execution: [
@@ -4554,6 +4746,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Deficit+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand on a small plate/platform, barbell in hands, knees soft, core braced.",
     execution: [
@@ -4577,6 +4770,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+RDL",
     videoUrls: ["https://www.youtube.com/embed/3TjvKq6C3m4"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set cable low with rope/handle, stand facing machine, hold handle, step back for tension.",
     execution: [
@@ -4601,6 +4795,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Machine+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Position hips under pad, feet planted on platform, core braced and ribs down.",
     execution: [
@@ -4625,6 +4820,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Lean+Away+Lateral",
     videoUrls: ["https://www.youtube.com/embed/5x9Wq5L0P5Y"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Hold cable handle with outside hand, hold post with other hand, lean slightly away.",
     execution: [
@@ -4649,6 +4845,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Machine+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Adjust seat so arms align with pads, grip handles, chest up and core braced.",
     execution: [
@@ -4673,6 +4870,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Rope+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to high cable, elbows tucked, stand tall with core braced.",
     execution: [
@@ -4697,6 +4895,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Rope+Tri",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable high, grip rope, step forward, hands behind head, elbows forward.",
     execution: [
@@ -4720,6 +4919,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Toe+Raises",
     videoUrls: ["https://www.youtube.com/embed/4xYlYp5Kq7g"],
     focusArea: "Tibialis (Shins)",
+    bodyPart: ["Leg"],
     preparation:
       "Stand tall near a wall for balance, heels on the floor, feet hip-width.",
     execution: [
@@ -4744,6 +4944,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Pause+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on bench with shoulder blades retracted, grip bar slightly wider than shoulders, feet planted.",
     execution: [
@@ -4768,6 +4969,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Close+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/0G2_XV7slIg"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench, grip bar just inside shoulder width, shoulder blades pinned back.",
     execution: [
@@ -4792,6 +4994,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Neutral+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/VmB1G1K7v94"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on a flat bench, hold dumbbells with palms facing each other, feet planted firmly.",
     execution: [
@@ -4816,6 +5019,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Place feet on a bench/box, hands on floor, body in straight plank line.",
     execution: [
@@ -4840,6 +5044,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Pullover",
     videoUrls: ["https://www.youtube.com/embed/Fx2f8D4G3yU"],
     focusArea: "Chest, Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Set bench to slight incline, lie back with dumbbell above chest, elbows slightly bent.",
     execution: [
@@ -4864,6 +5069,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/lhpaJ4C93S8"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cable high with handle, sit or kneel, brace core, grip with one hand.",
     execution: [
@@ -4887,6 +5093,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Lat+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall with thighs secured, grip bar medium width, core braced.",
     execution: [
@@ -4911,6 +5118,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Upper Back, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Sit on row station, grip wide bar, chest up and core braced, feet planted.",
     execution: [
@@ -4935,6 +5143,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Adjust seat so upper arms rest fully on pad, grip handles, elbows stable.",
     execution: [
@@ -4959,6 +5168,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Leg+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from a bar with strong grip, keep body still and core braced.",
     execution: [
@@ -4983,6 +5193,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=B-Stance+DB+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbells, place one foot slightly behind as a kickstand, core braced and chest up.",
     execution: [
@@ -5006,6 +5217,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Good+Morning",
     videoUrls: ["https://www.youtube.com/embed/yaXPRqUwItQ"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Place barbell on upper back, feet hip-width, soft knees, brace core strongly.",
     execution: [
@@ -5029,6 +5241,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Glute+Bridge",
     videoUrls: ["https://www.youtube.com/embed/5fKfR7oXq_0"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Lie on your back with knees bent, barbell over hips, feet planted shoulder-width.",
     execution: [
@@ -5053,6 +5266,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Kick-Out",
     videoUrls: ["https://www.youtube.com/embed/9Jt_0H0YCb8"],
     focusArea: "Glutes (Side), Outer Thighs",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach ankle strap to low cable, stand facing away slightly, hold support for balance.",
     execution: [
@@ -5080,6 +5294,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=1.5+Leg+Extension",
     videoUrls: ["https://www.youtube.com/embed/YyvSfVjQeL0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on machine, set pad on shins, back flat against the pad, grip handles.",
     execution: [
@@ -5104,6 +5319,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Machine+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Set shoulders under pads, balls of feet on platform edge, knees slightly bent.",
     execution: [
@@ -5128,6 +5344,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Machine+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/1jv2qk0aZkI"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with mid-chest, shoulders back, feet planted.",
     execution: [
@@ -5152,6 +5369,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Cable+Press",
     videoUrls: ["https://www.youtube.com/embed/5lJt7bJQyZs"],
     focusArea: "Chest, Core, Shoulders",
+    bodyPart: ["Chest", "Core", "Shoulder"],
     preparation:
       "Set cable at chest height, stand in split stance, hold handle with one arm, core braced.",
     execution: [
@@ -5176,6 +5394,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Straight+Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Lats, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Set cable high with straight bar/rope, step back, hinge slightly, arms straight and core braced.",
     execution: [
@@ -5200,6 +5419,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Suitcase+Carry",
     videoUrls: ["https://www.youtube.com/embed/ykJmrZ5v0Oo"],
     focusArea: "Core, Obliques, Grip",
+    bodyPart: ["Core"],
     preparation:
       "Hold one heavy dumbbell at your side, stand tall with shoulders level, brace core.",
     execution: [
@@ -5223,6 +5443,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sled+Push",
     videoUrls: ["https://www.youtube.com/embed/9VJmGZr5f0E"],
     focusArea: "Quads, Glutes, Conditioning",
+    bodyPart: ["Leg", "Glutes", "Full Body"],
     preparation:
       "Load the sled, grip handles, lean forward with neutral spine and braced core.",
     execution: [
@@ -5247,6 +5468,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Backward+Sled",
     videoUrls: ["https://www.youtube.com/embed/7qYz5c3Wn8g"],
     focusArea: "Quads, Knees, Conditioning",
+    bodyPart: ["Leg", "Full Body"],
     preparation:
       "Attach straps/handles to sled, face the sled, lean back slightly and brace core.",
     execution: [
@@ -5271,6 +5493,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Landmine+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Place barbell in landmine, hold end at chest, feet shoulder-width, core braced.",
     execution: [
@@ -5295,6 +5518,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Landmine+Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold bar end at chest (landmine), feet hip-width, brace core and keep posture tall.",
     execution: [
@@ -5319,6 +5543,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Landmine+Press",
     videoUrls: ["https://www.youtube.com/embed/9xQp2sldyts"],
     focusArea: "Shoulders, Upper Chest, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Hold bar end in one hand at shoulder height, split stance, core braced.",
     execution: [
@@ -5342,6 +5567,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Landmine+Row",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Use landmine with handle or grip sleeve, hinge at hips, brace core and keep back flat.",
     execution: [
@@ -5366,6 +5592,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Assisted+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Set assistance weight, kneel/stand on platform, grip handles, core braced.",
     execution: [
@@ -5389,6 +5616,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=EZ+Bar+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding EZ-bar with underhand grip, elbows close to sides, core braced.",
     execution: [
@@ -5413,6 +5641,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on incline bench with arms hanging down, palms facing each other, core braced.",
     execution: [
@@ -5436,6 +5665,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Plank",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Core, Abs, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Place forearms on the floor, elbows under shoulders, body in straight line from head to heels.",
     execution: [
@@ -5459,6 +5689,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbells at sides, stand facing a bench/box, core braced and posture tall.",
     execution: [
@@ -5483,6 +5714,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Lateral+Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Glutes, Quads, Adductors",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand sideways next to a box/bench, place one foot on top, brace core.",
     execution: [
@@ -5507,6 +5739,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Bridge",
     videoUrls: ["https://www.youtube.com/embed/5fKfR7oXq_0"],
     focusArea: "Glutes, Hamstrings, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Lie on your back, one knee bent with foot planted, other leg extended straight.",
     execution: [
@@ -5531,6 +5764,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Upper back on bench, one foot planted, other leg extended, core braced.",
     execution: [
@@ -5555,6 +5789,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Seated+Calf",
     videoUrls: ["https://www.youtube.com/embed/JbyjNymZOt0"],
     focusArea: "Calves (Soleus)",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on bench, place balls of feet on a raised surface, dumbbell on knee.",
     execution: [
@@ -5578,6 +5813,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Chest+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Grip parallel bars, lean torso slightly forward, elbows angled outward slightly.",
     execution: [
@@ -5601,6 +5837,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Get into push-up position with hands wider than shoulders, body in straight line.",
     execution: [
@@ -5625,6 +5862,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Rear+Delt+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cable at mid height, stand or sit, grip handle, brace core and keep posture tall.",
     execution: [
@@ -5649,6 +5887,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=High+Face+Pull",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts, Upper Back, Rotator Cuff",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Set rope at upper face height, grip rope, step back and brace core.",
     execution: [
@@ -5672,6 +5911,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Woodchopper",
     videoUrls: ["https://www.youtube.com/embed/8b4G2VnW6YQ"],
     focusArea: "Obliques, Core, Abs",
+    bodyPart: ["Core"],
     preparation:
       "Set cable high or mid, stand sideways, grip handle with both hands, brace core.",
     execution: [
@@ -5695,6 +5935,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Thruster",
     videoUrls: ["https://www.youtube.com/embed/6xwGFn-J_QA"],
     focusArea: "Quads, Glutes, Shoulders, Core",
+    bodyPart: ["Core", "Leg", "Shoulder", "Glutes"],
     preparation:
       "Hold bar in front rack position, feet shoulder-width, core braced, elbows up.",
     execution: [
@@ -5718,6 +5959,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Thruster",
     videoUrls: ["https://www.youtube.com/embed/6xwGFn-J_QA"],
     focusArea: "Quads, Glutes, Shoulders, Core",
+    bodyPart: ["Core", "Leg", "Shoulder", "Glutes"],
     preparation:
       "Hold dumbbells at shoulders, feet shoulder-width, brace core and stand tall.",
     execution: [
@@ -5742,6 +5984,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Overhead+Squat",
     videoUrls: ["https://www.youtube.com/embed/7Xj5kGg9g1I"],
     focusArea: "Quads, Glutes, Shoulders, Core, Mobility",
+    bodyPart: ["Core", "Leg", "Shoulder", "Glutes"],
     preparation:
       "Hold bar overhead with wide grip, lock elbows, brace core, feet shoulder-width.",
     execution: [
@@ -5765,6 +6008,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Push+Press",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Triceps, Upper Chest",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Hold bar at shoulders, feet shoulder-width, brace core and keep elbows slightly forward.",
     execution: [
@@ -5789,6 +6033,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Landmine+Press",
     videoUrls: ["https://www.youtube.com/embed/6o7GQKz4XrY"],
     focusArea: "Shoulders, Upper Chest, Core",
+    bodyPart: ["Chest", "Core", "Shoulder"],
     preparation:
       "Set barbell in a landmine attachment (or corner). Hold the bar with one hand at shoulder height, stagger your stance, and brace your core.",
     execution: [
@@ -5814,6 +6059,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Behind+Cable+Lateral",
     videoUrls: ["https://www.youtube.com/embed/5x9Wq5L0P5Y"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable low, grab handle with far hand, stand slightly in front so cable starts behind you.",
     execution: [
@@ -5837,6 +6083,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Chin-Up",
     videoUrls: ["https://www.youtube.com/embed/b-ztMQpj8yc"],
     focusArea: "Lats, Biceps, Upper Back",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grab bar with underhand grip shoulder-width, hang fully, core braced and still.",
     execution: [
@@ -5861,6 +6108,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Close+Grip+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit on row machine, grip V-handle, chest up, core braced, feet on platform.",
     execution: [
@@ -5885,6 +6133,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Bayesian+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low, step forward so arm is slightly behind body, elbow fixed, palm up.",
     execution: [
@@ -5908,6 +6157,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=L-Sit",
     videoUrls: ["https://www.youtube.com/embed/dAqQqmaI9vY"],
     focusArea: "Abs, Hip Flexors, Core",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Support yourself on dip bars or parallettes, arms locked, shoulders down and braced.",
     execution: [
@@ -5931,6 +6181,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Box+Jump",
     videoUrls: ["https://www.youtube.com/embed/52r_Ul5k03g"],
     focusArea: "Quads, Glutes, Explosiveness",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand facing a stable box, feet hip-width, brace core and prepare to jump.",
     execution: [
@@ -5954,6 +6205,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Jump+Squat",
     videoUrls: ["https://www.youtube.com/embed/U4s4mEQ5VqU"],
     focusArea: "Quads, Glutes, Conditioning",
+    bodyPart: ["Leg", "Glutes", "Full Body"],
     preparation:
       "Stand with feet shoulder-width, core braced, arms ready for balance.",
     execution: [
@@ -5977,6 +6229,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Swing",
     videoUrls: ["https://www.youtube.com/embed/YSxHifyI6s8"],
     focusArea: "Glutes, Hamstrings, Conditioning",
+    bodyPart: ["Leg", "Glutes", "Full Body"],
     preparation:
       "Stand with feet shoulder-width, kettlebell in front, hinge hips back and grip handle.",
     execution: [
@@ -6000,6 +6253,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Clean",
     videoUrls: ["https://www.youtube.com/embed/yWqS3y6xjU0"],
     focusArea: "Full Body, Traps, Legs",
+    bodyPart: ["Back", "Leg", "Full Body"],
     preparation:
       "Stand with dumbbells at sides or between legs, core braced, hips hinged slightly.",
     execution: [
@@ -6024,6 +6278,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Goblet+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold kettlebell at chest, feet shoulder-width, brace core and keep posture upright.",
     execution: [
@@ -6047,6 +6302,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=DB+Snatch",
     videoUrls: ["https://www.youtube.com/embed/9xQp2sldyts"],
     focusArea: "Shoulders, Traps, Full Body",
+    bodyPart: ["Back", "Shoulder", "Full Body"],
     preparation:
       "Stand with dumbbell between feet, hinge at hips, brace core, shoulder packed.",
     execution: [
@@ -6070,6 +6326,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Bear+Crawl",
     videoUrls: ["https://www.youtube.com/embed/3p8EBPVZ2Iw"],
     focusArea: "Core, Shoulders, Conditioning",
+    bodyPart: ["Core", "Shoulder", "Full Body"],
     preparation:
       "Start on hands and knees, lift knees slightly off floor, brace core.",
     execution: [
@@ -6093,6 +6350,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Battle+Ropes",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQverzw"],
     focusArea: "Arms, Shoulders, Conditioning",
+    bodyPart: ["Arm", "Shoulder", "Full Body"],
     preparation:
       "Stand with knees slightly bent, grip ropes firmly, core braced and posture tall.",
     execution: [
@@ -6117,6 +6375,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Russian+Twist",
     videoUrls: ["https://www.youtube.com/embed/wkD8rjkodUI"],
     focusArea: "Obliques, Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Sit on floor with knees bent, lean back slightly, brace core, hands together or holding weight.",
     execution: [
@@ -6141,6 +6400,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Mountain+Climbers",
     videoUrls: ["https://www.youtube.com/embed/nmwgirgXLYM"],
     focusArea: "Core, Conditioning, Shoulders",
+    bodyPart: ["Core", "Shoulder", "Full Body"],
     preparation:
       "Start in plank position with hands under shoulders, core tight and body straight.",
     execution: [
@@ -6165,6 +6425,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Goblet+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold kettlebell at chest, feet shoulder-width, brace core and keep posture tall.",
     execution: [
@@ -6189,6 +6450,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=1.5+Goblet+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbell at chest, feet shoulder-width, brace core and squat down.",
     execution: [
@@ -6212,6 +6474,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding kettlebell(s), feet hip-width, knees soft, core braced.",
     execution: [
@@ -6235,6 +6498,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand over kettlebell, hinge hips back, grip handle, brace core and keep back flat.",
     execution: [
@@ -6259,6 +6523,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold kettlebell at chest (goblet) or at sides, stand tall and brace core.",
     execution: [
@@ -6283,6 +6548,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=KB+Overhead+Press",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Triceps, Core",
+    bodyPart: ["Arm", "Core", "Shoulder"],
     preparation:
       "Hold kettlebell in rack position, feet shoulder-width, core braced and glutes tight.",
     execution: [
@@ -6307,6 +6573,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=KB+Push+Press",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Triceps, Legs",
+    bodyPart: ["Arm", "Leg", "Shoulder"],
     preparation:
       "Hold kettlebell at shoulder, feet shoulder-width, brace core and prepare to dip slightly.",
     execution: [
@@ -6330,6 +6597,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=KB+Row",
     videoUrls: ["https://www.youtube.com/embed/pYcpY20QaE8"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Hinge at hips with back flat, support with one hand on knee/bench, hold kettlebell in other hand.",
     execution: [
@@ -6353,6 +6621,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=KB+High+Pull",
     videoUrls: ["https://www.youtube.com/embed/YSxHifyI6s8"],
     focusArea: "Traps, Rear Delts, Conditioning",
+    bodyPart: ["Back", "Full Body"],
     preparation:
       "Stand with kettlebell in front, hinge slightly, brace core and grip handle firmly.",
     execution: [
@@ -6377,6 +6646,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Hip+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Lower Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Hang from a pull-up bar, brace core and keep body stable without swinging.",
     execution: [
@@ -6400,6 +6670,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Clean",
     videoUrls: ["https://www.youtube.com/embed/3n1l9vZQv1o"],
     focusArea: "Glutes, Hamstrings, Traps, Full Body",
+    bodyPart: ["Back", "Leg", "Glutes", "Full Body"],
     preparation:
       "Stand with kettlebell between feet, hinge hips back, grip handle, brace core.",
     execution: [
@@ -6424,6 +6695,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=KB+Clean+%26+Press",
     videoUrls: ["https://www.youtube.com/embed/3n1l9vZQv1o"],
     focusArea: "Shoulders, Legs, Core, Full Body",
+    bodyPart: ["Core", "Leg", "Shoulder", "Full Body"],
     preparation:
       "Start with kettlebell between feet, brace core and prepare to clean into rack.",
     execution: [
@@ -6448,6 +6720,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Turkish+Get-Up",
     videoUrls: ["https://www.youtube.com/embed/2YollP91Wro"],
     focusArea: "Core, Shoulders, Full Body Stability",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Lie on back holding kettlebell overhead, same-side knee bent, opposite arm/leg extended.",
     execution: [
@@ -6471,6 +6744,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=KB+Windmill",
     videoUrls: ["https://www.youtube.com/embed/9xQp2sldyts"],
     focusArea: "Obliques, Core, Shoulders, Hamstrings",
+    bodyPart: ["Core", "Leg", "Shoulder"],
     preparation:
       "Hold kettlebell overhead, feet slightly wider than hips, turn toes slightly away from the kettlebell side.",
     execution: [
@@ -6494,6 +6768,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Rack+Carry",
     videoUrls: ["https://www.youtube.com/embed/ykJmrZ5v0Oo"],
     focusArea: "Core, Upper Back, Conditioning",
+    bodyPart: ["Back", "Core", "Full Body"],
     preparation:
       "Clean kettlebell into rack position, elbow tucked, core braced and posture tall.",
     execution: [
@@ -6518,6 +6793,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Overhead+Carry",
     videoUrls: ["https://www.youtube.com/embed/ykJmrZ5v0Oo"],
     focusArea: "Shoulders, Core, Stability",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Press kettlebell overhead and lock out, keep biceps near ear, core braced.",
     execution: [
@@ -6541,6 +6817,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=KB+Halo",
     videoUrls: ["https://www.youtube.com/embed/4C9A2YxU3bA"],
     focusArea: "Shoulders, Upper Back, Mobility",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Hold kettlebell by horns at chest height, brace core, stand tall.",
     execution: [
@@ -6564,6 +6841,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=KB+Figure+8",
     videoUrls: ["https://www.youtube.com/embed/YSxHifyI6s8"],
     focusArea: "Glutes, Core, Coordination",
+    bodyPart: ["Core", "Glutes"],
     preparation:
       "Stand with feet wide, slight squat position, hold kettlebell with both hands to start.",
     execution: [
@@ -6588,6 +6866,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=KB+Floor+Press",
     videoUrls: ["https://www.youtube.com/embed/VmB1G1K7v94"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on floor holding kettlebell(s) near chest, elbows on floor, core braced.",
     execution: [
@@ -6611,6 +6890,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Renegade+Row",
     videoUrls: ["https://www.youtube.com/embed/3p8EBPVZ2Iw"],
     focusArea: "Core, Lats, Upper Back",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Start in plank with hands on kettlebells, feet wider than hips for stability, core braced.",
     execution: [
@@ -6634,6 +6914,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Position shoulders under pads, feet shoulder-width on platform, core braced and back flat.",
     execution: [
@@ -6658,6 +6939,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Hack+Squat+Heels",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Set feet lower on platform with heels elevated on small wedges/plates, brace core.",
     execution: [
@@ -6682,6 +6964,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Narrow+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Place feet closer together on the platform, toes slightly out, brace core and grip handles.",
     execution: [
@@ -6706,6 +6989,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Wide+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Glutes, Inner Thighs, Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set feet wider on the platform with toes slightly out, brace core and keep posture stable.",
     execution: [
@@ -6730,6 +7014,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit on leg press, place one foot on platform, keep other leg off the platform, brace core.",
     execution: [
@@ -6754,6 +7039,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=1.5+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit in leg press, feet shoulder-width, brace core and keep back on pad.",
     execution: [
@@ -6778,6 +7064,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Extension",
     videoUrls: ["https://www.youtube.com/embed/YyvSfVjQeL0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on the machine, place one ankle under pad, back against pad, grip handles.",
     execution: [
@@ -6802,6 +7089,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on machine, set pads properly, one leg under pad, core braced and back against seat.",
     execution: [
@@ -6826,6 +7114,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Neutral+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/1jv2qk0aZkI"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with mid-chest, grip neutral handles, shoulders pinned back.",
     execution: [
@@ -6849,6 +7138,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Attach rope to high cable, kneel down, hold rope near forehead, brace core with hips tucked slightly.",
     execution: [
@@ -6873,6 +7163,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/0tn5K9NlCfo"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand in front of the bar with it behind your legs, feet slightly forward, core braced and chest up.",
     execution: [
@@ -6897,6 +7188,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set bar on traps in Smith machine, take a split stance, brace core and stand tall.",
     execution: [
@@ -6921,6 +7213,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place bar on traps, stand tall under Smith bar, feet hip-width, core braced.",
     execution: [
@@ -6945,6 +7238,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Upper back on bench, bar across hips, feet planted, core braced and chin tucked.",
     execution: [
@@ -6969,6 +7263,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Position bar on upper back, balls of feet on a step/platform edge, knees slightly bent.",
     execution: [
@@ -6993,6 +7288,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Smith+Incline+Press",
     videoUrls: ["https://www.youtube.com/embed/SrqOu55lrYU"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench incline, position under bar, grip slightly wider than shoulders, shoulders retracted.",
     execution: [
@@ -7017,6 +7313,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Smith+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on flat bench under Smith bar, grip bar, retract shoulder blades, feet planted.",
     execution: [
@@ -7041,6 +7338,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Smith+Shoulder+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit upright under Smith bar, grip shoulder-width, core braced and glutes tight.",
     execution: [
@@ -7064,6 +7362,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Smith+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set bar at mid-shin height, hinge at hips with flat back, grip bar slightly wider than shoulders.",
     execution: [
@@ -7087,6 +7386,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Smith+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand tall holding Smith bar at thighs, feet shoulder-width, core braced and shoulders relaxed.",
     execution: [
@@ -7111,6 +7411,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8eMxBk"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Set bar in front rack position, elbows high, feet shoulder-width, brace core.",
     execution: [
@@ -7135,6 +7436,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8eMxBk"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Hold bar in front rack, feet shoulder-width, brace core, chest tall.",
     execution: [
@@ -7159,6 +7461,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Zercher+Squat",
     videoUrls: ["https://www.youtube.com/embed/7Xj5kGg9g1I"],
     focusArea: "Quads, Glutes, Core, Upper Back",
+    bodyPart: ["Back", "Core", "Leg", "Glutes"],
     preparation:
       "Hold barbell in elbow crease, hands together, brace core tightly and stand tall.",
     execution: [
@@ -7183,6 +7486,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Safety+Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Upper Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set safety bar on shoulders, grip handles, feet shoulder-width, brace core.",
     execution: [
@@ -7206,6 +7510,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Box+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set a box behind you, bar on traps, feet shoulder-width, core braced.",
     execution: [
@@ -7229,6 +7534,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Pin+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Strength",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set safety pins at desired depth in rack, position under bar, brace core and set stance.",
     execution: [
@@ -7253,6 +7559,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Hatfield+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Strength",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Use a safety bar (or machine) and hold rack handles for balance, feet shoulder-width, brace core.",
     execution: [
@@ -7276,6 +7583,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sissy+Squat",
     videoUrls: ["https://www.youtube.com/embed/1uDiW5--rAE"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Stand tall holding a support lightly, feet close, core braced and knees forward.",
     execution: [
@@ -7299,6 +7607,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Nordic+Curl",
     videoUrls: ["https://www.youtube.com/embed/4sE2LQ3cC8w"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Kneel with ankles anchored (partner or pad), hips extended, core braced and body straight.",
     execution: [
@@ -7322,6 +7631,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dead+Hang",
     videoUrls: ["https://www.youtube.com/embed/0F6QjG4x1oU"],
     focusArea: "Grip, Shoulders, Decompression",
+    bodyPart: ["Shoulder"],
     preparation:
       "Grab a pull-up bar with overhand grip, hands shoulder-width, let body hang relaxed.",
     execution: [
@@ -7346,6 +7656,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Goblet+Box+Squat",
     videoUrls: ["https://www.youtube.com/embed/MeIiIdhvXT4"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold a dumbbell at chest, stand in front of a box/bench, feet shoulder-width, core braced.",
     execution: [
@@ -7370,6 +7681,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Hack+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbells at sides slightly behind hips, feet close, core braced and torso upright.",
     execution: [
@@ -7394,6 +7706,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Walking+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Glutes, Quads, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbells at sides, stand tall, core braced and eyes forward.",
     execution: [
@@ -7417,6 +7730,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Curtsy+Lunge",
     videoUrls: ["https://www.youtube.com/embed/7qYz5c3Wn8g"],
     focusArea: "Glutes (Side), Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall, feet hip-width, brace core, hands free or holding light dumbbells.",
     execution: [
@@ -7441,6 +7755,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cossack+Squat",
     videoUrls: ["https://www.youtube.com/embed/7Xj5kGg9g1I"],
     focusArea: "Adductors, Quads, Glutes, Mobility",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand wide with toes slightly out, brace core, keep chest tall and posture upright.",
     execution: [
@@ -7464,6 +7779,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Wall+Sit",
     videoUrls: ["https://www.youtube.com/embed/y-wV4Venusw"],
     focusArea: "Quads, Endurance",
+    bodyPart: ["Leg"],
     preparation:
       "Lean back against a wall and slide down until knees are near 90 degrees, feet flat and hip-width.",
     execution: [
@@ -7487,6 +7803,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Pike+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/0wQG1c8h3VQ"],
     focusArea: "Shoulders, Triceps, Upper Chest",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Start in push-up, walk feet toward hands to form an inverted V shape, core braced.",
     execution: [
@@ -7510,6 +7827,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Inverted+Row",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Upper Back, Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Set a bar at waist height, hang underneath with straight body, heels on floor, core tight.",
     execution: [
@@ -7534,6 +7852,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cross+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells, palms facing in, elbows close to torso, core braced.",
     execution: [
@@ -7557,6 +7876,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Hollow+Hold",
     videoUrls: ["https://www.youtube.com/embed/2V4aZQG4H6k"],
     focusArea: "Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back, press lower back into floor, lift shoulders and legs slightly, arms overhead.",
     execution: [
@@ -7581,6 +7901,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Hyper",
     videoUrls: ["https://www.youtube.com/embed/8a9cN1m7GJg"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Position hips on pad, grip handles, legs hanging straight down, core braced.",
     execution: [
@@ -7605,6 +7926,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Back+Extension",
     videoUrls: ["https://www.youtube.com/embed/ph3pddpKzzw"],
     focusArea: "Lower Back, Glutes, Hamstrings",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set hips on pad, feet anchored, cross arms or hold weight, brace core and keep spine neutral.",
     execution: [
@@ -7629,6 +7951,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Weighted+Back+Raise",
     videoUrls: ["https://www.youtube.com/embed/ph3pddpKzzw"],
     focusArea: "Lower Back, Glutes, Hamstrings",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set up on back extension bench, hold plate to chest, brace core and keep posture controlled.",
     execution: [
@@ -7653,6 +7976,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Glute+Ham+Raise",
     videoUrls: ["https://www.youtube.com/embed/7Xj5kGg9g1I"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set knees on pad, feet secured, torso upright, brace core and squeeze glutes.",
     execution: [
@@ -7677,6 +8001,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Pull-Through",
     videoUrls: ["https://www.youtube.com/embed/3TjvKq6C3m4"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach rope low, face away from cable, step forward, rope between legs, brace core.",
     execution: [
@@ -7701,6 +8026,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Floor+Press",
     videoUrls: ["https://www.youtube.com/embed/VmB1G1K7v94"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on floor holding dumbbells, elbows on floor, feet planted, core braced.",
     execution: [
@@ -7725,6 +8051,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set incline bench 30–45 degrees, lie back, dumbbells over chest with slight elbow bend.",
     execution: [
@@ -7749,6 +8076,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Low+to+High+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables low, grab handles, step forward into staggered stance, chest up and core braced.",
     execution: [
@@ -7773,6 +8101,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Seated+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Sit tall on bench, dumbbells at sides, slight bend in elbows, core braced.",
     execution: [
@@ -7797,6 +8126,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Reverse+Pec+Deck",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit facing the pec deck pad, grip handles, chest against pad, shoulders down.",
     execution: [
@@ -7821,6 +8151,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Front+Raise",
     videoUrls: ["https://www.youtube.com/embed/-t7fuZ0KhDA"],
     focusArea: "Front Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable low with handle, stand tall, grip handle, brace core and keep shoulder packed.",
     execution: [
@@ -7845,6 +8176,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=DB+Front+Raise",
     videoUrls: ["https://www.youtube.com/embed/-t7fuZ0KhDA"],
     focusArea: "Front Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Stand tall holding dumbbells in front of thighs, core braced, shoulders down.",
     execution: [
@@ -7868,6 +8200,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Plate+Raise",
     videoUrls: ["https://www.youtube.com/embed/-t7fuZ0KhDA"],
     focusArea: "Front Delts, Upper Chest",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Hold a plate with both hands at thighs, stand tall, brace core and keep shoulders down.",
     execution: [
@@ -7892,6 +8225,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Y+Raise",
     videoUrls: ["https://www.youtube.com/embed/7dT9w4jD2lE"],
     focusArea: "Lower Traps, Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cables low with handles, step back, slight hinge, arms in front with thumbs up.",
     execution: [
@@ -7916,6 +8250,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Incline+Y+Raise",
     videoUrls: ["https://www.youtube.com/embed/7dT9w4jD2lE"],
     focusArea: "Lower Traps, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Lie chest-down on incline bench, dumbbells hanging, thumbs pointing up, core braced.",
     execution: [
@@ -7940,6 +8275,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Incline+Rear+Delt+Fly",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Lie chest-down on incline bench, dumbbells hanging, slight bend in elbows, shoulders down.",
     execution: [
@@ -7964,6 +8300,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Reverse+Fly",
     videoUrls: ["https://www.youtube.com/embed/eaM3V8wH4Bo"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cables at shoulder height, grab opposite handles, slight hinge, core braced and shoulders down.",
     execution: [
@@ -7988,6 +8325,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=DB+Upright+Row",
     videoUrls: ["https://www.youtube.com/embed/f5jhOTcup6M"],
     focusArea: "Shoulders, Traps",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Stand tall holding dumbbells in front of thighs, core braced and shoulders down.",
     execution: [
@@ -8012,6 +8350,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Triceps+Kickback",
     videoUrls: ["https://www.youtube.com/embed/6SS6K3lAwZ8"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Hinge at hips with flat back, elbow tucked by side, upper arm parallel to floor, core braced.",
     execution: [
@@ -8035,6 +8374,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dead+Bug",
     videoUrls: ["https://www.youtube.com/embed/4XLEnwUr1d8"],
     focusArea: "Core, Abs, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back, arms up, knees bent 90°, press lower back into the floor, brace core.",
     execution: [
@@ -8058,6 +8398,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Bar+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar to high cable, grip bar shoulder-width, elbows tucked, core braced.",
     execution: [
@@ -8082,6 +8423,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=V-Bar+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach V-bar handle to high cable, grip handle, elbows tucked and chest tall.",
     execution: [
@@ -8106,6 +8448,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Reverse+Grip+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/ybJJvTUbfpQ"],
     focusArea: "Triceps (Medial Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar, grip underhand shoulder-width, elbows pinned to sides, core braced.",
     execution: [
@@ -8133,6 +8476,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Cable+Triceps",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low or high (rope/handle), step forward, hands behind head, elbows pointing forward.",
     execution: [
@@ -8157,6 +8501,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Skull+Crushers",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench holding EZ bar above chest, elbows pointing up, core braced and shoulders stable.",
     execution: [
@@ -8181,6 +8526,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=DB+Skull+Crushers",
     videoUrls: ["https://www.youtube.com/embed/YbX7Wd8jQ-Q"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench holding dumbbells above chest, palms facing in, elbows vertical and stable.",
     execution: [
@@ -8205,6 +8551,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=DB+Overhead+Triceps",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit tall holding dumbbell overhead with both hands, elbows close to head, core braced.",
     execution: [
@@ -8232,6 +8579,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Overhead+Tri",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Stand or sit, hold dumbbell overhead with one arm, elbow close to head, core tight.",
     execution: [
@@ -8255,6 +8603,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Bench+Dip",
     videoUrls: ["https://www.youtube.com/embed/0326dy_-CzM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Place hands on bench behind you, legs extended or bent, shoulders down and core braced.",
     execution: [
@@ -8278,6 +8627,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Side+Plank",
     videoUrls: ["https://www.youtube.com/embed/K2VljzCC16g"],
     focusArea: "Obliques, Core, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Lie on side with elbow under shoulder, legs straight, core braced and hips stacked.",
     execution: [
@@ -8302,6 +8652,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Diamond+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/J0DnG1_S92I"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Get into push-up position, hands close together under chest forming a diamond shape, core tight.",
     execution: [
@@ -8325,6 +8676,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Ring+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/5dVZ1c4F1Y0"],
     focusArea: "Chest, Triceps, Core",
+    bodyPart: ["Arm", "Chest", "Core"],
     preparation:
       "Set rings at comfortable height, grab rings, step back into plank, brace core and glutes.",
     execution: [
@@ -8348,6 +8700,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Ring+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Support yourself on rings with arms locked, shoulders down, core tight and rings close to body.",
     execution: [
@@ -8371,6 +8724,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Ring+Row",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Upper Back, Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hold rings, lean back with straight body, feet planted, core braced and shoulders down.",
     execution: [
@@ -8395,6 +8749,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Ring+Face+Pull",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Hold rings with thumbs up, lean back slightly, body tight and shoulders down.",
     execution: [
@@ -8419,6 +8774,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=TRX+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest, Triceps, Core",
+    bodyPart: ["Arm", "Chest", "Core"],
     preparation:
       "Hold TRX handles, lean forward into plank, core braced and glutes tight.",
     execution: [
@@ -8442,6 +8798,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=TRX+Row",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Upper Back, Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hold TRX handles, lean back with straight body, core braced and shoulders down.",
     execution: [
@@ -8465,6 +8822,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=TRX+Triceps",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Hold TRX handles, lean forward, elbows up in front, core braced and body straight.",
     execution: [
@@ -8489,6 +8847,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=TRX+Biceps+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Hold TRX handles, lean back with straight body, palms up, elbows slightly elevated.",
     execution: [
@@ -8512,6 +8871,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Bird+Dog",
     videoUrls: ["https://www.youtube.com/embed/vk3aGZx7P9E"],
     focusArea: "Core, Lower Back, Stability",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Start on hands and knees, brace core, keep back flat and neck neutral.",
     execution: [
@@ -8536,6 +8896,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Rope+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to low cable, stand tall, grip rope with neutral hands, elbows close to torso.",
     execution: [
@@ -8559,6 +8920,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar to low cable, stand tall, elbows tight to sides, core braced.",
     execution: [
@@ -8583,6 +8945,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Rope+Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to low cable, stand tall, grip rope ends, elbows close and core braced.",
     execution: [
@@ -8607,6 +8970,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/sAq_ocpRh_I"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach single handle to low cable, stand side-on or facing machine, elbow fixed at side.",
     execution: [
@@ -8631,6 +8995,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set arm on preacher bench pad, hold dumbbell, brace shoulder and keep elbow stable on pad.",
     execution: [
@@ -8654,6 +9019,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Spider+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie chest-down on incline bench, arms hanging, dumbbells in hands, core braced.",
     execution: [
@@ -8677,6 +9043,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Zottman+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells with palms forward, elbows close, core tight.",
     execution: [
@@ -8701,6 +9068,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Reverse+EZ+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Forearms, Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand holding EZ bar with overhand grip, elbows close to torso, core braced.",
     execution: [
@@ -8725,6 +9093,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Reverse+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Forearms, Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells with palms facing down, elbows close to torso, core braced.",
     execution: [
@@ -8748,6 +9117,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Farmer+Carry",
     videoUrls: ["https://www.youtube.com/embed/ykJmrZ5v0Oo"],
     focusArea: "Grip, Traps, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Hold heavy dumbbells at sides, stand tall, brace core, shoulders down and back.",
     execution: [
@@ -8772,6 +9142,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Barbell+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps (Short Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall with barbell, hands wider than shoulders, elbows close to torso, core braced.",
     execution: [
@@ -8796,6 +9167,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Close+Barbell+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding barbell, hands inside shoulder width, elbows tucked, core tight.",
     execution: [
@@ -8819,6 +9191,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Drag+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand with barbell at thighs, underhand grip, elbows behind body slightly, core braced.",
     execution: [
@@ -8842,6 +9215,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cheat+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand with barbell, underhand grip, core braced, slight knee bend for controlled drive.",
     execution: [
@@ -8866,6 +9240,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Concentration+Curl",
     videoUrls: ["https://www.youtube.com/embed/sAq_ocpRh_I"],
     focusArea: "Biceps (Peak)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on bench, elbow braced against inner thigh, dumbbell hanging down, core stable.",
     execution: [
@@ -8890,6 +9265,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on incline bench, arms hanging back, palms forward, shoulders down and stable.",
     execution: [
@@ -8914,6 +9290,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Twist+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on incline bench, start palms neutral, elbows back, core braced and chest up.",
     execution: [
@@ -8937,6 +9314,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells with neutral grip, elbows close to torso, core braced.",
     execution: [
@@ -8961,6 +9339,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Seated+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Sit tall on bench holding dumbbells at sides with neutral grip, core braced.",
     execution: [
@@ -8984,6 +9363,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Ab+Wheel",
     videoUrls: ["https://www.youtube.com/embed/AH-QZ9i3w6k"],
     focusArea: "Abs, Core",
+    bodyPart: ["Core"],
     preparation:
       "Kneel on floor holding ab wheel, brace core and tuck hips slightly (posterior pelvic tilt).",
     execution: [
@@ -9008,6 +9388,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Standing+Ab+Wheel",
     videoUrls: ["https://www.youtube.com/embed/AH-QZ9i3w6k"],
     focusArea: "Abs, Core, Lats",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Stand holding ab wheel, face a wall (or use a short range), brace core and tuck hips slightly.",
     execution: [
@@ -9031,6 +9412,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Pallof+Press",
     videoUrls: ["https://www.youtube.com/embed/5m6j3sGx0W0"],
     focusArea: "Core, Obliques, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Set cable at chest height, stand sideways, hold handle to chest, feet shoulder-width, core braced.",
     execution: [
@@ -9055,6 +9437,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Kneeling+Pallof+Press",
     videoUrls: ["https://www.youtube.com/embed/5m6j3sGx0W0"],
     focusArea: "Core, Glutes, Stability",
+    bodyPart: ["Core", "Glutes"],
     preparation:
       "Half-kneel sideways to cable, inside knee down, hold handle at chest, brace core and squeeze glutes.",
     execution: [
@@ -9079,6 +9462,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Overhead+Pallof",
     videoUrls: ["https://www.youtube.com/embed/5m6j3sGx0W0"],
     focusArea: "Core, Obliques, Shoulders",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Set cable at chest height, stand sideways, hold handle close, brace core and keep posture tall.",
     execution: [
@@ -9103,6 +9487,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Leg+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from bar, brace core, keep body still and shoulders active (slight scapular tension).",
     execution: [
@@ -9126,6 +9511,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Toes-to-Bar",
     videoUrls: ["https://www.youtube.com/embed/5W6t8X0k0bA"],
     focusArea: "Abs, Hip Flexors, Grip",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from bar with overhand grip, brace core, keep shoulders stable and body controlled.",
     execution: [
@@ -9150,6 +9536,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hanging+Knee+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from a bar or use captain’s chair, brace core, keep torso still.",
     execution: [
@@ -9174,6 +9561,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Side+Bend",
     videoUrls: ["https://www.youtube.com/embed/8b4G2VnW6YQ"],
     focusArea: "Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Set cable low, stand sideways, hold handle at side, brace core and keep hips square.",
     execution: [
@@ -9197,6 +9585,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=DB+Side+Bend",
     videoUrls: ["https://www.youtube.com/embed/wkD8rjkodUI"],
     focusArea: "Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Stand tall holding dumbbell on one side, other hand on hip, brace core and keep shoulders level.",
     execution: [
@@ -9221,6 +9610,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Wrist+Curl",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low, sit or stand, forearms supported, hold handle, wrists hanging for full range.",
     execution: [
@@ -9245,6 +9635,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Reverse+Wrist+Curl",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms (Extensors)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low, support forearms, hold handle with palms down, wrists hanging off support.",
     execution: [
@@ -9269,6 +9660,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Wrist+Curl",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms (Flexors)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit on bench, forearms resting on thighs, palms up holding dumbbells, wrists hanging off knees.",
     execution: [
@@ -9293,6 +9685,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Reverse+Wrist+Curl",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms (Extensors)",
+    bodyPart: ["Arm"],
     preparation:
       "Sit with forearms supported on thighs, palms down holding dumbbells, wrists hanging off knees.",
     execution: [
@@ -9316,6 +9709,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Wrist+Roller",
     videoUrls: ["https://www.youtube.com/embed/BGi8kUuZcK8"],
     focusArea: "Forearms, Grip",
+    bodyPart: ["Arm"],
     preparation:
       "Hold wrist roller at shoulder height, arms straight, weight hanging from rope, core braced.",
     execution: [
@@ -9339,6 +9733,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Plate+Pinch",
     videoUrls: ["https://www.youtube.com/embed/0F6QjG4x1oU"],
     focusArea: "Grip, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Pinch two plates smooth-side out (or one thick plate), stand tall with shoulders down.",
     execution: [
@@ -9363,6 +9758,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Towel+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/b-ztMQpj8yc"],
     focusArea: "Lats, Grip, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Loop towels over pull-up bar, grip each towel, hang with core braced and shoulders packed.",
     execution: [
@@ -9387,6 +9783,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Deadlift+Hold",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Grip, Traps, Posterior Chain",
+    bodyPart: ["Back"],
     preparation:
       "Set barbell like deadlift, brace core, lift bar to lockout position safely.",
     execution: [
@@ -9410,6 +9807,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=DB+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand tall holding dumbbells at sides, core braced, shoulders relaxed down.",
     execution: [
@@ -9434,6 +9832,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Barbell+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand holding barbell at thighs, feet shoulder-width, core braced and chest up.",
     execution: [
@@ -9458,6 +9857,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Trap+Bar+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand inside trap bar, grip handles, stand tall at lockout, core braced.",
     execution: [
@@ -9482,6 +9882,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps, Shoulders (Stability)",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Press or hold barbell overhead with locked elbows, core braced, feet shoulder-width.",
     execution: [
@@ -9505,6 +9906,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Rack+Pull",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Back, Glutes, Hamstrings, Traps",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set barbell on rack pins around knee height, grip bar, brace core, lats tight and back flat.",
     execution: [
@@ -9529,6 +9931,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Deficit+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Hamstrings, Glutes, Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand on a small plate/step, bar over mid-foot, brace core and set flat back before pulling.",
     execution: [
@@ -9553,6 +9956,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Snatch+Grip+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Upper Back, Lats, Glutes, Hamstrings",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Grip bar wider than shoulder width, hips set, brace core, keep chest up and lats tight.",
     execution: [
@@ -9576,6 +9980,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells, knees soft, brace core and hinge hips back.",
     execution: [
@@ -9599,6 +10004,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold barbell at hips, stand tall, soften knees, brace core and keep lats tight.",
     execution: [
@@ -9622,6 +10028,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Good+Morning",
     videoUrls: ["https://www.youtube.com/embed/vkp8V4vD3cA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Bar on upper back, feet shoulder-width, knees soft, brace core and keep chest proud.",
     execution: [
@@ -9646,6 +10053,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Seated+Good+Morning",
     videoUrls: ["https://www.youtube.com/embed/vkp8V4vD3cA"],
     focusArea: "Lower Back, Hamstrings",
+    bodyPart: ["Back", "Leg"],
     preparation:
       "Sit on bench with bar on upper back, feet planted, brace core and keep chest up.",
     execution: [
@@ -9670,6 +10078,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Band+Pull+Through",
     videoUrls: ["https://www.youtube.com/embed/3TjvKq6C3m4"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach band low behind you, step forward with band between legs, grab band ends, brace core.",
     execution: [
@@ -9693,6 +10102,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=RKC+Plank",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Abs, Core, Stability",
+    bodyPart: ["Core"],
     preparation:
       "Get into forearm plank, elbows under shoulders, tuck pelvis slightly, squeeze glutes hard.",
     execution: [
@@ -9717,6 +10127,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Straight-Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cable high with a straight bar or rope, stand tall, slight hip hinge, arms straight and core braced.",
     execution: [
@@ -9741,6 +10152,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Woodchopper+High+Low",
     videoUrls: ["https://www.youtube.com/embed/6qz2k5Kp8dI"],
     focusArea: "Obliques, Core",
+    bodyPart: ["Core"],
     preparation:
       "Set cable high, stand sideways to cable, hands together on handle, feet shoulder-width, core braced.",
     execution: [
@@ -9765,6 +10177,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Med+Ball+Slam",
     videoUrls: ["https://www.youtube.com/embed/VBfG3L2s2aU"],
     focusArea: "Core, Conditioning, Full Body",
+    bodyPart: ["Core", "Full Body"],
     preparation:
       "Stand tall holding a medicine ball, feet shoulder-width, brace core and keep posture strong.",
     execution: [
@@ -9788,6 +10201,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sled+Push",
     videoUrls: ["https://www.youtube.com/embed/7ZkQW4R4aSg"],
     focusArea: "Quads, Glutes, Conditioning",
+    bodyPart: ["Leg", "Glutes", "Full Body"],
     preparation:
       "Load sled, grip handles, lean forward slightly with a strong flat back, brace core.",
     execution: [
@@ -9811,6 +10225,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sled+Pull",
     videoUrls: ["https://www.youtube.com/embed/7ZkQW4R4aSg"],
     focusArea: "Glutes, Hamstrings, Conditioning",
+    bodyPart: ["Leg", "Glutes", "Full Body"],
     preparation:
       "Attach harness/strap to sled, lean slightly forward, brace core and keep posture strong.",
     execution: [
@@ -9835,6 +10250,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Backward+Sled",
     videoUrls: ["https://www.youtube.com/embed/7ZkQW4R4aSg"],
     focusArea: "Quads, Knees (friendly conditioning)",
+    bodyPart: ["Leg"],
     preparation:
       "Hold sled straps/handles, lean back slightly, keep chest up and core braced.",
     execution: [
@@ -9858,6 +10274,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Hold dumbbells at sides, place one foot fully on a stable bench/box, brace core and stand tall.",
     execution: [
@@ -9882,6 +10299,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Glute+Kickback",
     videoUrls: ["https://www.youtube.com/embed/9g5g0xK6U1A"],
     focusArea: "Glutes",
+    bodyPart: ["Glutes"],
     preparation:
       "Attach ankle strap to low cable, hold support, slight forward lean, core tight and hips square.",
     execution: [
@@ -9906,6 +10324,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Copenhagen+Plank",
     videoUrls: ["https://www.youtube.com/embed/wF5xYx8B8cQ"],
     focusArea: "Adductors, Obliques, Core",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Place top leg on a bench (knee or ankle), elbow under shoulder, brace core and stack hips.",
     execution: [
@@ -9930,6 +10349,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Nordic",
     videoUrls: ["https://www.youtube.com/embed/5B3oZp5V6mQ"],
     focusArea: "Quads, Hip Flexors",
+    bodyPart: ["Leg"],
     preparation:
       "Kneel upright with knees on a pad, glutes squeezed, core braced, body in a straight line.",
     execution: [
@@ -9954,6 +10374,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Upper Back, Rear Delts, Rhomboids",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall with feet braced, grab wide handle, chest up, shoulders down and core braced.",
     execution: [
@@ -9977,6 +10398,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=T-Bar+Row",
     videoUrls: ["https://www.youtube.com/embed/7Y0BvL4mF7Q"],
     focusArea: "Middle Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set chest on pad, grip handles, retract shoulders slightly, brace core and keep neck neutral.",
     execution: [
@@ -10000,6 +10422,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Meadows+Row",
     videoUrls: ["https://www.youtube.com/embed/8c8R1WQ1yYo"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set bar in landmine, stand sideways, hinge at hips with flat back, grip thick end, core braced.",
     execution: [
@@ -10023,6 +10446,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=DB+Pullover",
     videoUrls: ["https://www.youtube.com/embed/FzN8b9m0pUo"],
     focusArea: "Lats, Chest",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Lie across a bench or on it, hold dumbbell over chest with slight elbow bend, brace core.",
     execution: [
@@ -10047,6 +10471,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Neutral+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit with thighs secured, grab neutral handles, chest tall, shoulders down, core braced.",
     execution: [
@@ -10071,6 +10496,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall with thighs locked under pad, grip bar wide, chest up and shoulders down.",
     execution: [
@@ -10094,6 +10520,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Iso+Row",
     videoUrls: ["https://www.youtube.com/embed/7Y0BvL4mF7Q"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit on machine, chest supported if available, grip handles, brace core and keep shoulders down.",
     execution: [
@@ -10118,6 +10545,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Floor+Pullover",
     videoUrls: ["https://www.youtube.com/embed/FzN8b9m0pUo"],
     focusArea: "Lats, Chest",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Lie on floor holding dumbbell above chest, slight elbow bend, brace core and keep ribs down.",
     execution: [
@@ -10142,6 +10570,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Scapular+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Lats, Lower Traps, Scapular Control",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Hang from pull-up bar with straight arms, core braced, legs still, grip shoulder-width.",
     execution: [
@@ -10166,6 +10595,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Serratus+Punch",
     videoUrls: ["https://www.youtube.com/embed/9Y0pQF2q4lA"],
     focusArea: "Serratus, Shoulders, Scapular Stability",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Set cable at chest height, stand tall, hold handle with slight bend in elbow, brace core.",
     execution: [
@@ -10190,6 +10620,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Cable+Pullover",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Attach rope to high pulley, step back, hinge slightly, arms straight with soft elbows, brace core.",
     execution: [
@@ -10214,6 +10645,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Close+Grip+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, thighs secured, grip V handle, chest up, shoulders down, brace core.",
     execution: [
@@ -10238,6 +10670,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Underhand+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Sit tall, grip bar shoulder-width underhand, chest up, shoulders down and core braced.",
     execution: [
@@ -10265,6 +10698,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Kneeling+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Kneel facing cable with rope attachment set high, arms straight, hips slightly back, core braced.",
     execution: [
@@ -10292,6 +10726,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Lats, Middle Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cable at mid height, half-kneel facing machine, grip handle, brace core and keep torso tall.",
     execution: [
@@ -10316,6 +10751,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Seated+Row+Machine",
     videoUrls: ["https://www.youtube.com/embed/7Y0BvL4mF7Q"],
     focusArea: "Middle Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Sit on row machine, chest up, shoulders down, grip handles, feet planted and core braced.",
     execution: [
@@ -10340,6 +10776,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Chest+Supported+DB+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Lie chest-down on incline bench, dumbbells hanging, brace core and keep neck neutral.",
     execution: [
@@ -10363,6 +10800,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Kroc+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Lats, Upper Back, Grip",
+    bodyPart: ["Back"],
     preparation:
       "Support body with one hand on bench, heavy dumbbell in other hand, brace core and set tight torso.",
     execution: [
@@ -10386,6 +10824,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Seal+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Lie face down on a flat high bench (or seal row bench), dumbbells hanging, chest supported.",
     execution: [
@@ -10410,6 +10849,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Reverse+Grip+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Lats, Middle Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hold barbell with underhand grip, hinge at hips, flat back, brace core and keep bar close.",
     execution: [
@@ -10434,6 +10874,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Lying+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Lie face down on the leg curl machine, set pad just above ankles, grip handles and brace core.",
     execution: [
@@ -10458,6 +10899,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Donkey+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Position hips under the pad, feet on platform edge, knees slightly bent, core braced.",
     execution: [
@@ -10482,6 +10924,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tibialis+Raise",
     videoUrls: ["https://www.youtube.com/embed/1Yg0mGg8c0E"],
     focusArea: "Tibialis (Shins)",
+    bodyPart: ["Leg"],
     preparation:
       "Stand with back against a wall, feet slightly forward, heels on floor, brace core.",
     execution: [
@@ -10506,6 +10949,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Close+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/0G2_XV7slIg"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench, grip bar just inside shoulder width, retract shoulder blades, feet planted and core braced.",
     execution: [
@@ -10530,6 +10974,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Lower Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set bench to slight decline, lie back, dumbbells at chest level, shoulders retracted and core braced.",
     execution: [
@@ -10553,6 +10998,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Pec+Deck+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Adjust seat so handles align with mid-chest, keep chest tall, shoulders down and back.",
     execution: [
@@ -10577,6 +11023,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cables low on both sides, grab handles, stand tall, slight elbow bend, core braced.",
     execution: [
@@ -10601,6 +11048,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Upper back on bench, bar over hips, feet planted, chin tucked, brace core and squeeze glutes lightly.",
     execution: [
@@ -10624,6 +11072,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Cable+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Set cable low with straight bar, stand facing away holding bar behind you, core braced and shoulders relaxed.",
     execution: [
@@ -10648,6 +11097,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Hip+Flexor+Raise",
     videoUrls: ["https://www.youtube.com/embed/Pr1ieGZ5atk"],
     focusArea: "Hip Flexors, Lower Abs",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Hang from a pull-up bar, brace core, keep shoulders active and body still.",
     execution: [
@@ -10672,6 +11122,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Chest+Press+Machine",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with mid-chest, plant feet, retract shoulders and brace core.",
     execution: [
@@ -10695,6 +11146,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Chest+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Lower Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Grip dip bars, lift body up, lean slightly forward, brace core and keep shoulders down.",
     execution: [
@@ -10718,6 +11170,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Triceps+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Grip dip bars, lock arms, keep torso upright, brace core and squeeze glutes.",
     execution: [
@@ -10742,6 +11195,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Place feet on a bench, hands on floor, body straight, brace core and squeeze glutes.",
     execution: [
@@ -10766,6 +11220,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Archer+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/5dVZ1c4F1Y0"],
     focusArea: "Chest, Triceps, Core",
+    bodyPart: ["Arm", "Chest", "Core"],
     preparation:
       "Start in wide push-up position, hands wider than shoulders, body straight and core braced.",
     execution: [
@@ -10790,6 +11245,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Pseudo+Planche+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/5dVZ1c4F1Y0"],
     focusArea: "Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Get into push-up stance, hands near hips, lean shoulders forward over wrists, brace core.",
     execution: [
@@ -10813,6 +11269,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Abs",
+    bodyPart: ["Core"],
     preparation:
       "Kneel facing cable with rope attachment high, hold rope by sides of head, brace core and tuck pelvis slightly.",
     execution: [
@@ -10837,6 +11294,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Reverse+Crunch",
     videoUrls: ["https://www.youtube.com/embed/1fbU_MkV7NE"],
     focusArea: "Lower Abs",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back, hands by sides or holding bench, knees bent, press lower back into floor.",
     execution: [
@@ -10861,6 +11319,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Lying+Leg+Raise",
     videoUrls: ["https://www.youtube.com/embed/JB2oyawG9KI"],
     focusArea: "Abs, Hip Flexors",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Lie on back, hands under hips or holding bench, legs straight, brace core and press lower back down.",
     execution: [
@@ -10884,6 +11343,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Hang from bar with wide overhand grip, brace core, keep legs still and shoulders packed.",
     execution: [
@@ -10907,6 +11367,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Chin-Up",
     videoUrls: ["https://www.youtube.com/embed/b-ztMQpj8yc"],
     focusArea: "Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hang from bar with underhand grip shoulder-width, brace core, keep shoulders packed and body still.",
     execution: [
@@ -10931,6 +11392,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Neutral+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hang from neutral handles, brace core, keep shoulders down and body tight.",
     execution: [
@@ -10955,6 +11417,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=L-Sit+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Hang from bar, lift legs straight forward into L-sit, brace core hard and stabilize shoulders.",
     execution: [
@@ -10979,6 +11442,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Archer+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/9efgcAjQe7E"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hang with wide grip, brace core and shoulders, keep legs still and stable.",
     execution: [
@@ -11003,6 +11467,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Mixed+Grip+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Biceps, Grip",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grip bar with one hand overhand and one underhand, brace core, keep shoulders packed.",
     execution: [
@@ -11027,6 +11492,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Commando+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grip bar with hands close together, body turned sideways, brace core and stabilize shoulders.",
     execution: [
@@ -11051,6 +11517,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Band+Assisted+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Loop band on bar, place knee/foot in band, grip bar, brace core and keep shoulders packed.",
     execution: [
@@ -11075,6 +11542,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Assisted+Pull-Up+Machine",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set assistance weight, kneel/stand on pad, grip handles, brace core and keep shoulders down.",
     execution: [
@@ -11099,6 +11567,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Negative+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Strength",
+    bodyPart: ["Back"],
     preparation:
       "Start at top position (jump or step up), chin over bar, brace core and pack shoulders.",
     execution: [
@@ -11123,6 +11592,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Hollow+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Hang from bar, tuck ribs down, pelvis slightly tucked, legs together in hollow body position.",
     execution: [
@@ -11147,6 +11617,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=High+to+Low+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Lower Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables high, grab handles, step forward into split stance, chest up and core braced.",
     execution: [
@@ -11170,6 +11641,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set hands wider than shoulders, body straight, brace core and squeeze glutes.",
     execution: [
@@ -11194,6 +11666,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set cables at chest height, step forward into split stance, handles at chest, core braced.",
     execution: [
@@ -11218,6 +11691,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Cable+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Core",
+    bodyPart: ["Chest", "Core"],
     preparation:
       "Set cable at chest height, stand sideways or split stance, handle at chest, core braced.",
     execution: [
@@ -11242,6 +11716,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Smith+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench under Smith bar, grip slightly wider than shoulders, retract shoulders and brace core.",
     execution: [
@@ -11266,6 +11741,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Neutral+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on flat bench with dumbbells, palms facing each other, shoulders retracted and feet planted.",
     execution: [
@@ -11290,6 +11766,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Squeeze+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench holding two dumbbells pressed together over chest, shoulders retracted and core braced.",
     execution: [
@@ -11314,6 +11791,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Kneeling+Cable+Pullover",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats",
+    bodyPart: ["Back"],
     preparation:
       "Kneel facing high cable with straight bar, arms straight, core braced, hips slightly back.",
     execution: [
@@ -11338,6 +11816,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/IODxDxX7oi4"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Place hands on a bench/box, body straight, brace core and squeeze glutes.",
     execution: [
@@ -11362,6 +11841,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Band+Face+Pull",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Anchor band at face height, grab both ends, step back for tension, brace core and keep posture tall.",
     execution: [
@@ -11386,6 +11866,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Rope+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to high cable, stand tall, elbows tucked to sides, brace core and grip rope ends.",
     execution: [
@@ -11413,6 +11894,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Rope+Triceps",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to low cable, face away, step forward, rope behind head, elbows pointing forward, core braced.",
     execution: [
@@ -11437,6 +11919,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=EZ+Overhead+Triceps",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding EZ bar overhead, elbows close, core braced and glutes tight.",
     execution: [
@@ -11461,6 +11944,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Cross-Body+Triceps",
     videoUrls: ["https://www.youtube.com/embed/6SS6K3lAwZ8"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding a dumbbell, elbow tucked close to ribcage, opposite hand supports upper arm if needed.",
     execution: [
@@ -11484,6 +11968,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=JM+Press",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench holding barbell, hands shoulder-width, elbows angled slightly forward, shoulders retracted.",
     execution: [
@@ -11508,6 +11993,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Close+Grip+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/J0DnG1_S92I"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Get into push-up position with hands under shoulders, core braced and body straight.",
     execution: [
@@ -11532,6 +12018,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Decline+Diamond+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/J0DnG1_S92I"],
     focusArea: "Triceps, Upper Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Place feet on bench, hands under chest forming diamond, brace core and squeeze glutes.",
     execution: [
@@ -11556,6 +12043,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Ring+Support+Hold",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Triceps, Shoulders, Stability",
+    bodyPart: ["Arm", "Core", "Shoulder"],
     preparation:
       "Hold top of dip on rings with arms locked, rings close to body, shoulders down and core braced.",
     execution: [
@@ -11583,6 +12071,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Overhead+Cable",
     videoUrls: ["https://www.youtube.com/embed/_gsUck-7M74"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low with single handle, face away, elbow close to head, core braced and stance stable.",
     execution: [
@@ -11607,6 +12096,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Weighted+Bench+Dip",
     videoUrls: ["https://www.youtube.com/embed/0326dy_-CzM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Hands on bench behind you, plate on lap, feet forward, shoulders down and core braced.",
     execution: [
@@ -11631,6 +12121,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=DB+Shoulder+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit tall on bench, dumbbells at shoulder height, core braced and shoulder blades slightly retracted.",
     execution: [
@@ -11655,6 +12146,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Standing+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Core, Triceps",
+    bodyPart: ["Arm", "Core", "Shoulder"],
     preparation:
       "Stand tall holding dumbbells at shoulders, brace core, squeeze glutes and keep ribs down.",
     execution: [
@@ -11679,6 +12171,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Military+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Stand with bar at upper chest, hands just outside shoulders, core braced and glutes tight.",
     execution: [
@@ -11703,6 +12196,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Smith+Overhead+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Sit or stand under Smith bar, grip just outside shoulders, brace core and keep chest tall.",
     execution: [
@@ -11726,6 +12220,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Push+Press",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Triceps, Legs (drive)",
+    bodyPart: ["Arm", "Leg", "Shoulder"],
     preparation:
       "Stand with bar at upper chest, hands outside shoulders, core braced and feet shoulder-width.",
     execution: [
@@ -11749,6 +12244,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Arnold+Press",
     videoUrls: ["https://www.youtube.com/embed/6Z15_WdXmVw"],
     focusArea: "Shoulders",
+    bodyPart: ["Shoulder"],
     preparation:
       "Sit tall holding dumbbells in front of face with palms facing you, core braced and elbows forward.",
     execution: [
@@ -11773,6 +12269,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Machine+Shoulder+Press",
     videoUrls: ["https://www.youtube.com/embed/qEwKCR5JCog"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Adjust seat so handles align with shoulders, grip handles, keep chest up and core braced.",
     execution: [
@@ -11797,6 +12294,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Landmine+Press",
     videoUrls: ["https://www.youtube.com/embed/6o7GQKz4XrY"],
     focusArea: "Shoulders, Upper Chest",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Set bar in landmine, hold end with both hands at chest height, feet shoulder-width, brace core.",
     execution: [
@@ -11821,6 +12319,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Kneeling+Landmine+Press",
     videoUrls: ["https://www.youtube.com/embed/6o7GQKz4XrY"],
     focusArea: "Shoulders, Core",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Half-kneel facing landmine, hold bar end at shoulder height, brace core and squeeze glutes.",
     execution: [
@@ -11845,6 +12344,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Handstand+Hold",
     videoUrls: ["https://www.youtube.com/embed/0wDEO86p7t0"],
     focusArea: "Shoulders, Core, Stability",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Kick up to wall handstand, hands shoulder-width, core braced, ribs down and glutes tight.",
     execution: [
@@ -11868,6 +12368,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Wall+HSPU",
     videoUrls: ["https://www.youtube.com/embed/0wDEO86p7t0"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Kick up to wall handstand, hands slightly wider than shoulders, core braced and glutes tight.",
     execution: [
@@ -11891,6 +12392,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Pike+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/0wDEO86p7t0"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Start in downward-dog/pike position, hands shoulder-width, hips high, core braced.",
     execution: [
@@ -11915,6 +12417,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Feet+Elevated+Pike",
     videoUrls: ["https://www.youtube.com/embed/0wDEO86p7t0"],
     focusArea: "Shoulders, Triceps",
+    bodyPart: ["Arm", "Shoulder"],
     preparation:
       "Place feet on bench, hands on floor, hips high, head between arms, core tight.",
     execution: [
@@ -11939,6 +12442,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Seated+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Sit tall holding dumbbells at sides, slight lean forward, core braced and shoulders down.",
     execution: [
@@ -11963,6 +12467,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Leaning+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Hold a support with one hand, lean slightly away, dumbbell in free hand, core tight.",
     execution: [
@@ -11990,6 +12495,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Behind+Cable+Lateral",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable low, grab handle with far hand, step forward so cable runs behind your body, brace core.",
     execution: [
@@ -12014,6 +12520,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Machine+Lateral+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Side Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Adjust seat so pads align with mid-arm, sit tall, grip handles, brace core and shoulders down.",
     execution: [
@@ -12038,6 +12545,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Alt+Front+Raise",
     videoUrls: ["https://www.youtube.com/embed/-t7fuZ0KhDA"],
     focusArea: "Front Delts",
+    bodyPart: ["Shoulder"],
     preparation:
       "Stand tall holding dumbbells at thighs, core braced, shoulders down and wrists neutral.",
     execution: [
@@ -12062,6 +12570,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Rear+Delt+Row",
     videoUrls: ["https://www.youtube.com/embed/kBWAon7ItDw"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Lie chest-down on incline bench, dumbbells hanging, elbows slightly flared, neck neutral.",
     execution: [
@@ -12085,6 +12594,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Cuban+Press",
     videoUrls: ["https://www.youtube.com/embed/1n7JqzUu6tE"],
     focusArea: "Rotator Cuff, Shoulders",
+    bodyPart: ["Shoulder"],
     preparation:
       "Stand tall with light dumbbells, elbows at 90 degrees, upper arms parallel to floor, core braced.",
     execution: [
@@ -12109,6 +12619,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Cable+Upright+Row",
     videoUrls: ["https://www.youtube.com/embed/f5jhOTcup6M"],
     focusArea: "Side Delts, Traps",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Attach rope to low cable, stand tall, grip rope ends, brace core and keep shoulders down.",
     execution: [
@@ -12132,6 +12643,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=High+Pull",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Traps, Shoulders, Posterior Chain",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Stand with barbell at thighs, feet shoulder-width, hinge slightly, brace core and keep back flat.",
     execution: [
@@ -12155,6 +12667,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Power+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Stand tall holding barbell at thighs, slight knee bend, brace core and keep arms straight.",
     execution: [
@@ -12179,6 +12692,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Low+High+Reverse+Fly",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set cables low, cross handles, hinge slightly, brace core and keep shoulders down.",
     execution: [
@@ -12203,6 +12717,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Rear+Delt+Machine",
     videoUrls: ["https://www.youtube.com/embed/rep-qVOkqgk"],
     focusArea: "Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Adjust seat so handles align with shoulders, chest against pad, brace core and keep neck neutral.",
     execution: [
@@ -12227,6 +12742,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=External+Rotation",
     videoUrls: ["https://www.youtube.com/embed/1n7JqzUu6tE"],
     focusArea: "Rotator Cuff",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable at elbow height, tuck elbow to side (use towel), forearm across body, core braced.",
     execution: [
@@ -12251,6 +12767,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Side+Lying+ER",
     videoUrls: ["https://www.youtube.com/embed/1n7JqzUu6tE"],
     focusArea: "Rotator Cuff",
+    bodyPart: ["Shoulder"],
     preparation:
       "Lie on your side, elbow at 90 degrees pinned to ribs, hold light dumbbell, shoulder relaxed down.",
     execution: [
@@ -12275,6 +12792,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Internal+Rotation",
     videoUrls: ["https://www.youtube.com/embed/1n7JqzUu6tE"],
     focusArea: "Rotator Cuff",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable at elbow height, stand sideways, elbow pinned to side, forearm out, core braced.",
     execution: [
@@ -12299,6 +12817,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Scaption+Raise",
     videoUrls: ["https://www.youtube.com/embed/3VcKaXpzqRo"],
     focusArea: "Shoulders (Front/Side), Serratus",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Stand tall holding light dumbbells, thumbs slightly up, arms slightly forward (about 30 degrees), core braced.",
     execution: [
@@ -12323,6 +12842,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=High+Incline+DB+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Front Delts, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench to high incline (60–75°), dumbbells at shoulders, retract shoulder blades and brace core.",
     execution: [
@@ -12347,6 +12867,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Bayesian+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low with single handle, stand facing away, arm slightly behind torso, elbow fixed and core braced.",
     execution: [
@@ -12371,6 +12892,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=EZ+Spider+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie chest-down on incline bench, hold EZ bar with underhand grip, arms hanging, core braced.",
     execution: [
@@ -12395,6 +12917,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=EZ+Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set arms on preacher pad, grip EZ bar, keep shoulders down and elbow stable on pad.",
     execution: [
@@ -12419,6 +12942,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Machine+Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Adjust seat and pad, place upper arms on pad, grip handles, keep chest tall and shoulders relaxed.",
     execution: [
@@ -12443,6 +12967,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cross+Body+Hammer",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms (Brachialis)",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells neutral, core braced and elbows close to torso.",
     execution: [
@@ -12470,6 +12995,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=High+Cable+Hammer",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable at head height with rope, face machine, elbows slightly forward, core braced.",
     execution: [
@@ -12494,6 +13020,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=High+Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps (Peak)",
+    bodyPart: ["Arm"],
     preparation:
       "Set both cables high, stand centered, elbows high and wide, core braced and chest up.",
     execution: [
@@ -12518,6 +13045,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Reverse+Curl",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms, Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low with straight bar, overhand grip, elbows pinned to sides, core braced.",
     execution: [
@@ -12542,6 +13070,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Seated+EZ+Reverse+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Forearms, Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Sit tall holding EZ bar with overhand grip, elbows close, core braced and shoulders down.",
     execution: [
@@ -12566,6 +13095,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Pronation+Supination",
     videoUrls: ["https://www.youtube.com/embed/16cJabFdayQ"],
     focusArea: "Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Sit with forearm supported, hold a light dumbbell by one end (like a hammer), wrist free to rotate.",
     execution: [
@@ -12590,6 +13120,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Farmer%27s+Walk",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Grip, Traps, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Pick up heavy dumbbells at your sides, stand tall, brace core and pull shoulders slightly down/back.",
     execution: [
@@ -12614,6 +13145,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Suitcase+Carry",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Core (Anti-Lateral Flexion), Grip",
+    bodyPart: ["Core"],
     preparation:
       "Hold one heavy dumbbell at your side, stand tall, brace core and keep hips level.",
     execution: [
@@ -12638,6 +13170,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/9B59B6/ffffff?text=Overhead+Carry",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Core, Stability",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Press dumbbell overhead to locked out position, ribs down, glutes tight and core braced.",
     execution: [
@@ -12661,6 +13194,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/9B59B6/ffffff?text=Waiter+Walk",
     videoUrls: ["https://www.youtube.com/embed/iaBVSJm78ko"],
     focusArea: "Shoulders, Core, Stability",
+    bodyPart: ["Core", "Shoulder"],
     preparation:
       "Press kettlebell overhead, keep wrist neutral, ribs down, glutes tight and core braced.",
     execution: [
@@ -12685,6 +13219,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Front+Rack+Carry",
     videoUrls: ["https://www.youtube.com/embed/2Qd2o2gYzvI"],
     focusArea: "Core, Upper Back, Shoulders",
+    bodyPart: ["Back", "Core", "Shoulder"],
     preparation:
       "Hold kettlebell in front rack position (elbow down, wrist neutral), brace core and keep posture tall.",
     execution: [
@@ -12709,6 +13244,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Front+Rack",
     videoUrls: ["https://www.youtube.com/embed/ya4cJvYz8mE"],
     focusArea: "Core, Upper Back, Quads (stability)",
+    bodyPart: ["Back", "Core", "Leg"],
     preparation:
       "Clean bar to front rack, elbows up, chest tall, brace core and keep feet under hips.",
     execution: [
@@ -12733,6 +13269,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Zercher+Carry",
     videoUrls: ["https://www.youtube.com/embed/ya4cJvYz8mE"],
     focusArea: "Core, Upper Back, Glutes",
+    bodyPart: ["Back", "Core", "Glutes"],
     preparation:
       "Hold barbell in elbow crooks, keep chest up, brace core, squeeze glutes and stand tall.",
     execution: [
@@ -12757,6 +13294,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Trap+Bar+Carry",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Grip, Traps, Core",
+    bodyPart: ["Back", "Core"],
     preparation:
       "Stand inside trap bar, grip handles, brace core, stand tall with shoulders packed.",
     execution: [
@@ -12780,6 +13318,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Yoke+Walk",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Full Body, Core, Traps",
+    bodyPart: ["Back", "Core", "Full Body"],
     preparation:
       "Set yoke height, get under pads, brace core hard, stand up strong and lock posture in.",
     execution: [
@@ -12804,6 +13343,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Sandbag+Carry",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Core, Upper Back, Conditioning",
+    bodyPart: ["Back", "Core", "Full Body"],
     preparation:
       "Lift sandbag to bearhug position, squeeze it tight to chest, brace core and stand tall.",
     execution: [
@@ -12828,6 +13368,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Chest+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Adjust seat so handles align with upper chest, retract shoulder blades, plant feet and brace core.",
     execution: [
@@ -12852,6 +13393,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Low+to+High+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables low, grab handles, step forward into split stance, chest tall and core braced.",
     execution: [
@@ -12875,6 +13417,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set cables at chest height, step forward, slight forward lean, core braced and shoulders down.",
     execution: [
@@ -12899,6 +13442,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=One+Arm+Cable+Fly",
     videoUrls: ["https://www.youtube.com/embed/taI4XduLpTk"],
     focusArea: "Chest, Core",
+    bodyPart: ["Chest", "Core"],
     preparation:
       "Set cable at chest height, stand in split stance, handle in one hand, shoulder down and core braced.",
     execution: [
@@ -12923,6 +13467,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Upper Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set bench to 30–45°, lie back, dumbbells above chest, slight elbow bend, shoulders retracted.",
     execution: [
@@ -12947,6 +13492,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Lower Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Set bench to slight decline, lie back, dumbbells above chest, shoulders retracted and core braced.",
     execution: [
@@ -12970,6 +13516,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Floor+DB+Fly",
     videoUrls: ["https://www.youtube.com/embed/eozdVDA78K0"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Lie on floor holding dumbbells above chest, knees bent, shoulders retracted and core braced.",
     execution: [
@@ -12993,6 +13540,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Svend+Press",
     videoUrls: ["https://www.youtube.com/embed/2yW1cGZtZ0A"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Stand tall squeezing two plates together at chest level, elbows slightly out, core braced.",
     execution: [
@@ -13017,6 +13565,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Pullover+Machine",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats, Teres Major",
+    bodyPart: ["Back"],
     preparation:
       "Adjust seat and pads, grip handles, brace core and keep shoulders down.",
     execution: [
@@ -13044,6 +13593,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Straight+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set cable high with single handle, stand tall, slight hinge, arm straight with soft elbow, core braced.",
     execution: [
@@ -13067,6 +13617,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Back+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Set bar on upper traps, grip bar, brace core, feet shoulder-width, chest up and back tight.",
     execution: [
@@ -13091,6 +13642,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Low-Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Glutes, Hamstrings, Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set bar lower on rear delts, grip tight, brace core, slight hip hinge, feet shoulder-width.",
     execution: [
@@ -13114,6 +13666,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Front+Squat",
     videoUrls: ["https://www.youtube.com/embed/tlfGU8bG3g0"],
     focusArea: "Quads, Upper Back, Core",
+    bodyPart: ["Back", "Core", "Leg"],
     preparation:
       "Rack bar on front delts, elbows high, brace core, feet shoulder-width and chest tall.",
     execution: [
@@ -13138,6 +13691,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Zercher+Squat",
     videoUrls: ["https://www.youtube.com/embed/ya4cJvYz8mE"],
     focusArea: "Quads, Glutes, Core, Upper Back",
+    bodyPart: ["Back", "Core", "Leg", "Glutes"],
     preparation:
       "Hold bar in elbow crooks, hands clasped, chest up, brace core and feet shoulder-width.",
     execution: [
@@ -13162,6 +13716,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Safety+Bar+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Upper Back, Core",
+    bodyPart: ["Back", "Core", "Leg"],
     preparation:
       "Set safety bar on shoulders, grip handles, brace core and set feet shoulder-width.",
     execution: [
@@ -13185,6 +13740,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Box+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Glutes, Hamstrings, Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set a box behind you, bar on back, brace core, feet set slightly wider than shoulders.",
     execution: [
@@ -13208,6 +13764,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Pause+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Core",
+    bodyPart: ["Core", "Leg", "Glutes"],
     preparation:
       "Set bar on back, brace core, feet shoulder-width, descend with control to your depth.",
     execution: [
@@ -13231,6 +13788,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Control",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Bar on back, brace core, set stance, prepare to descend slowly with control.",
     execution: [
@@ -13255,6 +13813,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Anderson+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes, Starting Strength",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set safety pins at desired depth, position under bar, brace core and set tight posture before lifting.",
     execution: [
@@ -13279,6 +13838,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Hatfield+Squat",
     videoUrls: ["https://www.youtube.com/embed/ultWZbUMPL8"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Use a safety bar or squat machine and hold support handles lightly, brace core and set stance.",
     execution: [
@@ -13303,6 +13863,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Bulgarian+Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place rear foot on bench, front foot planted, hold dumbbells at sides, brace core and keep chest up.",
     execution: [
@@ -13327,6 +13888,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Smith+Bulgarian",
     videoUrls: ["https://www.youtube.com/embed/2C-uNgKwPLE"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set Smith bar on upper traps, rear foot on bench, front foot forward, brace core and keep chest up.",
     execution: [
@@ -13350,6 +13912,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Split+Squat",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Take a staggered stance, hold dumbbells at sides, keep torso upright and brace core.",
     execution: [
@@ -13374,6 +13937,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Walking+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Quads, Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells, brace core, step forward with control and keep torso upright.",
     execution: [
@@ -13398,6 +13962,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Lunge",
     videoUrls: ["https://www.youtube.com/embed/QOVaHwm-Q6U"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells, brace core, step back carefully with one leg.",
     execution: [
@@ -13421,6 +13986,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Curtsy+Lunge",
     videoUrls: ["https://www.youtube.com/embed/7Xx8kR5q2dI"],
     focusArea: "Glutes (Med), Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells, brace core, step one leg back and across behind the other.",
     execution: [
@@ -13445,6 +14011,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Lateral+Lunge",
     videoUrls: ["https://www.youtube.com/embed/wrwwXE_x-pQ"],
     focusArea: "Adductors, Glutes, Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells, take a wide step to the side, brace core and keep chest up.",
     execution: [
@@ -13469,6 +14036,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cossack+Squat",
     videoUrls: ["https://www.youtube.com/embed/wrwwXE_x-pQ"],
     focusArea: "Adductors, Glutes, Mobility",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand wide, toes slightly out, brace core and keep chest tall as you shift weight side to side.",
     execution: [
@@ -13493,6 +14061,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Step-Up",
     videoUrls: ["https://www.youtube.com/embed/dQqApCGd5Ss"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Bar on upper back, stand facing a stable box/bench, place one foot fully on top, brace core.",
     execution: [
@@ -13516,6 +14085,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Sissy+Squat",
     videoUrls: ["https://www.youtube.com/embed/1n8rQkEoG2E"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Stand tall, hold support if needed, rise onto toes slightly, squeeze glutes and brace core.",
     execution: [
@@ -13539,6 +14109,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Sit in leg press with feet shoulder-width on platform, lower back pressed into pad, brace core.",
     execution: [
@@ -13563,6 +14134,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Wide+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Glutes, Adductors",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place feet wide on platform with toes slightly out, keep lower back into pad and brace core.",
     execution: [
@@ -13587,6 +14159,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Narrow+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Place feet close together on platform, toes slightly out, brace core and keep hips down.",
     execution: [
@@ -13611,6 +14184,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=High+Feet+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Place feet higher on platform, shoulder-width, toes slightly out, brace core and keep back flat to pad.",
     execution: [
@@ -13635,6 +14209,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Low+Feet+Leg+Press",
     videoUrls: ["https://www.youtube.com/embed/IZxyjW7MPJQ"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Place feet lower on platform, shoulder-width, heels down, brace core and keep hips down.",
     execution: [
@@ -13659,6 +14234,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Leg+Press+Calf",
     videoUrls: ["https://www.youtube.com/embed/gwLzBJYoWlI"],
     focusArea: "Calves",
+    bodyPart: ["Leg"],
     preparation:
       "Set platform with balls of feet on edge, legs nearly straight (soft knees), brace core and grip handles.",
     execution: [
@@ -13682,6 +14258,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Belt+Squat",
     videoUrls: ["https://www.youtube.com/embed/8pG2G1Z1s8U"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach belt to machine/weight, stand on platform, brace core and hold supports for balance.",
     execution: [
@@ -13706,6 +14283,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Pendulum+Squat",
     videoUrls: ["https://www.youtube.com/embed/8pG2G1Z1s8U"],
     focusArea: "Quads, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set shoulders under pads, feet on platform, brace core and set stance shoulder-width.",
     execution: [
@@ -13730,6 +14308,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Single+Leg+Extension",
     videoUrls: ["https://www.youtube.com/embed/YyvSfVjQeL0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Sit on leg extension, set pad above ankle, hold handles, brace core and keep hips down.",
     execution: [
@@ -13754,6 +14333,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Leg+Extension+Drop",
     videoUrls: ["https://www.youtube.com/embed/YyvSfVjQeL0"],
     focusArea: "Quads",
+    bodyPart: ["Leg"],
     preparation:
       "Set a challenging weight on leg extension, adjust seat/pad, brace core and grip handles.",
     execution: [
@@ -13777,6 +14357,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand tall holding barbell at hips, feet hip-width, brace core, soften knees and set shoulders back.",
     execution: [
@@ -13800,6 +14381,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand tall holding dumbbells at thighs, feet hip-width, brace core, soften knees and set shoulders back.",
     execution: [
@@ -13824,6 +14406,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Stiff-Leg+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand with bar at thighs, legs more straight than RDL, brace core and keep shoulders packed.",
     execution: [
@@ -13847,6 +14430,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Good+Morning",
     videoUrls: ["https://www.youtube.com/embed/YA-h3n9L4YU"],
     focusArea: "Hamstrings, Glutes, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set bar on upper back, feet shoulder-width, brace core, soften knees slightly and set back tight.",
     execution: [
@@ -13871,6 +14455,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Glute+Ham+Raise",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Set feet/ankles in GHR machine, knees on pad, torso upright, brace core and keep hips extended.",
     execution: [
@@ -13894,6 +14479,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Nordic+Curl",
     videoUrls: ["https://www.youtube.com/embed/4Y2ZdHCOXok"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Kneel with ankles secured (partner or anchor), hips extended, core braced and hands ready to catch.",
     execution: [
@@ -13918,6 +14504,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=DB+Hip+Thrust",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Upper back on bench, dumbbell on hips, feet planted, chin tucked and core braced.",
     execution: [
@@ -13942,6 +14529,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Barbell+Glute+Bridge",
     videoUrls: ["https://www.youtube.com/embed/Orxowest56U"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Lie on floor with barbell over hips, feet planted, brace core and keep ribs down.",
     execution: [
@@ -13966,6 +14554,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Pull-Through",
     videoUrls: ["https://www.youtube.com/embed/5WUX3p9GQ4c"],
     focusArea: "Glutes, Hamstrings",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Attach rope low, face away and step forward, rope between legs, brace core and set hips back.",
     execution: [
@@ -13990,6 +14579,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Reverse+Hyper",
     videoUrls: ["https://www.youtube.com/embed/5WUX3p9GQ4c"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Lie on reverse hyper machine with hips on pad, grip handles, let legs hang and brace core.",
     execution: [
@@ -14014,6 +14604,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Conventional+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand with mid-foot under bar, grip just outside legs, brace core, set back flat and pull slack out of bar.",
     execution: [
@@ -14038,6 +14629,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Sumo+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Adductors, Quads",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Take wide stance with toes out, grip inside legs, chest up, brace core and set hips close to bar.",
     execution: [
@@ -14062,6 +14654,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Trap+Bar+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/7p6W8pJw1aI"],
     focusArea: "Quads, Glutes, Traps",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Stand inside trap bar, grip handles, brace core, set back tight and keep chest tall.",
     execution: [
@@ -14086,6 +14679,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Snatch+Grip+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Upper Back, Glutes, Hamstrings",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Take wide snatch grip on bar, hips lower than RDL, brace core and keep chest up with tight lats.",
     execution: [
@@ -14110,6 +14704,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Deficit+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Glutes, Hamstrings, Starting Strength",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand on a small platform (2–5cm), set up like conventional, brace core and pull slack out of bar.",
     execution: [
@@ -14133,6 +14728,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Rack+Pull",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Back, Glutes, Traps",
+    bodyPart: ["Back", "Glutes"],
     preparation:
       "Set bar on rack pins at knee-to-mid-shin height, grip bar, brace core and set lats tight.",
     execution: [
@@ -14156,6 +14752,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/4A90E2/ffffff?text=Block+Pull",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Back, Glutes",
+    bodyPart: ["Back", "Glutes"],
     preparation:
       "Set bar on blocks at desired height, set stance, grip bar, brace core and pull slack out.",
     execution: [
@@ -14180,6 +14777,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Paused+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Back, Glutes, Technique",
+    bodyPart: ["Back", "Glutes"],
     preparation:
       "Set up like conventional, brace core, set lats tight, pull slack out of bar.",
     execution: [
@@ -14204,6 +14802,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Tempo+Deadlift",
     videoUrls: ["https://www.youtube.com/embed/op9kVnSso6Q"],
     focusArea: "Back, Glutes, Control",
+    bodyPart: ["Back", "Glutes"],
     preparation:
       "Set up like conventional, brace core, set back tight, pull slack out of bar.",
     execution: [
@@ -14228,6 +14827,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Deficit+DB+RDL",
     videoUrls: ["https://www.youtube.com/embed/2SHsk9AzdjA"],
     focusArea: "Hamstrings, Glutes",
+    bodyPart: ["Leg", "Glutes"],
     preparation:
       "Stand on small plates/platform, hold dumbbells, brace core, soften knees and set shoulders back.",
     execution: [
@@ -14252,6 +14852,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Seated+Calf+Raise",
     videoUrls: ["https://www.youtube.com/embed/YMmgqO8Jo-k"],
     focusArea: "Calves (Soleus)",
+    bodyPart: ["Leg"],
     preparation:
       "Sit in the calf raise machine, place balls of feet on platform edge, knees under pad, brace core.",
     execution: [
@@ -14279,6 +14880,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Standing+Cable+Leg+Curl",
     videoUrls: ["https://www.youtube.com/embed/1Tq3QdYUuHs"],
     focusArea: "Hamstrings",
+    bodyPart: ["Leg"],
     preparation:
       "Attach ankle strap to low cable, stand tall holding support, brace core and keep knee aligned.",
     execution: [
@@ -14303,6 +14905,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Cable+Glute+Kickback",
     videoUrls: ["https://www.youtube.com/embed/8nZ7K6o7QZQ"],
     focusArea: "Glutes",
+    bodyPart: ["Glutes"],
     preparation:
       "Attach ankle strap to low cable, hinge slightly forward holding support, brace core and keep pelvis square.",
     execution: [
@@ -14327,6 +14930,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Copenhagen+Plank",
     videoUrls: ["https://www.youtube.com/embed/6d8kK6iXq0A"],
     focusArea: "Adductors, Core",
+    bodyPart: ["Core", "Leg"],
     preparation:
       "Side plank position with top leg supported on a bench, bottom leg hanging, brace core and keep body straight.",
     execution: [
@@ -14351,6 +14955,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/4A90E2/ffffff?text=Back+Extension",
     videoUrls: ["https://www.youtube.com/embed/ph3pddpKzzw"],
     focusArea: "Glutes, Hamstrings, Lower Back",
+    bodyPart: ["Back", "Leg", "Glutes"],
     preparation:
       "Set pad so hips are supported, feet anchored, brace core and keep neck neutral.",
     execution: [
@@ -14375,6 +14980,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Dumbbell+Pullover",
     videoUrls: ["https://www.youtube.com/embed/Feyd2m7P7yQ"],
     focusArea: "Lats, Chest, Serratus",
+    bodyPart: ["Back", "Chest"],
     preparation:
       "Lie on bench holding one dumbbell above chest, slight elbow bend, ribs down and core braced.",
     execution: [
@@ -14398,6 +15004,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Pendlay+Row",
     videoUrls: ["https://www.youtube.com/embed/axoeDmW0oAY"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Hinge to near-parallel torso, bar on floor, grip slightly wider than shoulders, brace core and set lats tight.",
     execution: [
@@ -14421,6 +15028,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Ab+Wheel",
     videoUrls: ["https://www.youtube.com/embed/A3uK5TPzHqU"],
     focusArea: "Abs, Core (Anti-Extension)",
+    bodyPart: ["Core"],
     preparation:
       "Kneel on pad, hands on ab wheel, tuck pelvis slightly, brace core and keep ribs down.",
     execution: [
@@ -14444,6 +15052,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Wrist+Roller",
     videoUrls: ["https://www.youtube.com/embed/9uGfV6L8QmA"],
     focusArea: "Forearms, Grip",
+    bodyPart: ["Arm"],
     preparation:
       "Hold wrist roller at shoulder height with arms straight, attach plate to rope, brace core and keep wrists neutral.",
     execution: [
@@ -14467,6 +15076,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Neck+Flexion",
     videoUrls: ["https://www.youtube.com/embed/6QYw3rjz2vE"],
     focusArea: "Neck (Flexors)",
+    bodyPart: ["Shoulder"],
     preparation:
       "Attach harness with light plate, sit or stand tall, chin slightly tucked, brace core and keep shoulders relaxed.",
     execution: [
@@ -14491,6 +15101,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Neck+Extension",
     videoUrls: ["https://www.youtube.com/embed/6QYw3rjz2vE"],
     focusArea: "Neck (Extensors)",
+    bodyPart: ["Shoulder"],
     preparation:
       "Attach harness with light plate, sit or stand tall, chin slightly tucked, brace core and keep shoulders relaxed.",
     execution: [
@@ -14515,6 +15126,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Neck+Side+Flexion",
     videoUrls: ["https://www.youtube.com/embed/6QYw3rjz2vE"],
     focusArea: "Neck (Lateral Flexors)",
+    bodyPart: ["Shoulder"],
     preparation:
       "Set cable at head height with head strap, stand tall side-on, brace core and keep shoulders relaxed.",
     execution: [
@@ -14539,6 +15151,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Neck+Rotation",
     videoUrls: ["https://www.youtube.com/embed/6QYw3rjz2vE"],
     focusArea: "Neck (Rotators)",
+    bodyPart: ["Shoulder"],
     preparation:
       "Anchor a light band at head height, attach to head strap or hold against temple, stand tall and brace core.",
     execution: [
@@ -14562,6 +15175,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Cable+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Set cable low with straight bar or handles, stand tall, brace core, arms straight and shoulders relaxed down.",
     execution: [
@@ -14586,6 +15200,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Machine+Shrug",
     videoUrls: ["https://www.youtube.com/embed/6TSP1TRMUzs"],
     focusArea: "Traps",
+    bodyPart: ["Back"],
     preparation:
       "Adjust machine height, grip handles, stand tall with chest up, brace core and keep arms straight.",
     execution: [
@@ -14609,6 +15224,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dead+Hang",
     videoUrls: ["https://www.youtube.com/embed/2V8mQnFQ9xk"],
     focusArea: "Grip, Shoulder Health",
+    bodyPart: ["Shoulder"],
     preparation:
       "Hang from bar with overhand grip, hands just outside shoulders, relax legs and brace lightly through core.",
     execution: [
@@ -14633,6 +15249,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Scapular+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/2V8mQnFQ9xk"],
     focusArea: "Lower Traps, Lats, Shoulder Stability",
+    bodyPart: ["Back", "Shoulder"],
     preparation:
       "Hang from bar with arms straight, brace core and keep body still.",
     execution: [
@@ -14656,6 +15273,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Inverted+Row",
     videoUrls: ["https://www.youtube.com/embed/5WUX3p9GQ4c"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set bar at waist height, lie under it, grip bar, body straight, heels on floor and core braced.",
     execution: [
@@ -14680,6 +15298,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Chest+Supported+T-Bar",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Mid Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set chest on pad, grip handles, brace core and keep neck neutral.",
     execution: [
@@ -14703,6 +15322,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Meadows+Row",
     videoUrls: ["https://www.youtube.com/embed/8pG2G1Z1s8U"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Set bar in landmine, stand perpendicular, hinge at hips, grab bar sleeve, brace core and keep back flat.",
     execution: [
@@ -14727,6 +15347,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Lat+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit with thighs locked under pad, grip bar wide, brace core, chest up and shoulders down.",
     execution: [
@@ -14751,6 +15372,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=V-Bar+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Mid Back",
+    bodyPart: ["Back"],
     preparation:
       "Attach V-bar, sit tall, grip handles, brace core and keep shoulders packed down.",
     execution: [
@@ -14775,6 +15397,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Reverse+Grip+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Sit tall, grip bar underhand shoulder-width, brace core and keep chest up.",
     execution: [
@@ -14799,6 +15422,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Behind+Neck+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/CAwf7n6Luuc"],
     focusArea: "Upper Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, grip bar wide, brace core and keep neck neutral (do not push head forward).",
     execution: [
@@ -14823,6 +15447,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Straight+Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/VCc6w8zZ6_s"],
     focusArea: "Lats",
+    bodyPart: ["Back"],
     preparation:
       "Attach straight bar high, stand with slight hinge, arms straight with soft elbows, brace core and keep shoulders down.",
     execution: [
@@ -14850,6 +15475,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Kneeling+One+Arm+Pulldown",
     videoUrls: ["https://www.youtube.com/embed/lhpaJ4C93S8"],
     focusArea: "Lats",
+    bodyPart: ["Back"],
     preparation:
       "Kneel facing cable, grab handle overhead, brace core, keep shoulders down and torso stable.",
     execution: [
@@ -14873,6 +15499,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Barbell+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Mid Back, Lats",
+    bodyPart: ["Back"],
     preparation:
       "Hinge at hips, torso about 30–45°, grip bar overhand, brace core and keep back flat.",
     execution: [
@@ -14896,6 +15523,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Yates+Row",
     videoUrls: ["https://www.youtube.com/embed/vT2GjY_Umpw"],
     focusArea: "Lats, Mid Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Hinge with slightly more upright torso, grip bar underhand shoulder-width, brace core and set lats tight.",
     execution: [
@@ -14920,6 +15548,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Upper Back, Rear Delts",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, feet on platform, grab wide bar, brace core and keep chest up.",
     execution: [
@@ -14944,6 +15573,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One+Arm+Cable+Row",
     videoUrls: ["https://www.youtube.com/embed/xQNrFHEMhI4"],
     focusArea: "Lats, Mid Back",
+    bodyPart: ["Back"],
     preparation:
       "Sit tall, brace core, grab single handle, keep shoulders square and chest up.",
     execution: [
@@ -14967,6 +15597,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Grab pull-up bar with overhand grip slightly wider than shoulders, brace core and set shoulders down.",
     execution: [
@@ -14990,6 +15621,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Chin-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grip bar underhand at shoulder-width, brace core, set shoulders down and keep body still.",
     execution: [
@@ -15014,6 +15646,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Neutral+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back, Biceps",
+    bodyPart: ["Arm", "Back"],
     preparation:
       "Grip neutral handles, brace core, keep shoulders packed down and body tight.",
     execution: [
@@ -15037,6 +15670,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Wide+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Upper Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Grip bar wider than shoulders, brace core and keep shoulders down away from ears.",
     execution: [
@@ -15061,6 +15695,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Weighted+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Attach weight to dip belt, grip bar, brace core and set shoulders down before first rep.",
     execution: [
@@ -15085,6 +15720,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Assisted+Pull-Up",
     videoUrls: ["https://www.youtube.com/embed/eGo4IYlbE5g"],
     focusArea: "Lats, Upper Back",
+    bodyPart: ["Back"],
     preparation:
       "Set assistance level (machine or band), grip bar, brace core and keep shoulders down.",
     execution: [
@@ -15108,6 +15744,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Muscle-Up",
     videoUrls: ["https://www.youtube.com/embed/4X7qgBVnMfY"],
     focusArea: "Lats, Upper Back, Chest, Triceps",
+    bodyPart: ["Arm", "Back", "Chest"],
     preparation:
       "Grip bar, brace core, keep shoulders packed and build a strong pull-up base before attempting.",
     execution: [
@@ -15131,6 +15768,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Support yourself on bars with locked arms, shoulders down, chest slightly forward and core braced.",
     execution: [
@@ -15154,6 +15792,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Weighted+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Attach plate to dip belt, get into top support position, shoulders down and core braced.",
     execution: [
@@ -15177,6 +15816,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Assisted+Dip",
     videoUrls: ["https://www.youtube.com/embed/2z8JmcrW-As"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set assistance level, grip handles/bars, get stable at top position with shoulders down and core braced.",
     execution: [
@@ -15201,6 +15841,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Barbell+Bench+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps, Front Delts",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Lie on bench, eyes under bar, feet planted, retract shoulder blades, slight arch, grip bar just outside shoulders.",
     execution: [
@@ -15225,6 +15866,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Close+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench, grip bar about shoulder-width, retract shoulder blades, feet planted and core braced.",
     execution: [
@@ -15249,6 +15891,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Bench",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Upper Chest, Shoulders, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Set bench to 30–45°, retract shoulder blades, dumbbells at chest level, feet planted and core braced.",
     execution: [
@@ -15273,6 +15916,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+Bench",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Lower Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Secure feet, lie on decline bench, retract shoulder blades, grip bar slightly wider than shoulders, brace core.",
     execution: [
@@ -15297,6 +15941,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Grip+Bench",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Lie on bench, retract shoulder blades, grip bar wider than normal, feet planted and core braced.",
     execution: [
@@ -15320,6 +15965,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Spoto+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps, Control",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set up like bench press, retract shoulder blades, brace core, unrack and prepare for a controlled hover pause.",
     execution: [
@@ -15343,6 +15989,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Pin+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Triceps, Starting Strength",
+    bodyPart: ["Arm"],
     preparation:
       "Set safety pins at desired height, set up on bench, brace core, retract shoulder blades and grip bar.",
     execution: [
@@ -15366,6 +16013,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Floor+Press",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on floor under bar, set shoulder blades, bend knees, grip bar, brace core and unrack carefully.",
     execution: [
@@ -15390,6 +16038,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Floor+Press",
     videoUrls: ["https://www.youtube.com/embed/8iPEnn-ltC8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on floor with dumbbells, knees bent, retract shoulder blades and brace core.",
     execution: [
@@ -15414,6 +16063,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Swiss+Bar+Bench",
     videoUrls: ["https://www.youtube.com/embed/rT7DgCr-3pg"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Lie on bench, grip neutral handles on Swiss/football bar, retract shoulder blades, feet planted and brace core.",
     execution: [
@@ -15437,6 +16087,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Chest, Triceps, Shoulders",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Hands under shoulders, body in straight line, brace core, squeeze glutes and keep neck neutral.",
     execution: [
@@ -15460,6 +16111,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Wide+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Chest",
+    bodyPart: ["Chest"],
     preparation:
       "Hands wider than shoulders, body straight, core braced and glutes tight.",
     execution: [
@@ -15484,6 +16136,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Diamond+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Triceps, Chest",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Hands close under chest (diamond or narrow), body straight, core braced and elbows tucked.",
     execution: [
@@ -15508,6 +16161,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Decline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Upper Chest, Shoulders",
+    bodyPart: ["Chest", "Shoulder"],
     preparation:
       "Feet on bench, hands on floor, brace core and keep body straight.",
     execution: [
@@ -15532,6 +16186,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Hands on bench or bar, body straight, core braced and glutes tight.",
     execution: [
@@ -15556,6 +16211,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Archer+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/9c1g7Q7aKxw"],
     focusArea: "Chest, Triceps, Core",
+    bodyPart: ["Arm", "Chest", "Core"],
     preparation:
       "Take a wide push-up stance, hands wide, body straight, brace core and keep shoulders stable.",
     execution: [
@@ -15579,6 +16235,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Ring+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/9c1g7Q7aKxw"],
     focusArea: "Chest, Shoulders, Core",
+    bodyPart: ["Chest", "Core", "Shoulder"],
     preparation:
       "Set rings at appropriate height, grip rings, brace core and keep body straight like a plank.",
     execution: [
@@ -15603,6 +16260,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Pseudo+Planche+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/9c1g7Q7aKxw"],
     focusArea: "Chest, Front Delts, Triceps",
+    bodyPart: ["Arm", "Chest", "Shoulder"],
     preparation:
       "Hands near hips, lean shoulders forward past wrists, brace core, keep body straight and elbows tucked.",
     execution: [
@@ -15626,6 +16284,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Clap+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/ZvZ2Y7Vx5qg"],
     focusArea: "Chest, Triceps, Power",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Set a strong push-up position, brace core, keep body tight and hands under shoulders.",
     execution: [
@@ -15650,6 +16309,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Deficit+Push-Up",
     videoUrls: ["https://www.youtube.com/embed/_l3ySVKYVJ8"],
     focusArea: "Chest, Triceps",
+    bodyPart: ["Arm", "Chest"],
     preparation:
       "Hold push-up handles/parallettes, brace core, keep body straight and shoulders stable.",
     execution: [
@@ -15673,6 +16333,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Abs",
+    bodyPart: ["Core"],
     preparation:
       "Attach rope to high cable, kneel facing the stack, rope at forehead level, brace core and tuck pelvis slightly.",
     execution: [
@@ -15697,6 +16358,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Standing+Cable+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Abs",
+    bodyPart: ["Core"],
     preparation:
       "Attach rope to high cable, stand facing the stack, rope at forehead, feet shoulder-width, brace core and ribs down.",
     execution: [
@@ -15721,6 +16383,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Decline+Sit-Up",
     videoUrls: ["https://www.youtube.com/embed/1fbU_MkV7NE"],
     focusArea: "Abs",
+    bodyPart: ["Core"],
     preparation:
       "Secure feet on decline bench, cross arms or hold a plate on chest, brace core and keep chin slightly tucked.",
     execution: [
@@ -15744,6 +16407,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Hollow+Hold",
     videoUrls: ["https://www.youtube.com/embed/0b5K2fKfYvE"],
     focusArea: "Abs (Anti-Extension)",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back, tuck pelvis, press lower back into floor, raise shoulders and legs slightly, arms overhead.",
     execution: [
@@ -15767,6 +16431,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dead+Bug",
     videoUrls: ["https://www.youtube.com/embed/IU6dZ8dP7E4"],
     focusArea: "Core (Anti-Extension)",
+    bodyPart: ["Core"],
     preparation:
       "Lie on back, knees/hips at 90°, arms up, press lower back into floor and brace core.",
     execution: [
@@ -15790,6 +16455,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Bird+Dog",
     videoUrls: ["https://www.youtube.com/embed/vmKxg1m4qZk"],
     focusArea: "Core, Lower Back Stability",
+    bodyPart: ["Core"],
     preparation:
       "Start on all fours, hands under shoulders, knees under hips, brace core and keep spine neutral.",
     execution: [
@@ -15814,6 +16480,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=High-to-Low+Chop",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Obliques, Core",
+    bodyPart: ["Core"],
     preparation:
       "Set cable high, stand sideways, feet shoulder-width, brace core and keep hips stable.",
     execution: [
@@ -15838,6 +16505,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Low-to-High+Chop",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Obliques, Serratus, Core",
+    bodyPart: ["Chest", "Core"],
     preparation:
       "Set cable low, stand sideways, brace core, keep hips stable and shoulders down.",
     execution: [
@@ -15862,6 +16530,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Landmine+Rotation",
     videoUrls: ["https://www.youtube.com/embed/2Zr2d0qPpIY"],
     focusArea: "Obliques, Core",
+    bodyPart: ["Core"],
     preparation:
       "Set bar in landmine, hold end with both hands, arms straight-ish, feet shoulder-width, brace core.",
     execution: [
@@ -15885,6 +16554,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Dragon+Flag",
     videoUrls: ["https://www.youtube.com/embed/6xJ2qf7wQnI"],
     focusArea: "Abs, Core (Anti-Extension)",
+    bodyPart: ["Core"],
     preparation:
       "Lie on a bench, grip behind head securely, brace core hard, tuck pelvis and keep body tight.",
     execution: [
@@ -15908,6 +16578,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Plank",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Core (Anti-Extension)",
+    bodyPart: ["Core"],
     preparation:
       "Forearms on floor under shoulders, legs straight, squeeze glutes, tuck pelvis slightly and brace core.",
     execution: [
@@ -15931,6 +16602,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Side+Plank",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Obliques, Core",
+    bodyPart: ["Core"],
     preparation:
       "Lie on side, elbow under shoulder, legs straight, brace core and stack hips/shoulders.",
     execution: [
@@ -15955,6 +16627,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Side+Plank+Hip+Dips",
     videoUrls: ["https://www.youtube.com/embed/pSHjTRCQxIw"],
     focusArea: "Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Start in side plank, elbow under shoulder, body straight, brace core and keep hips stacked.",
     execution: [
@@ -15979,6 +16652,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Thread+the+Needle",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Obliques, Core Rotation",
+    bodyPart: ["Core"],
     preparation:
       "Start in side plank, top arm up, hips stacked, brace core and keep body straight.",
     execution: [
@@ -16002,6 +16676,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Pallof+Press",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Core (Anti-Rotation)",
+    bodyPart: ["Core"],
     preparation:
       "Set cable at chest height, stand sideways, feet shoulder-width, hands at chest, brace core and ribs down.",
     execution: [
@@ -16025,6 +16700,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/34495E/ffffff?text=Band+Pallof",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Core (Anti-Rotation)",
+    bodyPart: ["Core"],
     preparation:
       "Anchor band at chest height, stand sideways, hold band at chest, feet shoulder-width, brace core and ribs down.",
     execution: [
@@ -16049,6 +16725,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Anti-Rotation+Hold",
     videoUrls: ["https://www.youtube.com/embed/6GMKPQVERzw"],
     focusArea: "Core (Anti-Rotation)",
+    bodyPart: ["Core"],
     preparation:
       "Stand sideways to cable, hands pressed out in front, feet shoulder-width, brace core and keep ribs down.",
     execution: [
@@ -16073,6 +16750,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Windshield+Wipers",
     videoUrls: ["https://www.youtube.com/embed/A3uK5TPzHqU"],
     focusArea: "Abs, Obliques",
+    bodyPart: ["Core"],
     preparation:
       "Hang from bar, brace core, lift legs up to 90° or higher, keep shoulders packed down.",
     execution: [
@@ -16097,6 +16775,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Reverse+Crunch",
     videoUrls: ["https://www.youtube.com/embed/1fbU_MkV7NE"],
     focusArea: "Lower Abs",
+    bodyPart: ["Core"],
     preparation:
       "Lie on bench, hold behind head, knees bent, tuck pelvis slightly and brace core.",
     execution: [
@@ -16121,6 +16800,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/34495E/ffffff?text=Cable+Reverse+Crunch",
     videoUrls: ["https://www.youtube.com/embed/AV5PmZJIrrw"],
     focusArea: "Lower Abs",
+    bodyPart: ["Core"],
     preparation:
       "Attach ankle straps to low cable, lie on bench facing away, knees bent, brace core and keep lower back neutral.",
     execution: [
@@ -16145,6 +16825,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Rope+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to high cable, stand tall, elbows tucked, shoulders down, brace core and grip rope firmly.",
     execution: [
@@ -16168,6 +16849,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Bar+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar to high cable, stand tall, elbows tucked, wrists neutral, brace core and shoulders down.",
     execution: [
@@ -16192,6 +16874,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=V-Bar+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach V-handle to high cable, stand tall, elbows tucked, brace core and keep shoulders down.",
     execution: [
@@ -16216,6 +16899,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Reverse+Grip+Pushdown",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps (Medial Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar, grip underhand shoulder-width, elbows tight to sides, shoulders down and core braced.",
     execution: [
@@ -16240,6 +16924,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Overhead+Rope+Ext",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to high cable, face away, step forward, elbows up near head, brace core and keep ribs down.",
     execution: [
@@ -16267,6 +16952,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=One-Arm+Overhead+Ext",
     videoUrls: ["https://www.youtube.com/embed/2-LAMcpzODU"],
     focusArea: "Triceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Attach single handle to high cable, face away, elbow up by head, brace core and keep ribs down.",
     execution: [
@@ -16291,6 +16977,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=Skull+Crusher",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench, hold EZ bar above chest, elbows pointing up, brace core and keep shoulders stable.",
     execution: [
@@ -16315,6 +17002,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/50C878/ffffff?text=DB+Skull+Crusher",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench, dumbbells above chest, elbows up, shoulders stable and core braced.",
     execution: [
@@ -16338,6 +17026,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=JM+Press",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on bench, grip bar like close-grip bench, elbows tucked, shoulders retracted and core braced.",
     execution: [
@@ -16361,6 +17050,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/50C878/ffffff?text=Tate+Press",
     videoUrls: ["https://www.youtube.com/embed/d_KZxkY_0cM"],
     focusArea: "Triceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie on flat bench, dumbbells above chest, elbows flared slightly, wrists neutral and core braced.",
     execution: [
@@ -16385,6 +17075,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Incline+DB+Curl",
     videoUrls: ["https://www.youtube.com/embed/soxrZlIl35U"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set bench to 45–60°, sit back with arms hanging, dumbbells in hands, shoulders down and core braced.",
     execution: [
@@ -16409,6 +17100,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Set preacher bench height, rest upper arms on pad, grip EZ bar, keep shoulders down and brace core.",
     execution: [
@@ -16433,6 +17125,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=DB+Preacher+Curl",
     videoUrls: ["https://www.youtube.com/embed/fIWP-FRFNU0"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Place upper arm on preacher pad, hold dumbbell, keep shoulder down and torso stable.",
     execution: [
@@ -16456,6 +17149,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Spider+Curl",
     videoUrls: ["https://www.youtube.com/embed/soxrZlIl35U"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Lie chest-down on incline bench, arms hanging straight down, hold dumbbells and keep shoulders stable.",
     execution: [
@@ -16479,6 +17173,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Brachialis, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells with neutral grip, elbows close to sides, brace core and keep shoulders down.",
     execution: [
@@ -16503,6 +17198,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cross+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Brachialis, Forearms, Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall holding dumbbells, neutral grip, brace core and keep elbows close to torso.",
     execution: [
@@ -16526,6 +17222,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps",
+    bodyPart: ["Arm"],
     preparation:
       "Attach straight bar to low cable, stand tall, elbows tucked, brace core and keep shoulders down.",
     execution: [
@@ -16550,6 +17247,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Cable+Hammer+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Brachialis, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Attach rope to low cable, stand tall, neutral grip on rope ends, elbows tucked and core braced.",
     execution: [
@@ -16574,6 +17272,7 @@ export const EXERCISES: Exercise[] = [
       "https://via.placeholder.com/150/E74C3C/ffffff?text=Bayesian+Curl",
     videoUrls: ["https://www.youtube.com/embed/kwG2ipFRgfo"],
     focusArea: "Biceps (Long Head)",
+    bodyPart: ["Arm"],
     preparation:
       "Set cable low, stand facing away holding handle behind body, step forward, elbow slightly behind torso, brace core.",
     execution: [
@@ -16597,6 +17296,7 @@ export const EXERCISES: Exercise[] = [
     imageUrl: "https://via.placeholder.com/150/E74C3C/ffffff?text=Zottman+Curl",
     videoUrls: ["https://www.youtube.com/embed/zC3nLlEvin4"],
     focusArea: "Biceps, Forearms",
+    bodyPart: ["Arm"],
     preparation:
       "Stand tall with dumbbells, start with supinated grip, elbows close to sides, brace core and keep shoulders down.",
     execution: [

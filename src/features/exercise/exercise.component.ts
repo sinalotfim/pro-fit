@@ -10,13 +10,20 @@ import {
 } from '@angular/core';
 
 import { EXERCISES } from '../../core/constants/exercise.constant';
-import { Exercise } from '../../core/models/exercise.model';
+import { BodyPart, Exercise } from '../../core/models/exercise.model';
+import {
+    ExerciseFilterComponent,
+    ExerciseFilterState,
+} from './exercise-filter/exercise-filter.component';
 
 type HighlightPart = { text: string; match: boolean };
 type ExerciseGroup = { letter: string; items: Exercise[] };
 type Row =
     | { kind: 'header'; letter: string }
     | { kind: 'item'; exercise: Exercise };
+export type ActiveFilterChip =
+    | { kind: 'bodyPart'; value: BodyPart; label: string }
+    | { kind: 'equipment'; value: string; label: string };
 
 const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
 
@@ -24,7 +31,7 @@ const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
     selector: 'pf-exercise',
     templateUrl: 'exercise.component.html',
     styleUrls: ['exercise.component.scss'],
-    imports: [CommonModule, ScrollingModule],
+    imports: [CommonModule, ScrollingModule, ExerciseFilterComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExerciseComponent {
@@ -36,18 +43,54 @@ export class ExerciseComponent {
 
     readonly placeholderImage = PLACEHOLDER_IMAGE;
 
-    private readonly all = signal<Exercise[]>(EXERCISES);
+    readonly all = signal<Exercise[]>(EXERCISES);
 
     readonly query = signal('');
     readonly searchActive = signal(false);
     readonly currentLetter = signal('');
 
+    readonly bodyPartFilter = signal<ReadonlySet<BodyPart>>(new Set());
+    readonly equipmentFilter = signal<ReadonlySet<string>>(new Set());
+    readonly filterOpen = signal(false);
+
+    readonly hasActiveFilter = computed(
+        () => this.bodyPartFilter().size > 0 || this.equipmentFilter().size > 0,
+    );
+
+    readonly activeFilterChips = computed<ActiveFilterChip[]>(() => {
+        const chips: ActiveFilterChip[] = [];
+        for (const value of this.bodyPartFilter()) {
+            chips.push({ kind: 'bodyPart', value, label: value });
+        }
+        for (const value of this.equipmentFilter()) {
+            chips.push({ kind: 'equipment', value, label: value });
+        }
+        return chips;
+    });
+
+    readonly filterState = computed<ExerciseFilterState>(() => ({
+        bodyParts: this.bodyPartFilter(),
+        equipment: this.equipmentFilter(),
+    }));
+
     readonly filtered = computed<Exercise[]>(() => {
         const q = this.query().trim().toLowerCase();
-        if (!this.searchActive() || !q) {
+        const useQuery = this.searchActive() && q.length > 0;
+        const bodyParts = this.bodyPartFilter();
+        const equipment = this.equipmentFilter();
+        const useBodyParts = bodyParts.size > 0;
+        const useEquipment = equipment.size > 0;
+
+        if (!useQuery && !useBodyParts && !useEquipment) {
             return this.all();
         }
-        return this.all().filter((ex) => ex.name.toLowerCase().includes(q));
+
+        return this.all().filter((ex) => {
+            if (useQuery && !ex.name.toLowerCase().includes(q)) return false;
+            if (useBodyParts && !ex.bodyPart.some((p) => bodyParts.has(p))) return false;
+            if (useEquipment && !equipment.has(ex.equipment)) return false;
+            return true;
+        });
     });
 
     readonly groups = computed<ExerciseGroup[]>(() => {
@@ -78,7 +121,7 @@ export class ExerciseComponent {
 
     readonly rows = computed<Row[]>(() => {
         const list: Row[] = [];
-        const showHeaders = !this.searchActive();
+        const showHeaders = !this.searchActive() && !this.hasActiveFilter();
         for (const g of this.groups()) {
             if (showHeaders) {
                 list.push({ kind: 'header', letter: g.letter });
@@ -114,6 +157,43 @@ export class ExerciseComponent {
         this.scrollToTop();
         setTimeout(() => this.searchBox?.nativeElement.focus(), 0);
     }
+
+    openFilter(): void {
+        this.filterOpen.set(true);
+    }
+
+    closeFilter(): void {
+        this.filterOpen.set(false);
+    }
+
+    onFilterChange(state: ExerciseFilterState): void {
+        this.bodyPartFilter.set(new Set(state.bodyParts));
+        this.equipmentFilter.set(new Set(state.equipment));
+        this.scrollToTop();
+    }
+
+    removeFilterChip(chip: ActiveFilterChip): void {
+        if (chip.kind === 'bodyPart') {
+            const next = new Set(this.bodyPartFilter());
+            next.delete(chip.value);
+            this.bodyPartFilter.set(next);
+        } else {
+            const next = new Set(this.equipmentFilter());
+            next.delete(chip.value);
+            this.equipmentFilter.set(next);
+        }
+        this.scrollToTop();
+    }
+
+    clearAllFilters(): void {
+        if (!this.hasActiveFilter()) return;
+        this.bodyPartFilter.set(new Set());
+        this.equipmentFilter.set(new Set());
+        this.scrollToTop();
+    }
+
+    trackByChip = (_: number, chip: ActiveFilterChip): string =>
+        `${chip.kind}:${chip.value}`;
 
     closeSearch(): void {
         this.query.set('');
