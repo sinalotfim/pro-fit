@@ -1,4 +1,4 @@
-<header class="page-header exercise-header" #pageHeader>
+<header class="page-header exercise-header">
     <div class="exercise-header__top">
         <ng-container *ngIf="!searchActive(); else searchMode">
             <h1 class="exercise-header__title">EXERCISES</h1>
@@ -81,35 +81,48 @@
 </header>
 
 <main class="page exercise-page">
-    <section
-        class="letter-group"
-        *ngFor="let g of groups(); trackBy: trackByLetter"
-    >
-        <h2 class="letter-group__title">{{ g.letter }}</h2>
-        <button
-            class="exercise-item"
-            type="button"
-            *ngFor="let ex of g.items; trackBy: trackById"
-        >
-            <img
-                class="exercise-item__thumb"
-                [src]="ex.imageUrl || placeholderImage"
-                [alt]="ex.name"
-                (error)="onImageError($event)"
-                loading="lazy"
-            />
-            <div class="exercise-item__body">
-                <p class="exercise-item__name">
-                    <span
-                        *ngFor="let part of splitForHighlight(ex.name)"
-                        [class.hl]="part.match"
-                        >{{ part.text }}</span
-                    >
-                </p>
-                <p class="exercise-item__muscles">{{ ex.focusArea }}</p>
-            </div>
-        </button>
-    </section>
+    <span class="letter-overlay" *ngIf="currentLetter() && !searchActive()" aria-hidden="true">
+        {{ currentLetter() }}
+    </span>
 
-    <p class="empty-results" *ngIf="groups().length === 0">No exercises match your search.</p>
+    <cdk-virtual-scroll-viewport
+        class="exercise-viewport"
+        [itemSize]="88"
+        minBufferPx="240"
+        maxBufferPx="480"
+        (scrolledIndexChange)="onScrolledIndexChange($event)"
+    >
+        <div
+            *cdkVirtualFor="let row of rows(); trackBy: trackByRow"
+            class="row"
+            [class.row--header]="row.kind === 'header'"
+        >
+            <h2 *ngIf="row.kind === 'header'" class="row-header">{{ row.letter }}</h2>
+            <button
+                *ngIf="row.kind === 'item'"
+                class="exercise-item"
+                type="button"
+            >
+                <img
+                    class="exercise-item__thumb"
+                    [src]="row.exercise.imageUrl || placeholderImage"
+                    [alt]="row.exercise.name"
+                    (error)="onImageError($event)"
+                    loading="lazy"
+                />
+                <div class="exercise-item__body">
+                    <p class="exercise-item__name">
+                        <span
+                            *ngFor="let part of splitForHighlight(row.exercise.name)"
+                            [class.hl]="part.match"
+                            >{{ part.text }}</span
+                        >
+                    </p>
+                    <p class="exercise-item__muscles">{{ row.exercise.focusArea }}</p>
+                </div>
+            </button>
+        </div>
+    </cdk-virtual-scroll-viewport>
+
+    <p class="empty-results" *ngIf="rows().length === 0">No exercises match your search.</p>
 </main>

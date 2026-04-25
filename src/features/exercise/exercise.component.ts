@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
+import { CdkVirtualScrollViewport, ScrollingModule } from '@angular/cdk/scrolling';
 import {
-    AfterViewInit,
     ChangeDetectionStrategy,
     Component,
     ElementRef,
-    OnDestroy,
     ViewChild,
     computed,
-    inject,
     signal,
 } from '@angular/core';
 
@@ -16,6 +14,9 @@ import { Exercise } from '../../core/models/exercise.model';
 
 type HighlightPart = { text: string; match: boolean };
 type ExerciseGroup = { letter: string; items: Exercise[] };
+type Row =
+    | { kind: 'header'; letter: string }
+    | { kind: 'item'; exercise: Exercise };
 
 const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
 
@@ -23,18 +24,15 @@ const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
     selector: 'pf-exercise',
     templateUrl: 'exercise.component.html',
     styleUrls: ['exercise.component.scss'],
-    imports: [CommonModule],
+    imports: [CommonModule, ScrollingModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExerciseComponent implements AfterViewInit, OnDestroy {
+export class ExerciseComponent {
     @ViewChild('searchBox')
     private searchBox?: ElementRef<HTMLInputElement>;
 
-    @ViewChild('pageHeader')
-    private pageHeader?: ElementRef<HTMLElement>;
-
-    private readonly host = inject(ElementRef<HTMLElement>);
-    private headerObserver?: ResizeObserver;
+    @ViewChild(CdkVirtualScrollViewport)
+    private viewport?: CdkVirtualScrollViewport;
 
     readonly placeholderImage = PLACEHOLDER_IMAGE;
 
@@ -42,6 +40,7 @@ export class ExerciseComponent implements AfterViewInit, OnDestroy {
 
     readonly query = signal('');
     readonly searchActive = signal(false);
+    readonly currentLetter = signal('');
 
     readonly filtered = computed<Exercise[]>(() => {
         const q = this.query().trim().toLowerCase();
@@ -77,28 +76,42 @@ export class ExerciseComponent implements AfterViewInit, OnDestroy {
 
     readonly count = computed(() => this.filtered().length);
 
-    ngAfterViewInit(): void {
-        const headerEl = this.pageHeader?.nativeElement;
-        if (headerEl && typeof ResizeObserver !== 'undefined') {
-            this.headerObserver = new ResizeObserver(() => this.syncHeaderHeight());
-            this.headerObserver.observe(headerEl);
+    readonly rows = computed<Row[]>(() => {
+        const list: Row[] = [];
+        const showHeaders = !this.searchActive();
+        for (const g of this.groups()) {
+            if (showHeaders) {
+                list.push({ kind: 'header', letter: g.letter });
+            }
+            for (const exercise of g.items) {
+                list.push({ kind: 'item', exercise });
+            }
         }
-        this.syncHeaderHeight();
-    }
+        return list;
+    });
 
-    ngOnDestroy(): void {
-        this.headerObserver?.disconnect();
-    }
-
-    private syncHeaderHeight(): void {
-        const headerEl = this.pageHeader?.nativeElement;
-        if (!headerEl) return;
-        const h = headerEl.getBoundingClientRect().height;
-        this.host.nativeElement.style.setProperty('--pf-ex-header-h', `${Math.ceil(h)}px`);
+    onScrolledIndexChange(index: number): void {
+        const list = this.rows();
+        if (list.length === 0) {
+            if (this.currentLetter() !== '') this.currentLetter.set('');
+            return;
+        }
+        const safeIndex = Math.max(0, Math.min(index, list.length - 1));
+        for (let i = safeIndex; i >= 0; i--) {
+            const row = list[i];
+            if (row.kind === 'header') {
+                if (this.currentLetter() !== row.letter) {
+                    this.currentLetter.set(row.letter);
+                }
+                return;
+            }
+        }
+        if (this.currentLetter() !== '') this.currentLetter.set('');
     }
 
     openSearch(): void {
         this.searchActive.set(true);
+        this.scrollToTop();
         setTimeout(() => this.searchBox?.nativeElement.focus(), 0);
     }
 
@@ -110,6 +123,11 @@ export class ExerciseComponent implements AfterViewInit, OnDestroy {
     onQueryInput(event: Event): void {
         const value = (event.target as HTMLInputElement | null)?.value ?? '';
         this.query.set(value);
+        this.scrollToTop();
+    }
+
+    private scrollToTop(): void {
+        queueMicrotask(() => this.viewport?.scrollToIndex(0));
     }
 
     onImageError(event: Event): void {
@@ -150,4 +168,7 @@ export class ExerciseComponent implements AfterViewInit, OnDestroy {
     trackById(_: number, ex: Exercise): number {
         return ex.id;
     }
+
+    trackByRow = (_: number, row: Row): string =>
+        row.kind === 'header' ? `header-${row.letter}` : `item-${row.exercise.id}`;
 }
