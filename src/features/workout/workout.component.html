@@ -1,9 +1,25 @@
-<header class="page-header">
+<header class="page-header workout-header">
     <h1 class="title">Workouts</h1>
+    <button
+        type="button"
+        class="header-icon"
+        (click)="onCreateWorkout()"
+        aria-label="New workout"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+                d="M12 5v14M5 12h14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+            />
+        </svg>
+    </button>
 </header>
 
 <main class="page">
-    <section class="empty-state" *ngIf="workouts.length === 0">
+    <section class="empty-state" *ngIf="workouts().length === 0">
         <div class="empty-state__figure">
             <img
                 class="empty-state__image"
@@ -20,7 +36,7 @@
         </button>
     </section>
 
-    <article class="workout-card" *ngFor="let w of workouts">
+    <article class="workout-card" *ngFor="let w of workouts()">
         <header class="workout-card__head">
             <div class="workout-card__heading">
                 <h2 class="workout-card__name">{{ w.name }}</h2>
@@ -44,13 +60,3 @@
         <a class="workout-card__viewall link" href="#">View all</a>
     </article>
 </main>
-
-<button
-    type="button"
-    class="btn btn-primary fab-new"
-    *ngIf="workouts.length > 0"
-    (click)="onCreateWorkout()"
->
-    <span class="fab-new__icon" aria-hidden="true">+</span>
-    <span>New</span>
-</button>

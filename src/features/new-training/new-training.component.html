@@ -1,0 +1,206 @@
+<header class="nt-header">
+    <button
+        type="button"
+        class="nt-header__back"
+        (click)="onBack()"
+        aria-label="Back"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+                d="M15 6l-6 6 6 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    </button>
+
+    <div class="nt-header__body">
+        <div class="nt-header__title-row">
+            <ng-container *ngIf="!editing(); else editMode">
+                <h1 class="nt-header__title">{{ title() }}</h1>
+                <button
+                    type="button"
+                    class="nt-header__action"
+                    (click)="startEdit()"
+                    aria-label="Rename"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4 20h4l10-10-4-4L4 16v4z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M14 6l4 4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </button>
+            </ng-container>
+            <ng-template #editMode>
+                <input
+                    #titleInput
+                    type="text"
+                    class="nt-header__input"
+                    [ngModel]="draftTitle()"
+                    (ngModelChange)="onDraftInput($event)"
+                    (keydown)="onTitleKeydown($event)"
+                    aria-label="Training name"
+                    autocomplete="off"
+                    spellcheck="false"
+                    enterkeyhint="done"
+                />
+                <button
+                    type="button"
+                    class="nt-header__action"
+                    (click)="saveEdit()"
+                    aria-label="Save name"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M5 12l5 5L20 7"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+            </ng-template>
+        </div>
+    </div>
+</header>
+
+<main class="nt-page" [class.nt-page--with-save]="addedExercises().length > 0">
+    <ng-container *ngIf="addedExercises().length === 0; else exerciseList">
+        <p class="nt-page__hint">Please add your first exercise</p>
+        <button type="button" class="nt-add-btn" (click)="onAddExercises()">
+            <span class="nt-add-btn__icon" aria-hidden="true">+</span>
+            <span>Add exercises</span>
+        </button>
+    </ng-container>
+
+    <ng-template #exerciseList>
+        <ul class="entry-list">
+            <li *ngFor="let entry of addedExercises(); trackBy: trackByEntry" class="entry-card">
+                <button
+                    type="button"
+                    class="entry-card__head"
+                    (click)="toggleExpand(entry)"
+                    [attr.aria-expanded]="entry.expanded"
+                >
+                    <span
+                        class="entry-card__chevron"
+                        [class.entry-card__chevron--open]="entry.expanded"
+                        aria-hidden="true"
+                    >
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M6 9l6 6 6-6"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+                    <span class="entry-card__thumb-wrap">
+                        <img
+                            class="entry-card__thumb"
+                            [src]="entry.exercise.imageUrl"
+                            [alt]="entry.exercise.name"
+                            loading="lazy"
+                        />
+                        <span class="entry-card__thumb-badge" aria-hidden="true">?</span>
+                    </span>
+                    <span class="entry-card__title-block">
+                        <span class="entry-card__title">
+                            {{ entry.exercise.name }}
+                            <span class="entry-card__sep"> · </span>
+                            <span class="entry-card__equip">{{ entry.exercise.equipment }}</span>
+                        </span>
+                        <span class="entry-card__count">
+                            {{ entry.sets.length }} {{ entry.sets.length === 1 ? 'Set' : 'Sets' }}
+                        </span>
+                    </span>
+                    <span class="entry-card__menu" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="5" r="1.6" fill="currentColor" />
+                            <circle cx="12" cy="12" r="1.6" fill="currentColor" />
+                            <circle cx="12" cy="19" r="1.6" fill="currentColor" />
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="entry-card__body" *ngIf="entry.expanded">
+                    <div
+                        class="set-row"
+                        *ngFor="let set of entry.sets; let i = index; trackBy: trackBySet"
+                        [class.set-row--active]="i === 0"
+                    >
+                        <span class="set-row__marker" *ngIf="i === 0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M8 6l8 6-8 6z" fill="currentColor" />
+                            </svg>
+                        </span>
+                        <span class="set-row__num">{{ i + 1 }}</span>
+                        <label class="set-row__field">
+                            <input
+                                type="number"
+                                inputmode="decimal"
+                                class="set-row__input"
+                                [value]="set.kg ?? ''"
+                                (input)="onKgInput(entry, set.id, $any($event.target).value)"
+                                aria-label="Weight in kilograms"
+                            />
+                        </label>
+                        <span class="set-row__label">KG</span>
+                        <label class="set-row__field">
+                            <input
+                                type="number"
+                                inputmode="numeric"
+                                class="set-row__input"
+                                [value]="set.reps ?? ''"
+                                (input)="onRepsInput(entry, set.id, $any($event.target).value)"
+                                aria-label="Repetitions"
+                            />
+                        </label>
+                        <span class="set-row__label">REPS</span>
+                    </div>
+
+                    <button type="button" class="add-set-btn" (click)="addSet(entry)">
+                        <span aria-hidden="true">+</span>
+                        <span>Add a set</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+        <button type="button" class="add-more-btn" (click)="onAddExercises()">
+            <span aria-hidden="true">+</span>
+            <span>Add exercise</span>
+        </button>
+    </ng-template>
+</main>
+
+<footer class="save-bar" *ngIf="addedExercises().length > 0">
+    <button type="button" class="save-btn" (click)="onSave()">SAVE</button>
+</footer>
+
+<pf-add-exercises-sheet
+    *ngIf="addOpen()"
+    [recents]="recents()"
+    (add)="onExercisesAdded($event)"
+    (close)="onCloseAdd()"
+/>

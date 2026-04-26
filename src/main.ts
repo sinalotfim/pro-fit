@@ -36,6 +36,11 @@ const routes: Routes = [
         ],
     },
     {
+        path: 'workout/new',
+        loadComponent: () =>
+            import('./features/new-training/new-training.component').then((m) => m.NewTrainingComponent),
+    },
+    {
         path: '',
         redirectTo: '/workout',
         pathMatch: 'full',

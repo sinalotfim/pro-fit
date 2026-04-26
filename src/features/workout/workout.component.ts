@@ -1,19 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
-type WorkoutPreviewExercise = {
-    name: string;
-    equipment: string;
-    sets: number;
-    rep: string;
-};
-
-type WorkoutPreview = {
-    name: string;
-    exerciseCount: number;
-    image?: string;
-    preview: WorkoutPreviewExercise[];
-};
+import { WorkoutStore } from '../../core/stores/workout.store';
 
 const PLACEHOLDER_IMAGE = 'assets/workouts/placeholder.svg';
 const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
@@ -25,41 +14,13 @@ const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
     imports: [CommonModule],
 })
 export class WorkoutComponent {
+    private readonly router = inject(Router);
+    private readonly store = inject(WorkoutStore);
+
     readonly placeholderImage = PLACEHOLDER_IMAGE;
     readonly emptyStateImage = EMPTY_STATE_IMAGE;
 
-    readonly workouts: WorkoutPreview[] = [
-        {
-            name: 'Full Body Workout',
-            exerciseCount: 7,
-            image: 'assets/workouts/full-body.png',
-            preview: [
-                { name: 'Front Raise', equipment: 'Dumbbell', sets: 3, rep: '12' },
-                { name: 'Side Lunge', equipment: 'Dumbbell', sets: 3, rep: '12' },
-                { name: 'Russian Twist', equipment: 'Dumbbell', sets: 3, rep: '40s' },
-            ],
-        },
-        {
-            name: 'Chest Workout',
-            exerciseCount: 5,
-            image: 'assets/workouts/chest.png',
-            preview: [
-                { name: 'Bench Press', equipment: 'Dumbbell', sets: 3, rep: '12' },
-                { name: 'Pec Deck Fly', equipment: 'Machine', sets: 3, rep: '12' },
-                { name: 'Bench Press', equipment: 'Smith Machine', sets: 3, rep: '12' },
-            ],
-        },
-        {
-            name: 'Back Workout',
-            exerciseCount: 5,
-            image: 'assets/workouts/back.png',
-            preview: [
-                { name: 'Bent-over Row', equipment: 'Barbell', sets: 3, rep: '12' },
-                { name: 'Lat Pulldown', equipment: 'Cable', sets: 3, rep: '12' },
-                { name: 'Deadlift', equipment: 'Barbell', sets: 3, rep: '12' },
-            ],
-        },
-    ];
+    readonly workouts = this.store.workouts;
 
     onImageError(event: Event): void {
         const img = event.target as HTMLImageElement | null;
@@ -69,6 +30,8 @@ export class WorkoutComponent {
     }
 
     onCreateWorkout(): void {
-        // TODO: navigate to workout creation flow
+        this.router.navigate(['/workout/new'], {
+            queryParams: { n: this.store.nextNewTrainingNumber() },
+        });
     }
 }

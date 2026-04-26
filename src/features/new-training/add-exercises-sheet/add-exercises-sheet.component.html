@@ -1,0 +1,237 @@
+<div class="sheet-backdrop" (click)="onBackdropClick()" aria-hidden="true"></div>
+
+<section
+    class="sheet"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="addExercisesTitle"
+    (click)="$event.stopPropagation()"
+>
+    <header class="sheet-header">
+        <h2 id="addExercisesTitle" class="sheet-header__title">Add exercises</h2>
+        <button
+            class="sheet-header__close"
+            type="button"
+            (click)="onClose()"
+            aria-label="Close"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="M6 6l12 12M18 6L6 18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                />
+            </svg>
+        </button>
+    </header>
+
+    <div class="sheet-controls">
+        <label class="search-input">
+            <svg class="search-input__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+                <path
+                    d="M20 20l-3.5-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                />
+            </svg>
+            <input
+                type="search"
+                class="search-input__field"
+                [value]="query()"
+                (input)="onQueryInput($event)"
+                placeholder="Search"
+                autocomplete="off"
+                spellcheck="false"
+                enterkeyhint="search"
+                aria-label="Search exercises"
+            />
+        </label>
+
+        <div class="filter-row">
+            <button
+                type="button"
+                class="filter-chip"
+                [class.filter-chip--active]="hasActiveFilter()"
+                (click)="openFilter()"
+                aria-haspopup="dialog"
+                [attr.aria-expanded]="filterOpen()"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M4 5h16l-6 8v6l-4-2v-4z"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <span *ngIf="!hasActiveFilter(); else activeLabel">All ({{ count() }})</span>
+                <ng-template #activeLabel>
+                    <span>Filtered ({{ count() }})</span>
+                </ng-template>
+            </button>
+            <button
+                *ngIf="hasActiveFilter()"
+                type="button"
+                class="header-link"
+                (click)="clearAllFilters()"
+            >
+                Clear
+            </button>
+        </div>
+
+        <div class="active-chips" *ngIf="hasActiveFilter()">
+            <button
+                *ngFor="let chip of activeFilterChips(); trackBy: trackByChip"
+                type="button"
+                class="active-chip"
+                (click)="removeFilterChip(chip)"
+                [attr.aria-label]="'Remove filter ' + chip.label"
+            >
+                <span class="active-chip__label">{{ chip.label }}</span>
+                <span class="active-chip__remove" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="currentColor" />
+                        <path
+                            d="M9 9l6 6M15 9l-6 6"
+                            fill="none"
+                            stroke="var(--pf-surface)"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="sheet-body">
+        <ng-container *ngIf="recentsFiltered().length > 0">
+            <h3 class="section-header">RECENT</h3>
+            <ul class="exercise-list">
+                <li *ngFor="let ex of recentsFiltered(); trackBy: trackById">
+                    <button
+                        type="button"
+                        class="exercise-row"
+                        [class.exercise-row--selected]="isSelected(ex.id)"
+                        (click)="toggleSelect(ex)"
+                        [attr.aria-pressed]="isSelected(ex.id)"
+                    >
+                        <span
+                            class="select-circle"
+                            [class.select-circle--on]="isSelected(ex.id)"
+                            aria-hidden="true"
+                        >
+                            <svg *ngIf="isSelected(ex.id)" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 12l5 5L20 7"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>
+                        <img
+                            class="exercise-row__thumb"
+                            [src]="ex.imageUrl || placeholderImage"
+                            [alt]="ex.name"
+                            (error)="onImageError($event)"
+                            loading="lazy"
+                        />
+                        <span class="exercise-row__body">
+                            <span class="exercise-row__name">
+                                <span
+                                    *ngFor="let part of splitForHighlight(ex.name)"
+                                    [class.hl]="part.match"
+                                    >{{ part.text }}</span
+                                >
+                                <span class="exercise-row__sep"> · </span>
+                                <span class="exercise-row__equip">{{ ex.equipment }}</span>
+                            </span>
+                            <span class="exercise-row__muscles">{{ ex.focusArea }}</span>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </ng-container>
+
+        <h3 class="section-header">SEARCH RESULTS</h3>
+        <ul class="exercise-list" *ngIf="filtered().length > 0; else emptyResults">
+            <li *ngFor="let ex of filtered(); trackBy: trackById">
+                <button
+                    type="button"
+                    class="exercise-row"
+                    [class.exercise-row--selected]="isSelected(ex.id)"
+                    (click)="toggleSelect(ex)"
+                    [attr.aria-pressed]="isSelected(ex.id)"
+                >
+                    <span
+                        class="select-circle"
+                        [class.select-circle--on]="isSelected(ex.id)"
+                        aria-hidden="true"
+                    >
+                        <svg *ngIf="isSelected(ex.id)" viewBox="0 0 24 24">
+                            <path
+                                d="M5 12l5 5L20 7"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+                    <img
+                        class="exercise-row__thumb"
+                        [src]="ex.imageUrl || placeholderImage"
+                        [alt]="ex.name"
+                        (error)="onImageError($event)"
+                        loading="lazy"
+                    />
+                    <span class="exercise-row__body">
+                        <span class="exercise-row__name">
+                            <span
+                                *ngFor="let part of splitForHighlight(ex.name)"
+                                [class.hl]="part.match"
+                                >{{ part.text }}</span
+                            >
+                            <span class="exercise-row__sep"> · </span>
+                            <span class="exercise-row__equip">{{ ex.equipment }}</span>
+                        </span>
+                        <span class="exercise-row__muscles">{{ ex.focusArea }}</span>
+                    </span>
+                </button>
+            </li>
+        </ul>
+        <ng-template #emptyResults>
+            <p class="empty-results">No exercises match your search.</p>
+        </ng-template>
+    </div>
+
+    <div class="sheet-footer">
+        <button
+            type="button"
+            class="add-cta"
+            [disabled]="selectedCount() === 0"
+            (click)="confirm()"
+        >
+            ADD {{ selectedCount() }} EXERCISES
+        </button>
+    </div>
+</section>
+
+<pf-exercise-filter
+    *ngIf="filterOpen()"
+    [initial]="filterState()"
+    [allExercises]="allExercises"
+    (change)="onFilterChange($event)"
+    (close)="closeFilter()"
+/>

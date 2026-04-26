@@ -9,10 +9,45 @@
     position: relative;
 }
 
+.workout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--pf-space-3);
+}
+
 .title {
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 800;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--pf-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: background-color 120ms ease;
+}
+
+.header-icon:hover,
+.header-icon:focus-visible {
+    background: var(--pf-border);
+    outline: none;
+}
+
+.header-icon svg {
+    width: 22px;
+    height: 22px;
 }
 
 .workout-card {
@@ -161,22 +196,3 @@
     line-height: 1;
 }
 
-.fab-new {
-    position: sticky;
-    bottom: var(--pf-space-4);
-    align-self: flex-end;
-    margin: var(--pf-space-4) var(--pf-space-4) var(--pf-space-4) auto;
-    margin-top: auto;
-    padding: 14px 22px;
-    border-radius: 999px;
-    font-size: 15px;
-    gap: var(--pf-space-2);
-    box-shadow: 0 8px 20px rgba(58, 122, 254, 0.35);
-    z-index: 10;
-}
-
-.fab-new__icon {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-}
