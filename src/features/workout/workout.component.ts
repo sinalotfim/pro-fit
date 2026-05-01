@@ -1,8 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { LucideAngularModule } from 'lucide-angular';
 
-import { WorkoutStore } from '../../core/stores/workout.store';
+import { WorkoutService } from '../../core/services/workout.service';
 
 const PLACEHOLDER_IMAGE = 'assets/workouts/placeholder.svg';
 const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
@@ -11,27 +12,27 @@ const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
     selector: 'pf-workout',
     templateUrl: 'workout.component.html',
     styleUrls: ['workout.component.scss'],
-    imports: [CommonModule],
+    imports: [CommonModule, LucideAngularModule],
 })
 export class WorkoutComponent {
     private readonly router = inject(Router);
-    private readonly store = inject(WorkoutStore);
+    private readonly store = inject(WorkoutService);
 
     readonly placeholderImage = PLACEHOLDER_IMAGE;
     readonly emptyStateImage = EMPTY_STATE_IMAGE;
 
-    readonly workouts = this.store.workouts;
+    readonly workouts = this.store.workoutList;
 
-    onImageError(event: Event): void {
-        const img = event.target as HTMLImageElement | null;
-        if (img && img.src && !img.src.endsWith(PLACEHOLDER_IMAGE)) {
+    handleImageError(event: Event): void {
+        const img = event.target as HTMLImageElement;
+        if (!img.src.endsWith(PLACEHOLDER_IMAGE)) {
             img.src = PLACEHOLDER_IMAGE;
         }
     }
 
-    onCreateWorkout(): void {
+    handleCreate(): void {
         this.router.navigate(['/workout/new'], {
-            queryParams: { n: this.store.nextNewTrainingNumber() },
+            queryParams: { n: this.store.newWorkoutId() },
         });
     }
 }

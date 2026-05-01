@@ -1,45 +1,36 @@
-import { Injectable, computed, signal } from '@angular/core';
+import { Injectable, Signal, computed, signal } from '@angular/core';
 
-export type WorkoutPreviewExercise = {
-    name: string;
-    equipment: string;
-    sets: number;
-    rep: string;
-};
+import { WorkoutListItem } from '../models';
 
-export type WorkoutPreview = {
-    name: string;
-    exerciseCount: number;
-    image?: string;
-    preview: WorkoutPreviewExercise[];
-};
-
-const SEED: WorkoutPreview[] = [
+const SEED: WorkoutListItem[] = [
     {
+        id: 1,
         name: 'Full Body Workout',
         exerciseCount: 7,
         image: 'assets/workouts/full-body.png',
-        preview: [
+        exercises: [
             { name: 'Front Raise', equipment: 'Dumbbell', sets: 3, rep: '12' },
             { name: 'Side Lunge', equipment: 'Dumbbell', sets: 3, rep: '12' },
             { name: 'Russian Twist', equipment: 'Dumbbell', sets: 3, rep: '40s' },
         ],
     },
     {
+        id: 2,
         name: 'Chest Workout',
         exerciseCount: 5,
         image: 'assets/workouts/chest.png',
-        preview: [
+        exercises: [
             { name: 'Bench Press', equipment: 'Dumbbell', sets: 3, rep: '12' },
             { name: 'Pec Deck Fly', equipment: 'Machine', sets: 3, rep: '12' },
             { name: 'Bench Press', equipment: 'Smith Machine', sets: 3, rep: '12' },
         ],
     },
     {
+        id: 3,
         name: 'Back Workout',
         exerciseCount: 5,
         image: 'assets/workouts/back.png',
-        preview: [
+        exercises: [
             { name: 'Bent-over Row', equipment: 'Barbell', sets: 3, rep: '12' },
             { name: 'Lat Pulldown', equipment: 'Cable', sets: 3, rep: '12' },
             { name: 'Deadlift', equipment: 'Barbell', sets: 3, rep: '12' },
@@ -48,20 +39,19 @@ const SEED: WorkoutPreview[] = [
 ];
 
 @Injectable({ providedIn: 'root' })
-export class WorkoutStore {
-    private readonly _workouts = signal<WorkoutPreview[]>(SEED);
+export class WorkoutService {
+    private readonly workouts = signal<WorkoutListItem[]>(SEED);
 
-    readonly workouts = this._workouts.asReadonly();
+    readonly workoutList: Signal<WorkoutListItem[]> = this.workouts.asReadonly();
+    readonly newWorkoutCount: Signal<number> = computed(() => {
+        const regex: RegExp = /^new training\b/i;
+        return this.workouts().filter((workout) => regex.test(workout.name)).length;
+    });
+    readonly newWorkoutId: Signal<number> = computed(() => {
+        return this.newWorkoutCount() + 1;
+    });
 
-    readonly newTrainingCount = computed(
-        () => this._workouts().filter((w) => /^new training\b/i.test(w.name)).length,
-    );
-
-    addWorkout(workout: WorkoutPreview): void {
-        this._workouts.update((arr) => [...arr, workout]);
-    }
-
-    nextNewTrainingNumber(): number {
-        return this.newTrainingCount() + 1;
+    store(workout: WorkoutListItem): void {
+        this.workouts.update((list) => [...list, workout]);
     }
 }

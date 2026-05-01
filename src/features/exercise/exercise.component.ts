@@ -8,6 +8,7 @@ import {
     computed,
     signal,
 } from '@angular/core';
+import { LucideAngularModule } from 'lucide-angular';
 
 import { EXERCISES } from '../../core/constants/exercise.constant';
 import { BodyPart, Exercise } from '../../core/models/exercise.model';
@@ -31,7 +32,7 @@ const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
     selector: 'pf-exercise',
     templateUrl: 'exercise.component.html',
     styleUrls: ['exercise.component.scss'],
-    imports: [CommonModule, ScrollingModule, ExerciseFilterComponent],
+    imports: [CommonModule, ScrollingModule, ExerciseFilterComponent, LucideAngularModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExerciseComponent {

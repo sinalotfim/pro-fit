@@ -15,30 +15,13 @@
             (click)="onClose()"
             aria-label="Close"
         >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                    d="M6 6l12 12M18 6L6 18"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                />
-            </svg>
+            <i-lucide name="x" />
         </button>
     </header>
 
     <div class="sheet-controls">
         <label class="search-input">
-            <svg class="search-input__icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-                <path
-                    d="M20 20l-3.5-3.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                />
-            </svg>
+            <i-lucide name="search" class="search-input__icon" />
             <input
                 type="search"
                 class="search-input__field"
@@ -61,16 +44,7 @@
                 aria-haspopup="dialog"
                 [attr.aria-expanded]="filterOpen()"
             >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                        d="M4 5h16l-6 8v6l-4-2v-4z"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                    />
-                </svg>
+                <i-lucide name="funnel" />
                 <span *ngIf="!hasActiveFilter(); else activeLabel">All ({{ count() }})</span>
                 <ng-template #activeLabel>
                     <span>Filtered ({{ count() }})</span>
@@ -96,16 +70,7 @@
             >
                 <span class="active-chip__label">{{ chip.label }}</span>
                 <span class="active-chip__remove" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="10" fill="currentColor" />
-                        <path
-                            d="M9 9l6 6M15 9l-6 6"
-                            fill="none"
-                            stroke="var(--pf-surface)"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
-                    </svg>
+                    <i-lucide name="circle-x" />
                 </span>
             </button>
         </div>
@@ -128,16 +93,7 @@
                             [class.select-circle--on]="isSelected(ex.id)"
                             aria-hidden="true"
                         >
-                            <svg *ngIf="isSelected(ex.id)" viewBox="0 0 24 24">
-                                <path
-                                    d="M5 12l5 5L20 7"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
+                            <i-lucide *ngIf="isSelected(ex.id)" name="check" [strokeWidth]="3" />
                         </span>
                         <img
                             class="exercise-row__thumb"
@@ -178,16 +134,7 @@
                         [class.select-circle--on]="isSelected(ex.id)"
                         aria-hidden="true"
                     >
-                        <svg *ngIf="isSelected(ex.id)" viewBox="0 0 24 24">
-                            <path
-                                d="M5 12l5 5L20 7"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
+                        <i-lucide *ngIf="isSelected(ex.id)" name="check" [strokeWidth]="3" />
                     </span>
                     <img
                         class="exercise-row__thumb"

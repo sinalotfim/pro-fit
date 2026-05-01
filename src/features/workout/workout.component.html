@@ -3,18 +3,10 @@
     <button
         type="button"
         class="header-icon"
-        (click)="onCreateWorkout()"
+        (click)="handleCreate()"
         aria-label="New workout"
     >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-                d="M12 5v14M5 12h14"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.4"
-                stroke-linecap="round"
-            />
-        </svg>
+        <i-lucide name="plus" [strokeWidth]="2.4" />
     </button>
 </header>
 
@@ -25,12 +17,12 @@
                 class="empty-state__image"
                 [src]="emptyStateImage"
                 alt="Create a new workout"
-                (error)="onImageError($event)"
+                (error)="handleImageError($event)"
             />
         </div>
         <h2 class="empty-state__title">Create your first custom workout</h2>
         <p class="empty-state__subtitle">Set up your own unique routine</p>
-        <button type="button" class="btn btn-primary empty-state__cta" (click)="onCreateWorkout()">
+        <button type="button" class="btn btn-primary empty-state__cta" (click)="handleCreate()">
             <span class="empty-state__cta-icon" aria-hidden="true">+</span>
             <span>START</span>
         </button>
@@ -46,12 +38,12 @@
                 class="workout-card__figure"
                 [src]="w.image || placeholderImage"
                 [alt]="w.name"
-                (error)="onImageError($event)"
+                (error)="handleImageError($event)"
             />
         </header>
 
         <ul class="workout-card__list">
-            <li class="workout-card__row" *ngFor="let e of w.preview">
+            <li class="workout-card__row" *ngFor="let e of w.exercises">
                 <span class="ex-name">{{ e.name }} · {{ e.equipment }}</span>
                 <span class="ex-sets">{{ e.sets }} × {{ e.rep }}</span>
             </li>

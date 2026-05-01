@@ -2,13 +2,10 @@ import { Component, ElementRef, ViewChild, inject, signal } from '@angular/core'
 import { CommonModule, Location } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LucideAngularModule } from 'lucide-angular';
 
-import { Exercise } from '../../core/models/exercise.model';
-import {
-    WorkoutPreview,
-    WorkoutPreviewExercise,
-    WorkoutStore,
-} from '../../core/stores/workout.store';
+import { Exercise, WorkoutExerciseListItem, WorkoutListItem } from '../../core/models';
+import { WorkoutService } from '../../core/services';
 import { AddExercisesSheetComponent } from './add-exercises-sheet/add-exercises-sheet.component';
 
 export type TrainingSet = { id: number; kg: number | null; reps: number | null };
@@ -26,13 +23,13 @@ const RECENTS_LIMIT = 8;
     selector: 'pf-new-training',
     templateUrl: 'new-training.component.html',
     styleUrls: ['new-training.component.scss'],
-    imports: [CommonModule, FormsModule, AddExercisesSheetComponent],
+    imports: [CommonModule, FormsModule, AddExercisesSheetComponent, LucideAngularModule],
 })
 export class NewTrainingComponent {
     private readonly route = inject(ActivatedRoute);
     private readonly location = inject(Location);
     private readonly router = inject(Router);
-    private readonly store = inject(WorkoutStore);
+    private readonly store = inject(WorkoutService);
 
     readonly title = signal(this.buildInitialTitle());
     readonly editing = signal(false);
@@ -197,21 +194,22 @@ export class NewTrainingComponent {
             return;
         }
 
-        const preview: WorkoutPreviewExercise[] = entries.slice(0, 3).map((entry) => ({
+        const exercises: WorkoutExerciseListItem[] = entries.slice(0, 3).map((entry) => ({
             name: entry.exercise.name,
             equipment: entry.exercise.equipment,
             sets: entry.sets.length,
             rep: this.formatRep(entry),
         }));
 
-        const workout: WorkoutPreview = {
+        const workout: WorkoutListItem = {
+            id: this.store.newWorkoutId(),
             name: this.title(),
             exerciseCount: entries.length,
             image: entries[0]?.exercise.imageUrl || undefined,
-            preview,
+            exercises,
         };
 
-        this.store.addWorkout(workout);
+        this.store.store(workout);
         this.router.navigate(['/workout']);
     }
 

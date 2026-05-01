@@ -128,3 +128,20 @@ p.muted {
 .link:hover {
     text-decoration: underline;
 }
+
+/* Lucide icon host: keep it transparent to layout, let the inner <svg> drive size */
+i-lucide,
+lucide-icon,
+lucide-angular {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    color: inherit;
+}
+
+i-lucide > svg,
+lucide-icon > svg,
+lucide-angular > svg {
+    display: block;
+}

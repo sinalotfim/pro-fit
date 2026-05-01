@@ -3,6 +3,25 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { PreloadAllModules, provideRouter, RouteReuseStrategy, Routes, withPreloading } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { provideServiceWorker } from '@angular/service-worker';
+import {
+    LucideAngularModule,
+    ChartBar,
+    Check,
+    ChevronDown,
+    ChevronLeft,
+    CircleUser,
+    CircleX,
+    Dumbbell,
+    EllipsisVertical,
+    Funnel,
+    List,
+    Pencil,
+    Play,
+    Plus,
+    Search,
+    Trash2,
+    X,
+} from 'lucide-angular';
 
 import { AppComponent } from './app/app.component';
 
@@ -50,6 +69,26 @@ const routes: Routes = [
 bootstrapApplication(AppComponent, {
     providers: [
         importProvidersFrom(IonicModule.forRoot()),
+        importProvidersFrom(
+            LucideAngularModule.pick({
+                ChartBar,
+                Check,
+                ChevronDown,
+                ChevronLeft,
+                CircleUser,
+                CircleX,
+                Dumbbell,
+                EllipsisVertical,
+                Funnel,
+                List,
+                Pencil,
+                Play,
+                Plus,
+                Search,
+                Trash2,
+                X,
+            }),
+        ),
         provideRouter(routes, withPreloading(PreloadAllModules)),
         provideServiceWorker('ngsw-worker.js', {
             enabled: !isDevMode(),

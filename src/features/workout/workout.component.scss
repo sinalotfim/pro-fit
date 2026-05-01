@@ -1,12 +1,19 @@
 :host {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     height: 100%;
-    overflow-y: auto;
+    overflow: hidden;
     background: var(--pf-bg);
     color: var(--pf-text);
     position: relative;
+}
+
+.page {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .workout-header {
@@ -14,29 +21,29 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--pf-space-3);
-}
 
-.title {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: 800;
-}
+    .title {
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+    }
 
-.header-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    border: none;
-    background: transparent;
-    color: var(--pf-text);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
-    flex-shrink: 0;
-    transition: background-color 120ms ease;
+    .header-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        color: var(--pf-text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+        flex-shrink: 0;
+        transition: background-color 120ms ease;
+    }
 }
 
 .header-icon:hover,
@@ -195,4 +202,3 @@
     font-weight: 700;
     line-height: 1;
 }
-

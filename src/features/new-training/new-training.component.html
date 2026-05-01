@@ -5,16 +5,7 @@
         (click)="onBack()"
         aria-label="Back"
     >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-                d="M15 6l-6 6 6 6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            />
-        </svg>
+        <i-lucide name="chevron-left" [strokeWidth]="2.4" />
     </button>
 
     <div class="nt-header__body">
@@ -27,23 +18,7 @@
                     (click)="startEdit()"
                     aria-label="Rename"
                 >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M4 20h4l10-10-4-4L4 16v4z"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M14 6l4 4"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                        />
-                    </svg>
+                    <i-lucide name="pencil" />
                 </button>
             </ng-container>
             <ng-template #editMode>
@@ -65,16 +40,7 @@
                     (click)="saveEdit()"
                     aria-label="Save name"
                 >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M5 12l5 5L20 7"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.4"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
+                    <i-lucide name="check" [strokeWidth]="2.4" />
                 </button>
             </ng-template>
         </div>
@@ -104,16 +70,7 @@
                         [class.entry-card__chevron--open]="entry.expanded"
                         aria-hidden="true"
                     >
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M6 9l6 6 6-6"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
+                        <i-lucide name="chevron-down" />
                     </span>
                     <span class="entry-card__thumb-wrap">
                         <img
@@ -135,11 +92,7 @@
                         </span>
                     </span>
                     <span class="entry-card__menu" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="5" r="1.6" fill="currentColor" />
-                            <circle cx="12" cy="12" r="1.6" fill="currentColor" />
-                            <circle cx="12" cy="19" r="1.6" fill="currentColor" />
-                        </svg>
+                        <i-lucide name="ellipsis-vertical" />
                     </span>
                 </button>
 
@@ -150,9 +103,7 @@
                         [class.set-row--active]="i === 0"
                     >
                         <span class="set-row__marker" *ngIf="i === 0" aria-hidden="true">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M8 6l8 6-8 6z" fill="currentColor" />
-                            </svg>
+                            <i-lucide name="play" />
                         </span>
                         <span class="set-row__num">{{ i + 1 }}</span>
                         <label class="set-row__field">

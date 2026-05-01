@@ -9,6 +9,7 @@ import {
     computed,
     signal,
 } from '@angular/core';
+import { LucideAngularModule } from 'lucide-angular';
 
 import { BodyPart, Exercise } from '../../../core/models/exercise.model';
 
@@ -34,7 +35,7 @@ const BODY_PART_ORDER: BodyPart[] = [
     selector: 'pf-exercise-filter',
     templateUrl: 'exercise-filter.component.html',
     styleUrls: ['exercise-filter.component.scss'],
-    imports: [CommonModule],
+    imports: [CommonModule, LucideAngularModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExerciseFilterComponent implements OnInit {

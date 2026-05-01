@@ -9,6 +9,7 @@ import {
     signal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LucideAngularModule } from 'lucide-angular';
 
 import { EXERCISES } from '../../../core/constants/exercise.constant';
 import { BodyPart, Exercise } from '../../../core/models/exercise.model';
@@ -29,7 +30,7 @@ const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
     selector: 'pf-add-exercises-sheet',
     templateUrl: 'add-exercises-sheet.component.html',
     styleUrls: ['add-exercises-sheet.component.scss'],
-    imports: [CommonModule, FormsModule, ExerciseFilterComponent],
+    imports: [CommonModule, FormsModule, ExerciseFilterComponent, LucideAngularModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AddExercisesSheetComponent {

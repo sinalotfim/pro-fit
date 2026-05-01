@@ -259,6 +259,11 @@
     width: 18px;
     height: 18px;
     display: block;
+    fill: currentColor;
+}
+
+.active-chip__remove svg path {
+    stroke: var(--pf-surface);
 }
 
 .sheet-body {
