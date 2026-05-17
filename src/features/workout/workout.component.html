@@ -1,54 +1,38 @@
-<header class="page-header workout-header">
-    <h1 class="title">Workouts</h1>
-    <button
-        type="button"
-        class="header-icon"
-        (click)="handleCreate()"
-        aria-label="New workout"
-    >
-        <i-lucide name="plus" [strokeWidth]="2.4" />
-    </button>
-</header>
+<pf-workout-header (createClick)="handleCreate()" />
 
-<main class="page">
-    <section class="empty-state" *ngIf="workouts().length === 0">
-        <div class="empty-state__figure">
-            <img
-                class="empty-state__image"
-                [src]="emptyStateImage"
-                alt="Create a new workout"
-                (error)="handleImageError($event)"
-            />
-        </div>
-        <h2 class="empty-state__title">Create your first custom workout</h2>
-        <p class="empty-state__subtitle">Set up your own unique routine</p>
-        <button type="button" class="btn btn-primary empty-state__cta" (click)="handleCreate()">
-            <span class="empty-state__cta-icon" aria-hidden="true">+</span>
-            <span>START</span>
-        </button>
-    </section>
-
-    <article class="workout-card" *ngFor="let w of workouts()">
-        <header class="workout-card__head">
-            <div class="workout-card__heading">
-                <h2 class="workout-card__name">{{ w.name }}</h2>
-                <p class="workout-card__count">{{ w.exerciseCount }} exercises</p>
+<main class="pf-page">
+    @if (workouts().length === 0) {
+        <section class="empty">
+            <div class="empty__figure">
+                <img [src]="emptyStateImage" alt="Create a new workout" (error)="handleImageError($event)" />
             </div>
-            <img
-                class="workout-card__figure"
-                [src]="w.image || placeholderImage"
-                [alt]="w.name"
-                (error)="handleImageError($event)"
-            />
-        </header>
+            <h2 class="empty__title">Create your first custom workout</h2>
+            <p class="empty__subtitle">Set up your own unique routine</p>
+            <button type="button" class="btn btn-primary empty__cta" (click)="handleCreate()">
+                <span class="empty__cta-icon" aria-hidden="true">+</span>
+                <span>START</span>
+            </button>
+        </section>
+    } @else {
+        <article class="card" *ngFor="let w of workouts()">
+            <header class="card__head">
+                <div>
+                    <h2>{{ w.name }}</h2>
+                    <p>{{ w.exerciseCount }} exercises</p>
+                </div>
+                <img [src]="w.image || placeholderImage" [alt]="w.name" (error)="handleImageError($event)" />
+            </header>
 
-        <ul class="workout-card__list">
-            <li class="workout-card__row" *ngFor="let e of w.exercises">
-                <span class="ex-name">{{ e.name }} · {{ e.equipment }}</span>
-                <span class="ex-sets">{{ e.sets }} × {{ e.rep }}</span>
-            </li>
-        </ul>
+            <ul class="card__list">
+                @for (e of w.exercises; track e.name) {
+                    <li>
+                        <span>{{ e.name }} · {{ e.equipment }}</span>
+                        <span>{{ e.sets }} × {{ e.rep }}</span>
+                    </li>
+                }
+            </ul>
 
-        <a class="workout-card__viewall link" href="#">View all</a>
-    </article>
+            <a class="card__view pf-link" href="#">View all</a>
+        </article>
+    }
 </main>

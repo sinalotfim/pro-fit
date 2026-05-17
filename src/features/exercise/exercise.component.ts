@@ -1,48 +1,38 @@
+import { ChangeDetectionStrategy, Component, ViewChild, computed, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CdkVirtualScrollViewport, ScrollingModule } from '@angular/cdk/scrolling';
-import {
-    ChangeDetectionStrategy,
-    Component,
-    ElementRef,
-    ViewChild,
-    computed,
-    signal,
-} from '@angular/core';
-import { LucideAngularModule } from 'lucide-angular';
 
 import { EXERCISES } from '../../core/constants/exercise.constant';
 import { BodyPart, Exercise } from '../../core/models/exercise.model';
+import { ExerciseFilterComponent, ExerciseFilterState } from './filter/exercise-filter.component';
 import {
-    ExerciseFilterComponent,
-    ExerciseFilterState,
-} from './exercise-filter/exercise-filter.component';
+    ActiveFilterChip,
+    ExerciseHeaderComponent,
+} from './header/exercise-header.component';
+import { ExerciseItemComponent, ExerciseNamePart } from './item/exercise-item.component';
 
-type HighlightPart = { text: string; match: boolean };
 type ExerciseGroup = { letter: string; items: Exercise[] };
-type Row =
-    | { kind: 'header'; letter: string }
-    | { kind: 'item'; exercise: Exercise };
-export type ActiveFilterChip =
-    | { kind: 'bodyPart'; value: BodyPart; label: string }
-    | { kind: 'equipment'; value: string; label: string };
-
-const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
+type Row = { kind: 'header'; letter: string } | { kind: 'item'; exercise: Exercise };
 
 @Component({
     selector: 'pf-exercise',
     templateUrl: 'exercise.component.html',
     styleUrls: ['exercise.component.scss'],
-    imports: [CommonModule, ScrollingModule, ExerciseFilterComponent, LucideAngularModule],
+    imports: [
+        CommonModule,
+        ScrollingModule,
+        ExerciseFilterComponent,
+        ExerciseHeaderComponent,
+        ExerciseItemComponent,
+    ],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExerciseComponent {
-    @ViewChild('searchBox')
-    private searchBox?: ElementRef<HTMLInputElement>;
+    @ViewChild(ExerciseHeaderComponent)
+    private exerciseHeader?: ExerciseHeaderComponent;
 
     @ViewChild(CdkVirtualScrollViewport)
     private viewport?: CdkVirtualScrollViewport;
-
-    readonly placeholderImage = PLACEHOLDER_IMAGE;
 
     readonly all = signal<Exercise[]>(EXERCISES);
 
@@ -54,9 +44,7 @@ export class ExerciseComponent {
     readonly equipmentFilter = signal<ReadonlySet<string>>(new Set());
     readonly filterOpen = signal(false);
 
-    readonly hasActiveFilter = computed(
-        () => this.bodyPartFilter().size > 0 || this.equipmentFilter().size > 0,
-    );
+    readonly hasActiveFilter = computed(() => this.bodyPartFilter().size > 0 || this.equipmentFilter().size > 0);
 
     readonly activeFilterChips = computed<ActiveFilterChip[]>(() => {
         const chips: ActiveFilterChip[] = [];
@@ -156,7 +144,7 @@ export class ExerciseComponent {
     openSearch(): void {
         this.searchActive.set(true);
         this.scrollToTop();
-        setTimeout(() => this.searchBox?.nativeElement.focus(), 0);
+        queueMicrotask(() => this.exerciseHeader?.focusSearch());
     }
 
     openFilter(): void {
@@ -193,9 +181,6 @@ export class ExerciseComponent {
         this.scrollToTop();
     }
 
-    trackByChip = (_: number, chip: ActiveFilterChip): string =>
-        `${chip.kind}:${chip.value}`;
-
     closeSearch(): void {
         this.query.set('');
         this.searchActive.set(false);
@@ -211,21 +196,14 @@ export class ExerciseComponent {
         queueMicrotask(() => this.viewport?.scrollToIndex(0));
     }
 
-    onImageError(event: Event): void {
-        const img = event.target as HTMLImageElement | null;
-        if (img && !img.src.endsWith(PLACEHOLDER_IMAGE)) {
-            img.src = PLACEHOLDER_IMAGE;
-        }
-    }
-
-    splitForHighlight(name: string): HighlightPart[] {
+    splitForHighlight(name: string): ExerciseNamePart[] {
         const q = this.query().trim();
         if (!this.searchActive() || !q) {
             return [{ text: name, match: false }];
         }
         const lowerName = name.toLowerCase();
         const lowerQ = q.toLowerCase();
-        const parts: HighlightPart[] = [];
+        const parts: ExerciseNamePart[] = [];
         let i = 0;
         while (i < name.length) {
             const idx = lowerName.indexOf(lowerQ, i);
@@ -253,3 +231,5 @@ export class ExerciseComponent {
     trackByRow = (_: number, row: Row): string =>
         row.kind === 'header' ? `header-${row.letter}` : `item-${row.exercise.id}`;
 }
+
+export type { ActiveFilterChip } from './header/exercise-header.component';

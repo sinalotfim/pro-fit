@@ -59,7 +59,7 @@ p.muted {
 }
 
 /* Page primitives used by tab pages */
-.page-header {
+.pf-header {
     padding: var(--pf-space-5) var(--pf-space-4) var(--pf-space-3);
     background: var(--pf-bg);
     position: sticky;
@@ -67,11 +67,21 @@ p.muted {
     z-index: 1;
 }
 
-.page {
+.pf-page {
     padding: 0 var(--pf-space-4) var(--pf-space-6);
     display: flex;
     flex-direction: column;
     gap: var(--pf-space-4);
+}
+
+.pf-link {
+    color: var(--pf-accent);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .card {
@@ -119,15 +129,6 @@ p.muted {
 }
 
 /* Links */
-.link {
-    color: var(--pf-accent);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
 
 /* Lucide icon host: keep it transparent to layout, let the inner <svg> drive size */
 i-lucide,

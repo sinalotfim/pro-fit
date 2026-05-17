@@ -16,7 +16,7 @@ import { BodyPart, Exercise } from '../../../core/models/exercise.model';
 import {
     ExerciseFilterComponent,
     ExerciseFilterState,
-} from '../../exercise/exercise-filter/exercise-filter.component';
+} from '../../exercise/filter/exercise-filter.component';
 
 type HighlightPart = { text: string; match: boolean };
 

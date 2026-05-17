@@ -5,16 +5,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { provideServiceWorker } from '@angular/service-worker';
 import {
     LucideAngularModule,
-    ChartBar,
     Check,
     ChevronDown,
     ChevronLeft,
-    CircleUser,
     CircleX,
-    Dumbbell,
     EllipsisVertical,
     Funnel,
-    List,
     Pencil,
     Play,
     Plus,
@@ -71,16 +67,12 @@ bootstrapApplication(AppComponent, {
         importProvidersFrom(IonicModule.forRoot()),
         importProvidersFrom(
             LucideAngularModule.pick({
-                ChartBar,
                 Check,
                 ChevronDown,
                 ChevronLeft,
-                CircleUser,
                 CircleX,
-                Dumbbell,
                 EllipsisVertical,
                 Funnel,
-                List,
                 Pencil,
                 Play,
                 Plus,

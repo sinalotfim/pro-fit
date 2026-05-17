@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
-import { LucideAngularModule } from 'lucide-angular';
+import { IonTabBar, IonTabButton, IonTabs } from '@ionic/angular/standalone';
+import { ChartBar, CircleUser, Dumbbell, List, LucideAngularModule } from 'lucide-angular';
 
 @Component({
     selector: 'pf-tab-bar',
     templateUrl: 'tab-bar.component.html',
     styleUrls: ['tab-bar.component.scss'],
-    imports: [IonicModule, LucideAngularModule],
+    imports: [IonTabs, IonTabBar, IonTabButton, LucideAngularModule],
 })
 export class TabBarComponent {
-    constructor() {}
+    protected readonly icons = {
+        workout: Dumbbell,
+        exercise: List,
+        statistic: ChartBar,
+        profile: CircleUser,
+    };
 }

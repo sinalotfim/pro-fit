@@ -1,0 +1,11 @@
+<header class="pf-header workout-header">
+    <h1 class="workout-header__title">{{ title() }}</h1>
+    <button
+        type="button"
+        class="workout-header__icon"
+        (click)="onCreateClick()"
+        aria-label="New workout"
+    >
+        <i-lucide [img]="plusIcon" [strokeWidth]="2.4" />
+    </button>
+</header>

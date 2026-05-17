@@ -1,0 +1,87 @@
+<header class="pf-header exercise-header">
+    <div class="exercise-header__head">
+        @if (!searchActive()) {
+            <h1 class="exercise-header__title">{{ title() }}</h1>
+            <button
+                class="exercise-header__search-trigger"
+                type="button"
+                (click)="searchOpen.emit()"
+                aria-label="Search exercises"
+            >
+                <i-lucide
+                    class="exercise-header__search-icon"
+                    [img]="icons.search"
+                    [strokeWidth]="2.4"
+                />
+            </button>
+        } @else {
+            <label class="exercise-header__search">
+                <i-lucide [img]="icons.search" [strokeWidth]="2.4" />
+                <input
+                    #searchBox
+                    type="search"
+                    class="exercise-header__search-field"
+                    [value]="query()"
+                    (input)="onQueryInput($event)"
+                    placeholder="Search"
+                    autocomplete="off"
+                    spellcheck="false"
+                    enterkeyhint="search"
+                    aria-label="Search exercises"
+                />
+            </label>
+            <button
+                class="exercise-header__search-close"
+                type="button"
+                (click)="searchClose.emit()"
+            >
+                Close
+            </button>
+        }
+    </div>
+
+    <div class="exercise-header__filter">
+        <button
+            type="button"
+            class="exercise-header__filter-chip"
+            [class.exercise-header__filter-chip--active]="hasActiveFilter()"
+            (click)="filterClick.emit()"
+            aria-haspopup="dialog"
+            [attr.aria-expanded]="filterOpen()"
+        >
+            <i-lucide [img]="icons.filter" [strokeWidth]="2.4" />
+            @if (!hasActiveFilter()) {
+                <span>All ({{ count() }})</span>
+            } @else {
+                <span>Filtered ({{ activeFilterChips().length }})</span>
+            }
+        </button>
+        @if (hasActiveFilter()) {
+            <button
+                type="button"
+                class="exercise-header__filter-clear"
+                (click)="clearFilters.emit()"
+            >
+                Clear
+            </button>
+        }
+    </div>
+
+    @if (hasActiveFilter()) {
+        <div class="exercise-header__chips">
+            @for (chip of activeFilterChips(); track chip.kind + ':' + chip.value) {
+                <button
+                    type="button"
+                    class="exercise-header__chip"
+                    (click)="removeChip.emit(chip)"
+                    [attr.aria-label]="'Remove filter ' + chip.label"
+                >
+                    <span class="exercise-header__chip-label">{{ chip.label }}</span>
+                    <span class="exercise-header__chip-remove" aria-hidden="true">
+                        <i-lucide [img]="icons.close" [strokeWidth]="2.4" />
+                    </span>
+                </button>
+            }
+        </div>
+    }
+</header>

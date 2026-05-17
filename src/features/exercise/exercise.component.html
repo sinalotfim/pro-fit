@@ -1,86 +1,19 @@
-<header class="page-header exercise-header">
-    <div class="exercise-header__top">
-        <ng-container *ngIf="!searchActive(); else searchMode">
-            <h1 class="exercise-header__title">EXERCISES</h1>
-            <button
-                class="header-icon"
-                type="button"
-                (click)="openSearch()"
-                aria-label="Search exercises"
-            >
-                <i-lucide name="search" />
-            </button>
-        </ng-container>
-        <ng-template #searchMode>
-            <label class="search-input">
-                <i-lucide name="search" class="search-input__icon" />
-                <input
-                    #searchBox
-                    type="search"
-                    class="search-input__field"
-                    [value]="query()"
-                    (input)="onQueryInput($event)"
-                    placeholder="Search"
-                    autocomplete="off"
-                    spellcheck="false"
-                    enterkeyhint="search"
-                    aria-label="Search exercises"
-                />
-            </label>
-            <button class="header-link" type="button" (click)="closeSearch()">Close</button>
-        </ng-template>
-    </div>
+<pf-exercise-header
+    [searchActive]="searchActive()"
+    [query]="query()"
+    [hasActiveFilter]="hasActiveFilter()"
+    [filterOpen]="filterOpen()"
+    [count]="count()"
+    [activeFilterChips]="activeFilterChips()"
+    (searchOpen)="openSearch()"
+    (searchClose)="closeSearch()"
+    (queryInput)="onQueryInput($event)"
+    (filterClick)="openFilter()"
+    (clearFilters)="clearAllFilters()"
+    (removeChip)="removeFilterChip($event)"
+/>
 
-    <div class="exercise-header__filter">
-        <button
-            type="button"
-            class="filter-chip"
-            [class.filter-chip--active]="hasActiveFilter()"
-            (click)="openFilter()"
-            aria-haspopup="dialog"
-            [attr.aria-expanded]="filterOpen()"
-        >
-            <i-lucide name="funnel" />
-            <span *ngIf="!hasActiveFilter(); else activeLabel">All ({{ count() }})</span>
-            <ng-template #activeLabel>
-                <span>Filtered ({{ activeFilterChips().length }})</span>
-            </ng-template>
-        </button>
-        <button
-            *ngIf="hasActiveFilter()"
-            type="button"
-            class="header-link header-link--clear"
-            (click)="clearAllFilters()"
-        >
-            Clear
-        </button>
-    </div>
-
-    <div class="exercise-header__chips" *ngIf="hasActiveFilter()">
-        <button
-            *ngFor="let chip of activeFilterChips(); trackBy: trackByChip"
-            type="button"
-            class="active-chip"
-            (click)="removeFilterChip(chip)"
-            [attr.aria-label]="'Remove filter ' + chip.label"
-        >
-            <span class="active-chip__label">{{ chip.label }}</span>
-            <span class="active-chip__remove" aria-hidden="true">
-                <i-lucide name="circle-x" />
-            </span>
-        </button>
-    </div>
-</header>
-
-<main class="page exercise-page">
-    <span
-        class="letter-overlay"
-        *ngIf="currentLetter() && !searchActive() && !hasActiveFilter()"
-        aria-hidden="true"
-    >
-        {{ currentLetter() }}
-    </span>
-
+<main class="pf-page">
     <cdk-virtual-scroll-viewport
         class="exercise-viewport"
         [itemSize]="88"
@@ -93,42 +26,27 @@
             class="row"
             [class.row--header]="row.kind === 'header'"
         >
-            <h2 *ngIf="row.kind === 'header'" class="row-header">{{ row.letter }}</h2>
-            <button
-                *ngIf="row.kind === 'item'"
-                class="exercise-item"
-                type="button"
-            >
-                <img
-                    class="exercise-item__thumb"
-                    [src]="row.exercise.imageUrl || placeholderImage"
-                    [alt]="row.exercise.name"
-                    (error)="onImageError($event)"
-                    loading="lazy"
-                />
-                <div class="exercise-item__body">
-                    <p class="exercise-item__name">
-                        <span
-                            *ngFor="let part of splitForHighlight(row.exercise.name)"
-                            [class.hl]="part.match"
-                            >{{ part.text }}</span
-                        >
-                    </p>
-                    <p class="exercise-item__muscles">{{ row.exercise.focusArea }}</p>
-                </div>
-            </button>
+            @if (row.kind === 'header') {
+                <h2 class="row-header">{{ row.letter }}</h2>
+            }
+            @if (row.kind === 'item') {
+                <pf-exercise-item [exercise]="row.exercise" [nameParts]="splitForHighlight(row.exercise.name)" />
+            }
         </div>
     </cdk-virtual-scroll-viewport>
 
-    <p class="empty-results" *ngIf="rows().length === 0">
-        {{ searchActive() ? 'No exercises match your search.' : 'No exercises match your filters.' }}
-    </p>
+    @if (rows().length === 0) {
+        <p class="exercise-empty">
+            {{ searchActive() ? 'No exercises match your search.' : 'No exercises match your filters.' }}
+        </p>
+    }
 </main>
 
-<pf-exercise-filter
-    *ngIf="filterOpen()"
-    [initial]="filterState()"
-    [allExercises]="all()"
-    (change)="onFilterChange($event)"
-    (close)="closeFilter()"
-/>
+@if (filterOpen()) {
+    <pf-exercise-filter
+        [initial]="filterState()"
+        [allExercises]="all()"
+        (change)="onFilterChange($event)"
+        (close)="closeFilter()"
+    />
+}

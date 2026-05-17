@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { LucideAngularModule } from 'lucide-angular';
 
 import { WorkoutService } from '../../core/services/workout.service';
+import { WorkoutHeaderComponent } from './header/workout-header.component';
 
 const PLACEHOLDER_IMAGE = 'assets/workouts/placeholder.svg';
 const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
@@ -12,7 +12,7 @@ const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
     selector: 'pf-workout',
     templateUrl: 'workout.component.html',
     styleUrls: ['workout.component.scss'],
-    imports: [CommonModule, LucideAngularModule],
+    imports: [CommonModule, WorkoutHeaderComponent],
 })
 export class WorkoutComponent {
     private readonly router = inject(Router);

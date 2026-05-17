@@ -1,0 +1,215 @@
+.exercise-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-3);
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin: 0;
+        flex: 1;
+    }
+
+    &__search-trigger {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        color: var(--pf-text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0;
+        flex-shrink: 0;
+        transition: background-color 120ms ease;
+
+        &:focus-visible {
+            background: var(--pf-border);
+            outline: none;
+        }
+    }
+
+    &__search-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    &__search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: var(--pf-space-2);
+        background: var(--pf-border);
+        border-radius: 999px;
+        padding: 8px 14px;
+        min-width: 0;
+
+        :deep(svg) {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__search-field {
+        flex: 1;
+        min-width: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: var(--pf-text);
+        font: inherit;
+        font-size: 16px;
+        padding: 2px 0;
+
+        &::placeholder {
+            color: var(--pf-text-muted);
+        }
+
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    }
+
+    &__search-close {
+        background: transparent;
+        border: none;
+        color: var(--pf-accent);
+        font: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 8px 4px;
+        flex-shrink: 0;
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--pf-space-2);
+    }
+
+    &__filter-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--pf-space-2);
+        background: var(--pf-border);
+        color: var(--pf-text);
+        border: none;
+        border-radius: 999px;
+        padding: 6px 14px;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition:
+            background-color 120ms ease,
+            color 120ms ease,
+            transform 80ms ease;
+
+        &--active {
+            background: var(--pf-accent);
+            color: var(--pf-accent-contrast);
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--pf-accent);
+            outline-offset: 2px;
+        }
+
+        :deep(svg) {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    &__filter-clear {
+        background: transparent;
+        border: none;
+        color: var(--pf-accent);
+        font: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 8px 4px;
+    }
+
+    &__chips {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: var(--pf-space-2);
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    &__chip {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 8px 6px 14px;
+        background: var(--pf-surface);
+        border: 1px solid var(--pf-border);
+        border-radius: 999px;
+        color: var(--pf-text);
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition:
+            background-color 120ms ease,
+            border-color 120ms ease,
+            transform 80ms ease;
+
+        &:active {
+            transform: scale(0.97);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--pf-accent);
+            outline-offset: 2px;
+        }
+    }
+
+    &__chip-label {
+        min-width: 0;
+    }
+
+    &__chip-remove {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--pf-text-muted);
+
+        :deep(svg) {
+            width: 18px;
+            height: 18px;
+            display: block;
+
+            path {
+                stroke: var(--pf-surface);
+            }
+        }
+    }
+}

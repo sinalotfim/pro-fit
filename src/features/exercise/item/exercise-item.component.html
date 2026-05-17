@@ -1,0 +1,21 @@
+<button class="exercise-item" type="button">
+    <img
+        class="exercise-item__thumb"
+        [src]="exercise().imageUrl || placeholderImage"
+        [alt]="exercise().name"
+        (error)="onImageError($event)"
+        loading="lazy"
+    />
+    <div class="exercise-item__body">
+        <p class="exercise-item__name">
+            @for (part of nameParts(); track $index) {
+                <span
+                    class="exercise-item__name-part"
+                    [class.exercise-item__name-part--match]="part.match"
+                    >{{ part.text }}</span
+                >
+            }
+        </p>
+        <p class="exercise-item__muscles">{{ exercise().focusArea }}</p>
+    </div>
+</button>

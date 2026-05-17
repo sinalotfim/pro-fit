@@ -1,0 +1,38 @@
+.workout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--pf-space-3);
+
+    &__title {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        font: inherit;
+        border-radius: var(--pf-radius, 8px);
+
+        &:hover,
+        &:focus-visible {
+            background: var(--pf-border);
+            outline: none;
+        }
+
+        :deep(svg) {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}

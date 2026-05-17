@@ -1,23 +1,23 @@
 <ion-tabs>
-    <ion-tab-bar slot="bottom" class="app-tab-bar">
+    <ion-tab-bar slot="bottom" class="tab-bar">
         <ion-tab-button tab="workout" href="/tabs/workout">
-            <i-lucide name="dumbbell" class="tab-icon" />
-            <span class="tab-label">Workouts</span>
+            <i-lucide [img]="icons.workout" class="tab-bar__icon" />
+            <span class="tab-bar__label">Workouts</span>
         </ion-tab-button>
 
         <ion-tab-button tab="exercise" href="/tabs/exercise">
-            <i-lucide name="list" class="tab-icon" />
-            <span class="tab-label">Exercises</span>
+            <i-lucide [img]="icons.exercise" class="tab-bar__icon" />
+            <span class="tab-bar__label">Exercises</span>
         </ion-tab-button>
 
         <ion-tab-button tab="statistic" href="/tabs/statistic">
-            <i-lucide name="chart-bar" class="tab-icon" />
-            <span class="tab-label">Statistics</span>
+            <i-lucide [img]="icons.statistic" class="tab-bar__icon" />
+            <span class="tab-bar__label">Statistics</span>
         </ion-tab-button>
 
         <ion-tab-button tab="profile" href="/tabs/profile">
-            <i-lucide name="circle-user" class="tab-icon" />
-            <span class="tab-label">Profile</span>
+            <i-lucide [img]="icons.profile" class="tab-bar__icon" />
+            <span class="tab-bar__label">Profile</span>
         </ion-tab-button>
     </ion-tab-bar>
 </ion-tabs>
