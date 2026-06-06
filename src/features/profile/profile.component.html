@@ -1,15 +1,62 @@
-<header class="page-header">
-    <h1>Profile</h1>
+<header class="profile-header">
+    <h1 class="profile-header__title">Profile</h1>
 </header>
 
-<main class="page">
-    <section class="card">
-        <h2>Your profile</h2>
-        <p>Goals, units, and preferences will live here.</p>
+<main class="pf-page profile">
+    <section class="profile__identity" aria-label="Profile identity">
+        <div class="profile__avatar" aria-hidden="true">{{ profile.initial }}</div>
+        <h2 class="profile__name">{{ profile.name }}</h2>
+        <p class="profile__email">{{ profile.email }}</p>
+        <p class="profile__member">Member since {{ profile.memberSince }}</p>
     </section>
 
-    <section class="card">
-        <h2>Settings</h2>
-        <p class="muted">Coming soon.</p>
+    <section class="card profile__stats" aria-label="Body stats">
+        @for (stat of stats; track stat.label) {
+            <div class="profile__stat">
+                <span class="profile__stat-label">{{ stat.label }}</span>
+                <span class="profile__stat-value">{{ stat.value }}</span>
+            </div>
+        }
+    </section>
+
+    <section class="card profile__goal" aria-label="Weekly goal">
+        <div class="profile__goal-head">
+            <span class="profile__goal-label">Weekly goal</span>
+            <span class="profile__goal-total">{{ profile.totalWorkouts }} total workouts</span>
+        </div>
+
+        <div class="profile__goal-body">
+            <div class="profile__goal-copy">
+                <p class="profile__goal-count">
+                    <span class="profile__goal-done">{{ profile.weeklyDone }}</span>
+                    <span class="profile__goal-of">of {{ profile.weeklyTarget }}</span>
+                </p>
+                <p class="profile__goal-pct">{{ weeklyPercent }}% complete</p>
+            </div>
+
+            <div
+                class="profile__ring"
+                [style.--pf-ring-progress]="weeklyProgress"
+                role="img"
+                [attr.aria-label]="profile.weeklyDone + ' of ' + profile.weeklyTarget + ' workouts complete'"
+            >
+                <i-lucide [img]="icons.dumbbell" [strokeWidth]="1.75" class="profile__ring-icon" />
+            </div>
+        </div>
+    </section>
+
+    <section class="card profile__settings" aria-label="Settings">
+        <ul class="profile__settings-list">
+            @for (row of settings; track row.id) {
+                <li class="profile__settings-row">
+                    <button type="button" class="profile__settings-btn">
+                        <i-lucide [img]="icons[row.icon]" [strokeWidth]="1.75" class="profile__settings-icon" />
+                        <span class="profile__settings-label">{{ row.label }}</span>
+                        <span class="profile__settings-value">{{ row.value }}</span>
+                        <i-lucide [img]="icons.chevron" [strokeWidth]="1.75" class="profile__settings-chevron" />
+                    </button>
+                </li>
+            }
+        </ul>
     </section>
 </main>
