@@ -1,16 +1,129 @@
-.tab-bar {
-    --color: var(--pf-text-muted);
-    --color-selected: var(--pf-accent);
-    border-top: 1px solid var(--pf-border);
+:host {
+    display: block;
+    height: 100%;
 
-    &__icon {
-        width: 24px;
-        height: 24px;
-        display: block;
+    --pf-tab-icon-color: #111111;
+    --pf-tab-icon-hover: #444444;
+    --pf-tab-bar-bg: #ffffff;
+    --pf-tab-bar-border: rgba(0, 0, 0, 0.06);
+    --pf-tab-active-pill: #ebebeb;
+    --pf-tab-bar-radius: 999px;
+    --pf-tab-bar-inset-x: 16px;
+    --pf-tab-bar-inset-x-compact: 20px;
+    --pf-tab-bar-inset-bottom: 12px;
+    --pf-tab-bar-clearance: 72px;
+    --pf-tab-bar-height: 56px;
+    --pf-tab-bar-height-compact: 48px;
+    --pf-tab-icon-size: 24px;
+    --pf-tab-icon-size-compact: 20px;
+
+    ion-tabs {
+        height: 100%;
     }
 
-    &__label {
-        font-size: 12px;
-        font-weight: 500;
+    ::ng-deep .pf-page {
+        padding-bottom: calc(var(--pf-tab-bar-clearance) + env(safe-area-inset-bottom, 0px));
+    }
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: calc(var(--pf-tab-bar-inset-bottom) + env(safe-area-inset-bottom, 0px));
+    left: var(--pf-tab-bar-inset-x);
+    right: var(--pf-tab-bar-inset-x);
+    width: auto;
+    height: var(--pf-tab-bar-height);
+    margin: 0;
+    border-radius: var(--pf-tab-bar-radius);
+    border: 1px solid var(--pf-tab-bar-border);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    transition:
+        height 220ms ease,
+        left 220ms ease,
+        right 220ms ease;
+
+    --background: var(--pf-tab-bar-bg);
+    --border: 0;
+    --color: var(--pf-tab-icon-color);
+    --color-selected: var(--pf-tab-icon-color);
+
+    &--compact {
+        left: var(--pf-tab-bar-inset-x-compact);
+        right: var(--pf-tab-bar-inset-x-compact);
+        height: var(--pf-tab-bar-height-compact);
+
+        .tab-bar__icon {
+            width: var(--pf-tab-icon-size-compact);
+            height: var(--pf-tab-icon-size-compact);
+        }
+
+        ion-tab-button.tab-selected::before {
+            inset: 4px 10px;
+        }
+    }
+
+    ion-tab-button {
+        --padding-top: 0;
+        --padding-bottom: 0;
+        --ripple-color: transparent;
+        position: relative;
+        background: transparent;
+
+        .tab-bar__icon ::ng-deep svg {
+            fill: none;
+            stroke: currentColor;
+        }
+
+        @media (hover: hover) {
+            &:not(.tab-selected):hover {
+                --color: var(--pf-tab-icon-hover);
+            }
+        }
+
+        &:not(.tab-selected):active {
+            opacity: 0.85;
+        }
+
+        &.tab-selected {
+            --color: var(--pf-tab-icon-color);
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 5px 10px;
+                border-radius: 999px;
+                background: var(--pf-tab-active-pill);
+                pointer-events: none;
+            }
+
+            .tab-bar__icon ::ng-deep svg {
+                stroke-width: 2.5;
+            }
+
+            .tab-bar__icon--fillable ::ng-deep svg {
+                fill: currentColor;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    filter: brightness(0.95);
+                }
+            }
+        }
+
+        .tab-bar__icon {
+            position: relative;
+            z-index: 1;
+            color: inherit;
+        }
+    }
+
+    &__icon {
+        width: var(--pf-tab-icon-size);
+        height: var(--pf-tab-icon-size);
+        display: block;
+        transition:
+            width 220ms ease,
+            height 220ms ease;
     }
 }

@@ -1,7 +1,7 @@
 {
   "name": "pro-fit",
   "version": "0.0.1",
-  "description": "Pro Fit — an Angular + Ionic fitness PWA.",
+  "description": "Pro Fit - your fitness companion",
   "private": true,
   "scripts": {
     "ng": "ng",
