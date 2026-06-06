@@ -1,15 +1,33 @@
-<header class="page-header">
-    <h1>Statistics</h1>
+<header class="statistic-header">
+    <div class="statistic-header__row">
+        <h1 class="statistic-header__title">Statistics</h1>
+        @if (activeSegment() === 'overview') {
+            <button type="button" class="statistic-header__icon" aria-label="Calendar">
+                <i-lucide [img]="icons.calendar" [strokeWidth]="2.4" />
+            </button>
+        }
+    </div>
+
+    <div class="statistic-header__segment" role="tablist" aria-label="Statistics views">
+        @for (segment of segments; track segment.id) {
+            <button
+                type="button"
+                class="statistic-header__segment-btn"
+                role="tab"
+                [attr.aria-selected]="activeSegment() === segment.id"
+                [class.statistic-header__segment-btn--active]="activeSegment() === segment.id"
+                (click)="setSegment(segment.id)"
+            >
+                {{ segment.label }}
+            </button>
+        }
+    </div>
 </header>
 
-<main class="page">
-    <section class="card">
-        <h2>Your stats</h2>
-        <p>Charts and history will live here.</p>
-    </section>
-
-    <section class="card">
-        <h2>This week</h2>
-        <p class="muted">No sessions logged yet.</p>
-    </section>
+<main class="pf-page statistic">
+    @if (activeSegment() === 'overview') {
+        <pf-statistic-overview />
+    } @else {
+        <pf-statistic-history />
+    }
 </main>

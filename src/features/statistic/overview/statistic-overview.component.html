@@ -1,0 +1,110 @@
+<section class="overview__summary" aria-label="Weekly summary">
+    <article class="card overview__summary-card">
+        <i-lucide [img]="icons.calendar" [strokeWidth]="1.75" class="overview__summary-icon overview__summary-icon--accent" />
+        <span class="overview__summary-label">This week</span>
+        <p class="overview__summary-value">
+            <span class="overview__summary-number">{{ summary.weeklyWorkouts }}</span>
+            <span class="overview__summary-unit">workouts</span>
+        </p>
+        <p class="overview__summary-extra">
+            <i-lucide [img]="icons.clock" [strokeWidth]="1.75" class="overview__summary-extra-icon" />
+            {{ summary.weeklyDuration }}
+        </p>
+    </article>
+
+    <article class="card overview__summary-card">
+        <i-lucide [img]="icons.flame" [strokeWidth]="1.75" class="overview__summary-icon overview__summary-icon--streak" />
+        <span class="overview__summary-label">Streak</span>
+        <p class="overview__summary-value">
+            <span class="overview__summary-number">{{ summary.streakDays }}</span>
+            <span class="overview__summary-unit">days</span>
+        </p>
+    </article>
+
+    <article class="card overview__summary-card">
+        <i-lucide [img]="icons.dumbbell" [strokeWidth]="1.75" class="overview__summary-icon overview__summary-icon--accent" />
+        <span class="overview__summary-label">Volume</span>
+        <p class="overview__summary-value">
+            <span class="overview__summary-number">{{ summary.weeklyVolumeKg }}</span>
+            <span class="overview__summary-unit">kg</span>
+        </p>
+    </article>
+</section>
+
+<section class="card overview__volume" aria-label="Training volume">
+    <div class="overview__card-head">
+        <div>
+            <h2 class="overview__card-title">Training volume</h2>
+            <p class="overview__card-subtitle">8 weeks</p>
+        </div>
+        <span class="overview__chip">8 weeks</span>
+    </div>
+
+    <div class="overview__chart">
+        <div class="overview__chart-y" aria-hidden="true">
+            @for (tick of yTicks; track tick.value) {
+                <span class="overview__chart-y-label">{{ tick.label }}</span>
+            }
+        </div>
+
+        <svg
+            class="overview__chart-svg"
+            [attr.viewBox]="'0 0 ' + chartWidth + ' ' + chartHeight"
+            preserveAspectRatio="none"
+            role="img"
+            aria-label="Training volume trend over 8 weeks"
+        >
+            <defs>
+                <linearGradient id="volumeAreaGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--pf-accent)" stop-opacity="0.35" />
+                    <stop offset="100%" stop-color="var(--pf-accent)" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+
+            @for (tick of yTicks; track tick.value) {
+                <line
+                    class="overview__chart-grid"
+                    [attr.x1]="0"
+                    [attr.y1]="chartHeight - (tick.value / 15000) * chartHeight"
+                    [attr.x2]="chartWidth"
+                    [attr.y2]="chartHeight - (tick.value / 15000) * chartHeight"
+                />
+            }
+
+            <path class="overview__chart-area" [attr.d]="chartAreaPath" />
+            <path class="overview__chart-line" [attr.d]="chartLinePath" />
+
+            @for (point of chartPoints; track $index) {
+                <circle class="overview__chart-dot" [attr.cx]="point.x" [attr.cy]="point.y" r="4" />
+            }
+        </svg>
+
+        <div class="overview__chart-x" aria-hidden="true">
+            @for (point of volumeSeries; track point.label) {
+                <span class="overview__chart-x-label">{{ point.label }}</span>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="card overview__muscles" aria-label="Muscle groups">
+    <div class="overview__card-head">
+        <div>
+            <h2 class="overview__card-title">Muscle groups</h2>
+            <p class="overview__card-subtitle">This week</p>
+        </div>
+        <a class="pf-link overview__view-all" href="#">View all</a>
+    </div>
+
+    <ul class="overview__bars">
+        @for (group of muscleGroups; track group.name) {
+            <li class="overview__bar-row">
+                <span class="overview__bar-label">{{ group.name }}</span>
+                <div class="overview__bar-track" aria-hidden="true">
+                    <div class="overview__bar-fill" [style.width.%]="barWidth(group.volumeKg)"></div>
+                </div>
+                <span class="overview__bar-value">{{ formatVolume(group.volumeKg) }}</span>
+            </li>
+        }
+    </ul>
+</section>

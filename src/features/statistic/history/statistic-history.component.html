@@ -1,0 +1,42 @@
+<ul class="history">
+    @for (session of sessions; track session.id) {
+        <li>
+            <button
+                type="button"
+                class="card history__card"
+                [attr.aria-label]="session.name + ' on ' + session.date"
+            >
+                <div class="history__badge" aria-hidden="true">
+                    <i-lucide [img]="icons.user" [strokeWidth]="1.75" />
+                </div>
+
+                <div class="history__body">
+                    <div class="history__head">
+                        <span class="history__name">{{ session.name }}</span>
+                        <span class="history__dot" aria-hidden="true"></span>
+                        <span class="history__date">{{ session.date }}</span>
+                        <i-lucide [img]="icons.chevron" [strokeWidth]="1.75" class="history__chevron" />
+                    </div>
+
+                    <div class="history__stats">
+                        <div class="history__stat">
+                            <i-lucide [img]="icons.clock" [strokeWidth]="1.75" class="history__stat-icon" />
+                            <span class="history__stat-value">{{ session.duration }}</span>
+                            <span class="history__stat-label">Duration</span>
+                        </div>
+                        <div class="history__stat">
+                            <i-lucide [img]="icons.list" [strokeWidth]="1.75" class="history__stat-icon" />
+                            <span class="history__stat-value">{{ session.exerciseCount }}</span>
+                            <span class="history__stat-label">Exercises</span>
+                        </div>
+                        <div class="history__stat">
+                            <i-lucide [img]="icons.dumbbell" [strokeWidth]="1.75" class="history__stat-icon" />
+                            <span class="history__stat-value">{{ formatVolume(session.volumeKg) }}</span>
+                            <span class="history__stat-label">Volume</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </li>
+    }
+</ul>

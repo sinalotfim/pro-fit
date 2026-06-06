@@ -1,0 +1,127 @@
+:host {
+    display: block;
+}
+
+.history {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-2);
+}
+
+.history__card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: var(--pf-space-3);
+    align-items: start;
+    padding: var(--pf-space-3) var(--pf-space-4);
+    border: 1px solid var(--pf-border);
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    transition: background-color 120ms ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--pf-accent);
+        outline-offset: 2px;
+    }
+}
+
+.history__badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1f2630;
+    display: grid;
+    place-items: center;
+    color: var(--pf-accent);
+    margin-top: 4px;
+
+    :deep(svg) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.history__body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--pf-space-3);
+}
+
+.history__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    position: relative;
+}
+
+.history__name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.history__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--pf-accent);
+    flex-shrink: 0;
+}
+
+.history__date {
+    font-size: 13px;
+    color: var(--pf-text-muted);
+}
+
+.history__chevron {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--pf-text-muted);
+}
+
+.history__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--pf-space-2);
+}
+
+.history__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.history__stat-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--pf-accent);
+    margin-bottom: 2px;
+}
+
+.history__stat-value {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.history__stat-label {
+    font-size: 11px;
+    color: var(--pf-text-muted);
+}
