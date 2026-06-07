@@ -2,17 +2,7 @@
 
 <main class="pf-page">
     @if (workouts().length === 0) {
-        <section class="empty">
-            <div class="empty__figure">
-                <img [src]="emptyStateImage" alt="Create a new workout" (error)="handleImageError($event)" />
-            </div>
-            <h2 class="empty__title">Create your first custom workout</h2>
-            <p class="empty__subtitle">Set up your own unique routine</p>
-            <button type="button" class="btn btn-primary empty__cta" (click)="handleCreate()">
-                <span class="empty__cta-icon" aria-hidden="true">+</span>
-                <span>START</span>
-            </button>
-        </section>
+        <pf-workout-empty (createClick)="handleCreate()" />
     } @else {
         <article class="card" *ngFor="let w of workouts()">
             <header class="card__head">

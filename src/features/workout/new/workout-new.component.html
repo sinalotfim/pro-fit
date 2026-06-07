@@ -1,0 +1,119 @@
+<pf-workout-new-header
+    [title]="title()"
+    [saveVisible]="addedExercises().length > 0"
+    (titleChange)="title.set($event)"
+    (backClick)="onBack()"
+    (saveClick)="onSave()"
+/>
+
+<main class="nt-page" [class.nt-page--list]="addedExercises().length > 0">
+    @if (addedExercises().length === 0) {
+        <pf-workout-new-empty (addClick)="onAddExercises()" />
+    } @else {
+        <ul class="entry-list">
+            <li *ngFor="let entry of addedExercises(); trackBy: trackByEntry" class="entry-card">
+                <div class="entry-card__head">
+                    <button
+                        type="button"
+                        class="entry-card__toggle"
+                        (click)="toggleExpand(entry)"
+                        [attr.aria-expanded]="entry.expanded"
+                    >
+                        <span
+                            class="entry-card__chevron"
+                            [class.entry-card__chevron--open]="entry.expanded"
+                            aria-hidden="true"
+                        >
+                            <i-lucide name="chevron-down" />
+                        </span>
+                        <span class="entry-card__thumb-wrap">
+                            <img
+                                class="entry-card__thumb"
+                                [src]="entry.exercise.imageUrl"
+                                [alt]="entry.exercise.name"
+                                loading="lazy"
+                            />
+                            <span class="entry-card__thumb-badge" aria-hidden="true">
+                                <i-lucide [img]="videoIcon" [strokeWidth]="2" />
+                            </span>
+                        </span>
+                        <span class="entry-card__title-block">
+                            <span class="entry-card__title">
+                                {{ entry.exercise.name }}
+                                <span class="entry-card__sep"> · </span>
+                                <span class="entry-card__equip">{{ entry.exercise.equipment }}</span>
+                            </span>
+                            <span class="entry-card__count">
+                                {{ entry.sets.length }} {{ entry.sets.length === 1 ? 'Set' : 'Sets' }}
+                            </span>
+                        </span>
+                    </button>
+                    <button
+                        type="button"
+                        class="entry-card__delete"
+                        (click)="removeEntry(entry)"
+                        aria-label="Remove exercise"
+                    >
+                        <i-lucide [img]="trashIcon" [strokeWidth]="2" />
+                    </button>
+                </div>
+
+                <div class="entry-card__body" *ngIf="entry.expanded">
+                    <div
+                        class="set-row"
+                        *ngFor="let set of entry.sets; let i = index; trackBy: trackBySet"
+                        [class.set-row--active]="isActiveSet(entry, set)"
+                    >
+                        <span class="set-row__marker" *ngIf="isActiveSet(entry, set)" aria-hidden="true">
+                            <i-lucide [img]="activeSetIcon" [strokeWidth]="2.5" />
+                        </span>
+                        <span class="set-row__num">{{ i + 1 }}</span>
+                        <label class="set-row__field">
+                            <input
+                                type="number"
+                                inputmode="decimal"
+                                class="set-row__input"
+                                [id]="setInputId(entry.uid, set.id, 'kg')"
+                                [value]="set.kg ?? ''"
+                                (focus)="setActiveSet(entry, set)"
+                                (input)="onKgInput(entry, set.id, $any($event.target).value)"
+                                aria-label="Weight in kilograms"
+                            />
+                        </label>
+                        <span class="set-row__label">KG</span>
+                        <label class="set-row__field">
+                            <input
+                                type="number"
+                                inputmode="numeric"
+                                class="set-row__input"
+                                [id]="setInputId(entry.uid, set.id, 'reps')"
+                                [value]="set.reps ?? ''"
+                                (focus)="setActiveSet(entry, set)"
+                                (input)="onRepsInput(entry, set.id, $any($event.target).value)"
+                                aria-label="Repetitions"
+                            />
+                        </label>
+                        <span class="set-row__label">REPS</span>
+                    </div>
+
+                    <button type="button" class="add-set-btn" (click)="addSet(entry)">
+                        <span aria-hidden="true">+</span>
+                        <span>Add a set</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+        <button type="button" class="add-more-btn" (click)="onAddExercises()">
+            <span aria-hidden="true">+</span>
+            <span>Add exercise</span>
+        </button>
+    }
+</main>
+
+<pf-workout-new-add-exercises-sheet
+    *ngIf="addOpen()"
+    [recents]="recents()"
+    (add)="onExercisesAdded($event)"
+    (close)="onCloseAdd()"
+/>

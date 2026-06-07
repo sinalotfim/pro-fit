@@ -1,12 +1,13 @@
-import { Component, ElementRef, ViewChild, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { LucideAngularModule } from 'lucide-angular';
+import { ChevronRight, CirclePlay, LucideAngularModule, Trash2 } from 'lucide-angular';
 
-import { Exercise, WorkoutExerciseListItem, WorkoutListItem } from '../../core/models';
-import { WorkoutService } from '../../core/services';
-import { AddExercisesSheetComponent } from './add-exercises-sheet/add-exercises-sheet.component';
+import { Exercise, WorkoutExerciseListItem, WorkoutListItem } from '../../../core/models';
+import { WorkoutService } from '../../../core/services';
+import { WorkoutNewAddExercisesSheetComponent } from './add-exercises-sheet/workout-new-add-exercises-sheet.component';
+import { WorkoutNewEmptyComponent } from './empty/workout-new-empty.component';
+import { WorkoutNewHeaderComponent } from './header/workout-new-header.component';
 
 export type TrainingSet = { id: number; kg: number | null; reps: number | null };
 
@@ -18,28 +19,36 @@ export type TrainingExerciseEntry = {
 };
 
 const RECENTS_LIMIT = 8;
+const DEFAULT_SET_COUNT = 2;
 
 @Component({
-    selector: 'pf-new-training',
-    templateUrl: 'new-training.component.html',
-    styleUrls: ['new-training.component.scss'],
-    imports: [CommonModule, FormsModule, AddExercisesSheetComponent, LucideAngularModule],
+    selector: 'pf-workout-new',
+    templateUrl: 'workout-new.component.html',
+    styleUrls: ['workout-new.component.scss'],
+    imports: [
+        CommonModule,
+        WorkoutNewAddExercisesSheetComponent,
+        WorkoutNewEmptyComponent,
+        LucideAngularModule,
+        WorkoutNewHeaderComponent,
+    ],
 })
-export class NewTrainingComponent {
+export class WorkoutNewComponent {
     private readonly route = inject(ActivatedRoute);
     private readonly location = inject(Location);
     private readonly router = inject(Router);
     private readonly store = inject(WorkoutService);
 
     readonly title = signal(this.buildInitialTitle());
-    readonly editing = signal(false);
-    readonly draftTitle = signal(this.title());
 
     readonly addOpen = signal(false);
     readonly addedExercises = signal<TrainingExerciseEntry[]>([]);
     readonly recents = signal<readonly Exercise[]>([]);
+    readonly activeSet = signal<{ entryUid: number; setId: number } | null>(null);
 
-    @ViewChild('titleInput') private titleInput?: ElementRef<HTMLInputElement>;
+    protected readonly activeSetIcon = ChevronRight;
+    protected readonly videoIcon = CirclePlay;
+    protected readonly trashIcon = Trash2;
 
     private nextEntryUid = 1;
     private nextSetId = 1;
@@ -53,40 +62,6 @@ export class NewTrainingComponent {
 
     onBack(): void {
         this.location.back();
-    }
-
-    startEdit(): void {
-        this.draftTitle.set(this.title());
-        this.editing.set(true);
-        queueMicrotask(() => {
-            const el = this.titleInput?.nativeElement;
-            if (el) {
-                el.focus();
-                el.select();
-            }
-        });
-    }
-
-    saveEdit(): void {
-        const next = this.draftTitle().trim();
-        if (next.length > 0) {
-            this.title.set(next);
-        }
-        this.editing.set(false);
-    }
-
-    onDraftInput(value: string): void {
-        this.draftTitle.set(value);
-    }
-
-    onTitleKeydown(event: KeyboardEvent): void {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            this.saveEdit();
-        } else if (event.key === 'Escape') {
-            event.preventDefault();
-            this.editing.set(false);
-        }
     }
 
     onAddExercises(): void {
@@ -107,9 +82,8 @@ export class NewTrainingComponent {
         for (const ex of list) {
             if (existingIds.has(ex.id)) continue;
             existingIds.add(ex.id);
-            const initialSetCount = ex.sets > 0 ? ex.sets : 1;
             const sets: TrainingSet[] = [];
-            for (let i = 0; i < initialSetCount; i++) {
+            for (let i = 0; i < DEFAULT_SET_COUNT; i++) {
                 sets.push({ id: this.nextSetId++, kg: null, reps: null });
             }
             additions.push({
@@ -121,9 +95,32 @@ export class NewTrainingComponent {
         }
         if (additions.length > 0) {
             this.addedExercises.update((arr) => [...arr, ...additions]);
+            const firstEntry = additions[0];
+            const firstSet = firstEntry.sets[0];
+            this.focusSet(firstEntry.uid, firstSet.id);
         }
         this.updateRecents(list);
         this.addOpen.set(false);
+    }
+
+    isActiveSet(entry: TrainingExerciseEntry, set: TrainingSet): boolean {
+        const active = this.activeSet();
+        return active?.entryUid === entry.uid && active?.setId === set.id;
+    }
+
+    setActiveSet(entry: TrainingExerciseEntry, set: TrainingSet): void {
+        this.activeSet.set({ entryUid: entry.uid, setId: set.id });
+    }
+
+    setInputId(entryUid: number, setId: number, field: 'kg' | 'reps'): string {
+        return `set-${field}-${entryUid}-${setId}`;
+    }
+
+    private focusSet(entryUid: number, setId: number): void {
+        this.activeSet.set({ entryUid, setId });
+        queueMicrotask(() => {
+            document.getElementById(this.setInputId(entryUid, setId, 'kg'))?.focus();
+        });
     }
 
     private updateRecents(list: readonly Exercise[]): void {
@@ -148,6 +145,14 @@ export class NewTrainingComponent {
         this.addedExercises.update((arr) =>
             arr.map((e) => (e.uid === entry.uid ? { ...e, expanded: !e.expanded } : e)),
         );
+    }
+
+    removeEntry(entry: TrainingExerciseEntry): void {
+        this.addedExercises.update((arr) => arr.filter((e) => e.uid !== entry.uid));
+        const active = this.activeSet();
+        if (active?.entryUid === entry.uid) {
+            this.activeSet.set(null);
+        }
     }
 
     addSet(entry: TrainingExerciseEntry): void {

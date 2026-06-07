@@ -11,12 +11,12 @@ import {
 import { FormsModule } from '@angular/forms';
 import { LucideAngularModule } from 'lucide-angular';
 
-import { EXERCISES } from '../../../core/constants/exercise.constant';
-import { BodyPart, Exercise } from '../../../core/models/exercise.model';
+import { EXERCISES } from '../../../../core/constants/exercise.constant';
+import { BodyPart, Exercise } from '../../../../core/models/exercise.model';
 import {
     ExerciseFilterComponent,
     ExerciseFilterState,
-} from '../../exercise/filter/exercise-filter.component';
+} from '../../../exercise/filter/exercise-filter.component';
 
 type HighlightPart = { text: string; match: boolean };
 
@@ -27,13 +27,13 @@ export type ActiveFilterChip =
 const PLACEHOLDER_IMAGE = 'assets/exercises/placeholder.svg';
 
 @Component({
-    selector: 'pf-add-exercises-sheet',
-    templateUrl: 'add-exercises-sheet.component.html',
-    styleUrls: ['add-exercises-sheet.component.scss'],
+    selector: 'pf-workout-new-add-exercises-sheet',
+    templateUrl: 'workout-new-add-exercises-sheet.component.html',
+    styleUrls: ['workout-new-add-exercises-sheet.component.scss'],
     imports: [CommonModule, FormsModule, ExerciseFilterComponent, LucideAngularModule],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AddExercisesSheetComponent {
+export class WorkoutNewAddExercisesSheetComponent {
     @Input() recents: readonly Exercise[] = [];
     @Input() allExercises: readonly Exercise[] = EXERCISES;
 

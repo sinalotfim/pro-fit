@@ -3,23 +3,22 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 import { WorkoutService } from '../../core/services/workout.service';
+import { WorkoutEmptyComponent } from './empty/workout-empty.component';
 import { WorkoutHeaderComponent } from './header/workout-header.component';
 
 const PLACEHOLDER_IMAGE = 'assets/workouts/placeholder.svg';
-const EMPTY_STATE_IMAGE = 'assets/workouts/barbell.svg';
 
 @Component({
     selector: 'pf-workout',
     templateUrl: 'workout.component.html',
     styleUrls: ['workout.component.scss'],
-    imports: [CommonModule, WorkoutHeaderComponent],
+    imports: [CommonModule, WorkoutHeaderComponent, WorkoutEmptyComponent],
 })
 export class WorkoutComponent {
     private readonly router = inject(Router);
     private readonly store = inject(WorkoutService);
 
     readonly placeholderImage = PLACEHOLDER_IMAGE;
-    readonly emptyStateImage = EMPTY_STATE_IMAGE;
 
     readonly workouts = this.store.workoutList;
 

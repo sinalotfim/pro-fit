@@ -14,68 +14,6 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    .empty {
-        background: var(--pf-surface);
-        border: 1px solid var(--pf-border);
-        border-radius: var(--pf-radius);
-        padding: var(--pf-space-6) var(--pf-space-4);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: var(--pf-space-3);
-        min-height: 60vh;
-        justify-content: center;
-
-        &__figure {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background: var(--pf-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--pf-space-3);
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                border-radius: 50%;
-            }
-        }
-        &__title {
-            margin: 0;
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--pf-text);
-            line-height: 1.25;
-            max-width: 18ch;
-        }
-
-        &__subtitle {
-            margin: 0 0 var(--pf-space-3);
-            color: var(--pf-text-muted);
-            font-size: 15px;
-        }
-
-        &__cta {
-            width: 100%;
-            max-width: 360px;
-            padding: 16px 24px;
-            border-radius: 14px;
-            font-size: 16px;
-            letter-spacing: 0.5px;
-            gap: var(--pf-space-2);
-
-            &__cta-icon {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 1;
-            }
-        }
-    }
-
     .card {
         background: var(--pf-surface);
         border: 1px solid var(--pf-border);

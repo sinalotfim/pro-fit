@@ -1,0 +1,37 @@
+<header class="nth">
+    <button type="button" class="nth__back" (click)="onBack()" aria-label="Back">
+        <i-lucide [img]="backIcon" [strokeWidth]="2.4" />
+    </button>
+
+    @if (!editing()) {
+        <h1 class="nth__title">{{ title() }}</h1>
+        <div class="nth__actions">
+            <button type="button" class="nth__action" (click)="startEdit()" aria-label="Rename">
+                <i-lucide [img]="pencilIcon" />
+            </button>
+            @if (saveVisible()) {
+                <button type="button" class="nth__action nth__action--save" (click)="onSave()" aria-label="Save workout">
+                    <i-lucide [img]="saveIcon" [strokeWidth]="2.4" />
+                </button>
+            }
+        </div>
+    } @else {
+        <input
+            #titleInput
+            type="text"
+            class="nth__input"
+            [ngModel]="draftTitle()"
+            (ngModelChange)="onDraftInput($event)"
+            (keydown)="onTitleKeydown($event)"
+            aria-label="Training name"
+            autocomplete="off"
+            spellcheck="false"
+            enterkeyhint="done"
+        />
+        <div class="nth__actions">
+            <button type="button" class="nth__action" (click)="saveEdit()" aria-label="Save name">
+                <i-lucide [img]="checkIcon" [strokeWidth]="2.4" />
+            </button>
+        </div>
+    }
+</header>

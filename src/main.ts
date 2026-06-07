@@ -53,7 +53,7 @@ const routes: Routes = [
     {
         path: 'workout/new',
         loadComponent: () =>
-            import('./features/new-training/new-training.component').then((m) => m.NewTrainingComponent),
+            import('./features/workout/new/workout-new.component').then((m) => m.WorkoutNewComponent),
     },
     {
         path: '',
